@@ -1,35 +1,23 @@
-<template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        nuxtSmarensol
-      </h1>
-      <h2 class="subtitle">
-        My grand Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <arou
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+  .home
+    navMenu
+    slider
+    .container
+      div
+        logo
+        h1.title nuxtSmarensol
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import navMenu from '~/components/nav/navMenu.vue'
+import slider from '~/components/slider/slider.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    navMenu,
+    slider
   }
 }
 </script>

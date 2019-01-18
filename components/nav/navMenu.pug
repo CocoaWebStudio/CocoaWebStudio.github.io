@@ -1,0 +1,22 @@
+#nav.container-fluid
+  b-navbar(toggleable="md" type="dark" variant="info")
+    b-navbar-toggle(target="nav_collapse")
+    b-navbar-brand(to="/") Smarensol
+    b-collapse(is-nav id="nav_collapse")
+      b-navbar-nav
+        b-nav-item
+          nuxt-link(to="/") HOME
+        b-nav-item(to="/aboutUs") ABOUT
+        b-nav-item-dropdown(text="PRODUCTS" right)
+          b-dropdown-item(to="/productsServices/energy") Energy
+          b-dropdown-item(to="/productsServices/industry") Industry
+          b-dropdown-item(to="/productsServices/oil") Oil
+        b-nav-item(to="/allies") ALLIES
+        b-nav-item(to="/customers") CUSTOMERS
+        b-nav-item-dropdown(text="CONTACT" right)
+          b-dropdown-item(href="#") Institutional Data
+          b-dropdown-item(href="#") Location
+          b-dropdown-item(to="/contact/contactUs") Contact Us
+        b-nav-item-dropdown(text="Lang" right)
+          b-dropdown-item(href="#") EN
+          b-dropdown-item(href="#") ES
