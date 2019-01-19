@@ -3,6 +3,9 @@
     navMenu
     .container
      h1 About Smarensol
+     br
+     br
+     tab
 </template>
 <script>
 import navMenu from '~/components/nav/navMenu.vue'
