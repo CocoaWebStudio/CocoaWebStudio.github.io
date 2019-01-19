@@ -1,7 +1,8 @@
 <template lang="pug">
   .home
     navMenu
-    slider
+    .slider
+      slider
     .container
       .row
         h1.title Welcome to Smarensol
@@ -24,11 +25,12 @@ export default {
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
+.slider {
+  height: 60vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+.container {
   text-align: center;
 }
 
