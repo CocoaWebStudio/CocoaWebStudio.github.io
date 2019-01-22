@@ -2,7 +2,7 @@
   .customer
     navMenu
     .container
-     h1 Customers Smarensol
+     h1.title Customers Smarensol
 </template>
 <script>
 import navMenu from '~/components/nav/navMenu.vue'
