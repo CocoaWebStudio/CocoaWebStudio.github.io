@@ -4,17 +4,53 @@
     .container
      h1.title Allies Smarensol
      br
-     image
+     b-container#alliesImg(fluid class="p-4 bg")
+      b-row
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=35" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=58" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=59" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=54" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=41" alt="Thumbnail")
+      br
+      b-row
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=30" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=55" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=60" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=25" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=45" alt="Thumbnail")
+      br
+      b-row
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=70" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=56" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=69" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=43" alt="Thumbnail")
+        b-col
+          b-img(thumbnail fluid src="https://picsum.photos/125/125/?image=38" alt="Thumbnail")
+
 </template>
 <script>
 import navMenu from '~/components/nav/navMenu.vue'
-import image from '~/components/image/image.vue'
 
 export default {
   name: 'allies',
   components: {
-    navMenu,
-    image
+    navMenu
   }
 }
 </script>
+<style src="./allies.scss" lang="scss">
+</style>
