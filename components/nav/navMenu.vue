@@ -1,3 +1,3 @@
-<template src="./navMenu.pug"></template>
+<template src="./navMenu.pug" />
 <style src="./navMenu.scss" lang="scss">
 </style>

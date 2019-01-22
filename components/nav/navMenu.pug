@@ -1,15 +1,12 @@
 #nav.container-fluid
-  b-navbar(toggleable="md" type="dark" variant="info")
+  b-navbar.row(toggleable="md" type="dark" variant="info")
     b-navbar-toggle(target="nav_collapse")
     b-navbar-brand(to="/") Smarensol
     b-collapse(is-nav id="nav_collapse")
       b-navbar-nav
         b-nav-item(to="/") HOME
         b-nav-item(to="/aboutUs") ABOUT
-        b-nav-item-dropdown(text="PRODUCTS" right)
-          b-dropdown-item(to="/productsService/energy") Energy
-          b-dropdown-item(to="/productsService/industry") Industry
-          b-dropdown-item(to="/productsService/oil") Oil
+        b-nav-item(to="/productsService") PRODUCTS
         b-nav-item(to="/allies") ALLIES
         b-nav-item(to="/customers") CUSTOMERS
         b-nav-item-dropdown(text="CONTACT" right)
