@@ -1,7 +1,7 @@
 <template lang="pug">
   .contacUs
     .container
-     h1.title ContactUs Smarensol
+     h1.title Contact Us Smarensol
      contactForm
 </template>
 <script>
@@ -14,3 +14,5 @@ export default {
   }
 }
 </script>
+<style src="./contactUs.scss" lang="scss">
+</style>

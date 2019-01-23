@@ -27,3 +27,5 @@ export default {
   }
 }
 </script>
+<style src="./contactForm.scss" lang="scss">
+</style>
