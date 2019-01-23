@@ -1,0 +1,37 @@
+<template lang="pug">
+  div
+    b-card-group(deck)
+      b-card(title="Title"
+        img-src="https://picsum.photos/300/300/?image=41"
+        img-alt="Img"
+        img-top
+        )
+        p.card-text
+          p This is a wider card with supporting text below as a
+          p natural lead-in to additional content. This content
+          p is a little bit longer.
+        div(slot="footer")
+          small.text-muted Last updated 3 mins ago
+      b-card(title="Title"
+        img-src="https://picsum.photos/300/300/?image=41"
+        img-alt="Img"
+        img-top
+        )
+        p.card-text
+          p This card has supporting text below as a natural lead-in
+          p to additional content.
+        div(slot="footer")
+          small.text-muted Last updated 3 mins ago
+      b-card(title="Title"
+        img-src="https://picsum.photos/300/300/?image=41"
+        img-alt="Img"
+        img-top
+        )
+        p.card-text
+          p This is a wider card with supporting text below as a natural
+          p lead-in to additional content. This card has even longer content
+          p than the first to show that equal height action.
+        div(slot="footer")
+          small.text-muted Last updated 3 mins ago
+</template>
+
