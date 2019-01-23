@@ -1,4 +1,4 @@
 <template lang="pug">
   .container
-    h1 Energy Smarensol
+    h1 Lines of Tranmission Smarensol
 </template>
