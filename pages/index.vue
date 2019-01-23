@@ -2,6 +2,10 @@
   .home
     navMenu
     slider
+    .container
+      .row
+        .col.text-center
+          h1.subtitle “WE ARE SPECIALISTS IN PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES”
 </template>
 
 <script>
@@ -17,3 +21,23 @@ export default {
   }
 }
 </script>
+
+<style>
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 60px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 30px;
+  color: #526488;
+  word-spacing: 1px;
+  padding-bottom: 15px;
+}
+</style>
