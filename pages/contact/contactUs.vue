@@ -1,7 +1,7 @@
 <template lang="pug">
   .contacUs
     .container
-     h1 ContactUs Smarensol
+     h1.title ContactUs Smarensol
      contactForm
 </template>
 <script>
