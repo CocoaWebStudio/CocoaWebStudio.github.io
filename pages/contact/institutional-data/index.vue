@@ -13,7 +13,7 @@
 import location from '~/components/location/location.vue'
 
 export default {
-  name: 'data',
+  name: 'Data',
   components: {
     location
   }
