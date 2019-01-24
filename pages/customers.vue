@@ -10,9 +10,10 @@
 import navMenu from '~/components/nav/navMenu.vue'
 
 export default {
-  name: 'AboutUs',
+  name: 'Customers',
   components: {
     navMenu
   }
 }
 </script>
+<style src="./customers.scss" lang="scss" />
