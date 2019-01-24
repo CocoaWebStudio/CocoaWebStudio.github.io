@@ -1,20 +1,25 @@
 <template lang="pug">
   .data
+    navMenu
     .container
-     h1.title Data Institutional to Smarensol
-     br
-     p Teléfonos: +593 4 2071092 / +593 9 994138795
-     p Dirección: Torres del Mall del Sol – Torre B Piso 4
-     p Email: ventas@smarensol.com
-     p Guayaquil – Ecuador
-     location
+      .row
+        .col.text-center
+          h1.title Institutional Data Smarensol
+          br
+      p Teléfonos: +593 4 2071092 / +593 9 994138795
+      p Dirección: Torres del Mall del Sol – Torre B Piso 4
+      p Email: ventas@smarensol.com
+      p Guayaquil – Ecuador
+    location
 </template>
 <script>
 import location from '~/components/location/location.vue'
+import navMenu from '~/components/nav/navMenu.vue'
 
 export default {
   name: 'Data',
   components: {
+    navMenu,
     location
   }
 }

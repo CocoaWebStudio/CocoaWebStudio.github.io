@@ -1,12 +1,16 @@
 <template lang="pug">
-  .container
-    h1.title Distribution Smarensol
+  .substations
+    navMenu
+    .container
+      .row
+        .col.text-center
+          h1.title Substations Smarensol
 </template>
 <script>
 import navMenu from '~/components/nav/navMenu.vue'
 
 export default {
-  name: 'Distribution',
+  name: 'Substations',
   components: {
     navMenu
   }
