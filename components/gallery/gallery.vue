@@ -1,1 +1,1 @@
-<template src="./gallery.pug"> </template>
+<template src="./gallery.pug" />
