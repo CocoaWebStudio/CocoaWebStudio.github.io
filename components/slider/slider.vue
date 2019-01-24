@@ -6,13 +6,26 @@ import industry from '~/assets/images/industry.jpg'
 import oil from '~/assets/images/oil.jpg'
 
 export default {
+  props:[
+    smarensol: smarensol,
+    energy: energy,
+    industry: industry,
+    oil: oil,
+   ],
   data() {
     return {
-      smarensol: smarensol,
-      energy: energy,
-      industry: industry,
-      oil: oil
+      slide: 0,
+      sliding: null
+    }
+  },
+  methods: {
+    onSlideStart(slide) {
+      this.sliding = true
+    },
+    onSlideEnd(slide) {
+      this.sliding = false
     }
   }
 }
 </script>
+<style src="./slider.scss" lang="scss"/>
