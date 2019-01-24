@@ -10,7 +10,7 @@
 import navMenu from '~/components/nav/navMenu.vue'
 
 export default {
-  name: 'aboutUs',
+  name: 'AboutUs',
   components: {
     navMenu
   }

@@ -6,7 +6,7 @@
 import navMenu from '~/components/nav/navMenu.vue'
 
 export default {
-  name: 'mainMenu',
+  name: 'MainMenu',
   components: {
     navMenu
   }

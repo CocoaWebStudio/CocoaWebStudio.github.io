@@ -3,7 +3,7 @@
 import socialNetworks from '~/components/socialNetworks/socialNetworks.vue'
 
 export default {
-  name: 'navMenu',
+  name: 'NavMenu',
   components: {
     socialNetworks
   }
