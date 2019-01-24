@@ -1,11 +1,11 @@
 <template lang="pug">
   .home
     navMenu
-    slider
-    .container
+    .container.jumbotron
       .row
         .col.text-center
-          h1.subtitle “WE ARE SPECIALISTS IN PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES”
+          h1.subtitle WE ARE SPECIALISTS IN PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES
+        slider
 </template>
 
 <script>
