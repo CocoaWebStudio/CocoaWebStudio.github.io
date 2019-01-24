@@ -21,4 +21,4 @@ export default {
   }
 }
 </script>
-<style src="./_index.scss" lang="scss" />
+<style src="./about-us.scss" lang="scss" />
