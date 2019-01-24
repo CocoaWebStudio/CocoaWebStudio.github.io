@@ -4,7 +4,7 @@
     .container
      h1.title ABOUT US?
      br
-     p Smarensol S.A., is a company of the electrical sector, which has more than 15 years of experience in the commercialization of equipment and supplies for the electrical system of Distribution, Transmission and Substations.
+     p.text Smarensol S.A., is a company of the electrical sector, which has more than 15 years of experience in the commercialization of equipment and supplies for the electrical system of Distribution, Transmission and Substations.
      br
      br
      tab
@@ -21,3 +21,4 @@ export default {
   }
 }
 </script>
+<style src="./_index.scss" lang="scss" />
