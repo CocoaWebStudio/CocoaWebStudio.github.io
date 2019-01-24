@@ -46,11 +46,21 @@
 import navMenu from '~/components/nav/navMenu.vue'
 
 export default {
-  name: 'allies',
+  name: 'F',
   components: {
     navMenu
   }
 }
 </script>
-<style src="./allies.scss" lang="scss">
+<style lang="scss">
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 60px;
+  color: #35495e;
+  letter-spacing: 1px;
+  text-align: center;
+}
 </style>
