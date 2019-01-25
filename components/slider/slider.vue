@@ -1,19 +1,16 @@
 <template src="./slider.pug" />
 <script>
-import smarensol from '~/assets/images/smarensol.jpg'
-import energy from '~/assets/images/energy.jpg'
-import industry from '~/assets/images/industry.jpg'
-import oil from '~/assets/images/oil.jpg'
-
 export default {
   data() {
     return {
-      smarensol: smarensol,
-      energy: energy,
-      industry: industry,
-      oil: oil,
       slide: 0,
-      sliding: null
+      sliding: null,
+      images: [
+        {title:'smarensol', url:'~/assets/images/smarensol.jpg'},
+        {title: 'energy' , url:'~/assets/images/energy.jpg'},
+        {title: 'industry' , url:'~/assets/images/industry.jpg'},
+        {title: 'oil' , url:'~/assets/images/oil.jpg'}
+      ]
     }
   },
   methods: {

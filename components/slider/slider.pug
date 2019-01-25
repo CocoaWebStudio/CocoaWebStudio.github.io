@@ -10,7 +10,8 @@ b-carousel(id="carouselSlider"
   @sliding-start="onSlideStart"
   @sliding-end="onSlideEnd"
 )
-  b-carousel-slide(:img-src="smarensol")
-  b-carousel-slide(:img-src="energy")
-  b-carousel-slide(:img-src="industry")
-  b-carousel-slide(:img-src="oil")
+  b-carousel-slide(v-for="image in images"
+    :key="index"
+    :img-src="image.url"
+    :title="image.title"
+   )
