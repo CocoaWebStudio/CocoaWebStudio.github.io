@@ -16,4 +16,4 @@ export default {
   }
 }
 </script>
-<style src="./customers.scss" lang="scss" />
+<style src="./customers.scss" lang="scss" scoped />

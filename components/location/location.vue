@@ -2,6 +2,6 @@
   .container
     .row
       .col.text-center
-        h1.subtitle Location of Smarensol
+        h1.subtitle Location
 </template>
-<style src="./location.scss" lang="scss" />
+<style src="./location.scss" lang="scss" scoped />
