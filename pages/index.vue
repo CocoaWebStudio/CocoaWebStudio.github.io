@@ -6,6 +6,10 @@
         .col.text-center.title-box
           h3.title WE ARE SPECIALISTS PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES
     slider(:sliders="sliders")
+    .container-fluid
+      .row
+        .col.text-center
+          h1.allies Allies Smarensol
 </template>
 
 <script>
@@ -37,13 +41,12 @@ export default {
   background-color:  #0002F5;
   .title {
     font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: #ffffff;
     letter-spacing: 1.5px;
     padding-top: 10px;
   }
 }
-
 
 .subtitle {
   font-weight: 300;
@@ -52,5 +55,15 @@ export default {
   word-spacing: 1px;
   padding-bottom: 15px;
 }
+
+.allies{
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 60px;
+  color: #35495e;
+  letter-spacing: 1px;
+  text-align: center;
+}
 </style>
-s
