@@ -37,4 +37,4 @@ export default {
   }
 }
 </script>
-<style src="./about-us.scss" lang="scss" />
+<style src="./about-us.scss" lang="scss" scoped/>

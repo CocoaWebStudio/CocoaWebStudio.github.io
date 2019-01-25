@@ -52,3 +52,4 @@ export default {
   }
 }
 </script>
+<style src="./index.scss" lang="scss" scoped/>

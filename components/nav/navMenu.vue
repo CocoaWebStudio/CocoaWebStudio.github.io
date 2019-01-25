@@ -10,5 +10,4 @@ export default {
 }
 </script>
 
-<style src="./navMenu.scss" lang="scss">
-</style>
+<style src="./navMenu.scss" lang="scss" scoped />

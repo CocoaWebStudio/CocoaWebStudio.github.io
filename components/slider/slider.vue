@@ -23,4 +23,4 @@ export default {
   }
 }
 </script>
-<style src="./slider.scss" lang="scss" />
+<style src="./slider.scss" lang="scss" scoped/>
