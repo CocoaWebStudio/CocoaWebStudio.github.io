@@ -1,11 +1,11 @@
 <template lang="pug">
   .home
     navMenu
-    .container.jumbotron
+    .container-fluid
       .row
-        .col.text-center
-          h1.subtitle WE ARE SPECIALISTS IN PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES
-        slider
+        .col.text-center.title-box
+          h3.title WE ARE SPECIALISTS PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES
+    slider(:sliders="sliders")
 </template>
 
 <script>
@@ -18,20 +18,32 @@ export default {
     Logo,
     navMenu,
     slider
+  },
+  data() {
+    return {
+      sliders: [
+        {id:0,title:'smarensol', url:'/images/sliderSmarensolLogo.jpg'},
+        {id:1,title: 'energy' , url:'/images/energy.jpg'},
+        {id:2,title: 'industry' , url:'/images/industry.jpg'},
+        {id:3,title: 'oil' , url:'/images/oil.jpg'}
+      ]
+    }
   }
 }
 </script>
 
-<style scoped>
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 60px;
-  color: #35495e;
-  letter-spacing: 1px;
+<style scoped lang="scss">
+.title-box{
+  background-color:  #0002F5;
+  .title {
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+  }
 }
+
 
 .subtitle {
   font-weight: 300;
@@ -41,3 +53,4 @@ export default {
   padding-bottom: 15px;
 }
 </style>
+s

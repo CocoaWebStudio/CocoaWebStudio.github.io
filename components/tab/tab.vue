@@ -1,3 +1,2 @@
 <template src="./tab.pug" />
-<style src="./tab.scss" lang="scss">
-</style>
+<style src="./tab.scss" lang="scss" />

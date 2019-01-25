@@ -3,15 +3,14 @@ b-carousel(id="carouselSlider"
   controls
   indicators
   background="#ababab"
-  :interval="9000"
-  img-width="1200"
-  img-height="900"
+  :interval="5000"
   v-model="slide"
   @sliding-start="onSlideStart"
   @sliding-end="onSlideEnd"
 )
-  b-carousel-slide(v-for="image in images"
-    :key="index"
-    :img-src="image.url"
-    :title="image.title"
-   )
+  b-carousel-slide(
+    v-for="slide in sliders"
+    :key="slide.id"
+    :img-src="slide.url"
+    :title="slide.title"
+  )

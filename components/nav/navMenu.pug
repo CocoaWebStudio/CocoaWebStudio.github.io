@@ -1,10 +1,10 @@
 #nav.container-fluid
-  b-navbar.row(toggleable="md" type="dark" variant="info")
+  b-navbar.row(toggleable="md")
     b-navbar-toggle(target="nav_collapse")
-    b-navbar-brand(to="/") Smarensol
+    b-navbar-brand(to="/")
+      img(src="~/assets/SmarensolLogo.svg" alt="Smaresol" class='img-fluid' style="width:200px;")
     b-collapse(is-nav id="nav_collapse")
-      b-navbar-nav
-        b-nav-item(to="/") HOME
+      b-navbar-nav.ml-auto
         b-nav-item(to="/company/about-us") COMPANY
         b-nav-item-dropdown(text="PRODUCT LINES" right)
           b-dropdown-item(to="/product-lines/distribution") Distribution
@@ -16,8 +16,6 @@
         b-nav-item-dropdown(text="CONTACT" right)
           b-dropdown-item(to="/contact/institutional-data") Institutional Data
           b-dropdown-item(to="/contact/contact-us") Contact Us
-        b-nav-item
-         socialNetworks
         b-nav-item-dropdown(text="Lang" right)
           b-dropdown-item(href="#") EN
           b-dropdown-item(href="#") ES
