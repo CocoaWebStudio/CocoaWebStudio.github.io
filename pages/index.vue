@@ -27,9 +27,9 @@ export default {
     return {
       sliders: [
         {id:0,title:'smarensol', url:'/images/sliderSmarensolLogo.jpg'},
-        {id:1,title: 'energy' , url:'/images/energy.jpg'},
-        {id:2,title: 'industry' , url:'/images/industry.jpg'},
-        {id:3,title: 'oil' , url:'/images/oil.jpg'}
+        {id:1,title: 'energy' , url:'/images/energy1.jpg'},
+        {id:2,title: 'industry' , url:'/images/energy4.jpg'},
+        {id:3,title: 'oil' , url:'/images/energy3.jpg'}
       ]
     }
   }
