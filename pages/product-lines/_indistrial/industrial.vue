@@ -6,8 +6,8 @@
         .col.text-center
           h1.title Industrial Smarensol
           br
-      .jumbotron
-        gallery
+      .row
+        gallery(:gallerys="gallerys")
 </template>
 <script>
 import navMenu from '~/components/nav/navMenu.vue'
@@ -18,6 +18,15 @@ export default {
   components: {
     navMenu,
     gallery
+  },
+  data() {
+    return {
+      gallerys: [
+        {id:0,title:'Tools', url:'https://picsum.photos/300/300/?image=41'},
+        {id:1,title: 'Security equipments' , url:'https://picsum.photos/300/300/?image=28'},
+        {id:2,title: 'Motors and Variators' , url:'https://picsum.photos/300/300/?image=61'}
+      ]
+    }
   }
 }
 </script>
