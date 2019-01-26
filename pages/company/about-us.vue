@@ -14,18 +14,18 @@
           h2.title VISION
           p.blockquote To be leaders in the commercialization of solutions for the national electricity sector, seeking excellence and continuous improvement.
       .row
-        .col
+        .col.center-tex
           h2.title VALUES
-          h4 Honesty
-          p Our attitude is directed to fulfill what we promise, we will respect the truth and justice.
-          h4 Efficiency
-          p We will optimize our internal resources and processes.
-          h4 Social Responsability
-          p We will contribute to the social and environmental improvement of our stakeholders.
-          h4 Teamwork
-          p We will cultivate the camaraderie and development of work groups.
-          h4 Continuous Improvement
-          p We will constantly review our internal processes, in order to reduce the response time to our customers.
+          h4.center Honesty
+          p.text Our attitude is directed to fulfill what we promise, we will respect the truth and justice.
+          h4.center Efficiency
+          p.text We will optimize our internal resources and processes.
+          h4.center Social Responsability
+          p.text We will contribute to the social and environmental improvement of our stakeholders.
+          h4.center Teamwork
+          p.text We will cultivate the camaraderie and development of work groups.
+          h4.center Continuous Improvement
+          p.text We will constantly review our internal processes, in order to reduce the response time to our customers.
 </template>
 <script>
 import navMenu from '~/components/nav/navMenu.vue'
