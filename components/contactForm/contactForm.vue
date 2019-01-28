@@ -15,6 +15,10 @@ export default {
     onSubmit(evt) {
       evt.preventDefault()
       alert(JSON.stringify(this.form))
+      this.form.email = ''
+      this.form.name = ''
+      this.form.telephone = ''
+      this.form.comentary = ''
     },
     onReset(evt) {
       evt.preventDefault()
