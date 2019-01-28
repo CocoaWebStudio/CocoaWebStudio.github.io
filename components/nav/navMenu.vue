@@ -1,7 +1,6 @@
 <template src="./navMenu.pug" />
 <script>
 import socialNetworks from '~/components/socialNetworks/socialNetworks.vue'
-
 export default {
   name: 'NavMenu',
   components: {

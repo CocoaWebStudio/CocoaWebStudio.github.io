@@ -21,7 +21,7 @@ import navMenu from '~/components/nav/navMenu.vue'
 import location from '~/components/location/location.vue'
 
 export default {
-  name: 'Contact-us',
+  name: 'contact-us',
   components: {
     navMenu,
     contactForm,

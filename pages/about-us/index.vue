@@ -1,11 +1,12 @@
+<i18n src="./content.json" />
 <template lang="pug">
   .about
     navMenu
     .container
-      h1.title ABOUT US
+      h1.title {{ $t('about-us') }}
       .row
         .col
-          p.blockquote Smarensol S.A., is a company of the electrical sector, which has more than 15 years of experience in the commercialization of equipment and supplies for the electrical system of Distribution, Transmission and Substations.
+          p.blockquote {{ $t('description')}}
       .row
         .col
           h2.title Mission
@@ -31,7 +32,7 @@
 import navMenu from '~/components/nav/navMenu.vue'
 
 export default {
-  name: 'About-us',
+  name: 'about-us',
   components: {
     navMenu
   }

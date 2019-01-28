@@ -10,9 +10,15 @@
 import navMenu from '~/components/nav/navMenu.vue'
 
 export default {
-  name: 'Customers',
+  name: 'customers',
   components: {
     navMenu
+  },
+  nuxtI18n: {
+    paths: {
+      en: '/customers',
+      es: '/clientes'
+    }
   }
 }
 </script>
