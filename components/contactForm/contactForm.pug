@@ -1,5 +1,5 @@
 .container
-  b-form
+  b-form(@submit="onSubmit" @reset="onReset")
     b-form-group(id="exampleInputGroup1"
       label="Email address:"
       label-for="exampleInput1"
@@ -24,18 +24,20 @@
       label-for="exampleInput3"
     )
       b-form-input(id="exampleInput3"
-        type="text"
+        type="tel"
         v-model="form.telephone"
         required
         placeholder="Telephone")
     b-form-group(id="exampleInputGroup4"
       label="Comentary:"
-      label-for="exampleInput4"
+      label-for="textarea1"
     )
-      b-form-input(id="exampleInput4"
+      b-form-textarea(id="textarea1"
         type="text"
         v-model="form.comentary"
         required
+        :rows="3"
+        :max-rows="6"
         placeholder="Comentary")
     b-form-group(id="exampleGroup5")
       b-button(type="submit" variant="primary") Submit
