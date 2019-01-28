@@ -1,10 +1,12 @@
 {
   "en": {
     "about-us": "ABOUT US",
-    "description": "Smarensol S.A., is a company of the electrical sector, which has more than 15 years of experience in the commercialization of equipment and supplies for the electrical system of Distribution, Transmission and Substations."
+    "description": "Smarensol S.A., is a company of the electrical sector, which has more than 15 years of experience in the commercialization of equipment and supplies for the electrical system of Distribution, Transmission and Substations.",
+    "mission": "Mission"
   },
   "es": {
     "about-us": "NOSOTROS",
-    "description": "Smarensol S.A., is a company of the electrical sector, which has more than 15 years of experience in the commercialization of equipment and supplies for the electrical system of Distribution, Transmission and Substations."
+    "description": "Smarensol S.A., es una empresa del sector eléctrico, que cuenta con personal de más de 15 años de experiencia en comercialización de equipos y suministros para sistema eléctrico de Distribución, Transmisión y Subestaciones.",
+    "mission": "Misión"
   }
 }

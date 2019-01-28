@@ -2,11 +2,15 @@ module.exports= {
   pages: {
     'contact-us/index': {
       en: '/contact-us',
-      es: '/contactenos'   // -> accessible at /es/sobre
+      es: '/contactenos'
     },
     'about-us/index': {
       en: '/about-us',
       es: '/nosotros'
+    },
+    'customers': {
+      en: '/customers',
+      es: '/clientes'
     }
-  },
+  }
 }

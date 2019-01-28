@@ -6,10 +6,10 @@
       h1.title {{ $t('about-us') }}
       .row
         .col
-          p.blockquote {{ $t('description')}}
+          p.blockquote {{ $t('description') }}
       .row
         .col
-          h2.title Mission
+          h2.title {{ $t('mission') }}
           p.blockquote Provide solutions for the electricity sector, with highly qualified personnel; in order to generate a good return for the business and contribute to national development.
         .col
           h2.title VISION
