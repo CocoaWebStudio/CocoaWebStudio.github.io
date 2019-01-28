@@ -16,3 +16,8 @@
   color: #000000;
   text-align: justify;
 }
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #0001f5;
+  border-color: #0001f5;
+}
