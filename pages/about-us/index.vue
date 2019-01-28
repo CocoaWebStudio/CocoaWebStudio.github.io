@@ -1,4 +1,4 @@
-<i18n src="./content.json" />
+<i18n src="./content.json" ></i18n>
 <template lang="pug">
   .about
     navMenu
@@ -10,23 +10,23 @@
       .row
         .col
           h2.title {{ $t('mission') }}
-          p.blockquote Provide solutions for the electricity sector, with highly qualified personnel; in order to generate a good return for the business and contribute to national development.
+          p.blockquote {{ $t('mission-content') }}
         .col
-          h2.title VISION
-          p.blockquote To be leaders in the commercialization of solutions for the national electricity sector, seeking excellence and continuous improvement.
+          h2.title {{ $t('vision') }}
+          p.blockquote {{ $t('vision-content') }}
       .row
         .col.center-tex
-          h2.title VALUES
-          h4.center Honesty
-          p.text Our attitude is directed to fulfill what we promise, we will respect the truth and justice.
-          h4.center Efficiency
-          p.text We will optimize our internal resources and processes.
-          h4.center Social Responsability
-          p.text We will contribute to the social and environmental improvement of our stakeholders.
-          h4.center Teamwork
-          p.text We will cultivate the camaraderie and development of work groups.
-          h4.center Continuous Improvement
-          p.text We will constantly review our internal processes, in order to reduce the response time to our customers.
+          h2.title  {{ $t('values') }}
+          h4.center {{ $t('honesty') }}
+          p.text  {{ $t('honesty-content') }}
+          h4.center {{ $t('efficiency') }}
+          p.text {{ $t('efficiency-content') }}
+          h4.center {{ $t('social-responsability') }}
+          p.text {{ $t('social-responsability-content') }}
+          h4.center {{ $t('teamwork') }}
+          p.text {{ $t('teamwork-content') }}
+          h4.center {{ $t('continuous-improvement') }}
+          p.text {{ $t('continuous-improvement-content') }}
 </template>
 <script>
 import navMenu from '~/components/nav/navMenu.vue'
