@@ -1,3 +1,4 @@
+<i18n src="./content-index.json"></i18n>
 <template lang="pug">
   .home
     navMenu
@@ -9,7 +10,7 @@
     .container-fluid
       .row
         .col.text-center
-          h1.allies Allies Smarensol
+          h1.allies {{ $t('allies-us')}}
 </template>
 
 <script>
