@@ -26,12 +26,6 @@ export default {
     navMenu,
     contactForm,
     location
-  },
-  nuxtI18n: {
-    paths: {
-      en: '/contact-us',
-      es: '/contactenos'
-    }
   }
 }
 </script>

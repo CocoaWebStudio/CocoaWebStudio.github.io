@@ -1,5 +1,5 @@
 const pkg = require('./package')
-
+const { pages } = require('./i18nRouter')
 module.exports = {
   mode: 'universal',
 
@@ -41,13 +41,14 @@ module.exports = {
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
     ['nuxt-i18n', {
-      seo: false,
       locales: [
         { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
         { code: 'es', iso: 'es-ES', file: 'es.js', name: 'Español' }
       ],
+      strategy: 'prefix',
       defaultLocale: 'es',
-      strategy: 'prefix_and_default',
+      parsePages: false,
+      pages,
       lazy: true,
       langDir: 'lang/',
       detectBrowserLanguage: {
@@ -58,13 +59,11 @@ module.exports = {
         // Cookie name
         cookieKey: 'i18n_redirected',
         // Set to always redirect to value stored in the cookie, not just once
-        alwaysRedirect: false,
+        alwaysRedirect: true,
         // If no locale for the browsers locale is a match, use this one as a fallback
-        fallbackLocale: 'en'
+        fallbackLocale: 'es'
       },
-      vueI18n: {
-      	fallbackLocale: 'es',
-      }
+      vueI18nLoader: true
     }]
   ],
   /*
