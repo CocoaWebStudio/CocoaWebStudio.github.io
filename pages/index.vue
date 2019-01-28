@@ -4,7 +4,7 @@
     .container-fluid
       .row
         .col.text-center.title-box
-          h3.title WE ARE SPECIALISTS PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES
+          h3.title {{ $t('welcome')}}
     slider(:sliders="sliders")
     .container-fluid
       .row

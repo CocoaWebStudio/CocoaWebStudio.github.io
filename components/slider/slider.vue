@@ -3,7 +3,7 @@
 export default {
   props: {
     sliders: {
-      type: Object,
+      type: Array,
       required: true
     }
   },

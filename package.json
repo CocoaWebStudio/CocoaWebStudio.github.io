@@ -21,6 +21,7 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "nuxt": "^2.3.4",
+    "nuxt-i18n": "^5.8.0",
     "vue-social-sharing": "^2.3.3"
   },
   "devDependencies": {
