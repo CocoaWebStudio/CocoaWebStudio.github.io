@@ -1,0 +1,17 @@
+{
+  "en": {
+    "submit": "Submit",
+    "reset": "Reset",
+    "email": "Email Address:",
+    "your-name": "Your Name:",
+    "telephone": "Telephone:",
+    "comentary": "Comentary:"
+  },
+  "es": {
+    "submit": "Enviar",
+    "reset": "Restaurar",
+    "your-name": "Nombre:",
+    "telephone": "Teléfono:",
+    "comentary": "Comentario:"
+  }
+}
