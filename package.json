@@ -1,7 +1,7 @@
 {
-  "name": "nuxtSmarensol",
+  "name": "Smarensol",
   "version": "1.0.0",
-  "description": "My grand Nuxt.js project",
+  "description": "WE ARE SPECIALISTS IN PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES",
   "author": "lliguin inc",
   "private": true,
   "scripts": {
@@ -22,6 +22,7 @@
     "express": "^4.16.4",
     "nuxt": "^2.3.4",
     "nuxt-i18n": "^5.8.0",
+    "vue-feather-icons": "^4.10.0",
     "vue-social-sharing": "^2.3.3"
   },
   "devDependencies": {

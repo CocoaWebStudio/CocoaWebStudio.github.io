@@ -1,23 +1,19 @@
 <i18n src="./product-lines.json"></i18n>
 <template lang="pug">
-  .distribution
-    navMenu
-    .container
-      .row
-        .col.text-center
+  .container
+    .row
+      .col.text-center
           h1.title {{ $t('distribution')}}
-          br
-      .row
-        gallery(:gallerys="gallerys")
+        br
+    .row
+      gallery(:gallerys="gallerys")
 </template>
 <script>
-import navMenu from '~/components/nav/navMenu.vue'
 import gallery from '~/components/gallery/gallery.vue'
 
 export default {
   name: 'Distribution',
   components: {
-    navMenu,
     gallery
   },
   data() {

@@ -1,6 +1,5 @@
 <template lang="pug">
   .contacUs
-    navMenu
     .container
       .row
         .col
@@ -17,13 +16,11 @@
 </template>
 <script>
 import contactForm from '~/components/contactForm/contactForm.vue'
-import navMenu from '~/components/nav/navMenu.vue'
 import location from '~/components/location/location.vue'
 
 export default {
   name: 'contact-us',
   components: {
-    navMenu,
     contactForm,
     location
   }

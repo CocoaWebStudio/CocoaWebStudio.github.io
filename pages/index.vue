@@ -1,6 +1,6 @@
+<i18n src="./content-index.json"></i18n>
 <template lang="pug">
   .home
-    navMenu
     .container-fluid
       .row
         .col.text-center.title-box
@@ -9,18 +9,14 @@
     .container-fluid
       .row
         .col.text-center
-          h1.allies Allies Smarensol
+          h1.allies {{ $t('allies-us')}}
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import navMenu from '~/components/nav/navMenu.vue'
 import slider from '~/components/slider/slider.vue'
 
 export default {
   components: {
-    Logo,
-    navMenu,
     slider
   },
   data() {
