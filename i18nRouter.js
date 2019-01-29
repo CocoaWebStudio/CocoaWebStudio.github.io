@@ -11,10 +11,6 @@ module.exports= {
     'customers': {
       en: '/customers',
       es: '/clientes'
-    },
-    'index': {
-      en: '/home',
-      es: '/inicio'
     }
   }
 }

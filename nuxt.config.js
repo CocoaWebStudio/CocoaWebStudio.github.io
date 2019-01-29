@@ -47,7 +47,7 @@ module.exports = {
         { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
         { code: 'es', iso: 'es-EC', file: 'es.js', name: 'Español' }
       ],
-      strategy: 'prefix',
+      strategy: 'prefix_and_default',
       defaultLocale: 'es',
       parsePages: false,
       pages,
