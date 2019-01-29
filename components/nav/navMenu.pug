@@ -7,7 +7,7 @@
       b-navbar-nav.ml-auto
         nuxt-link.nav-link(:to="localePath('about-us')") {{ $t('menu.company')}}
         b-nav-item-dropdown(:text="$t('menu.productLines.title')" right)
-          nuxt-link.nav-link(:to="localePath('/product-lines/distribution')") {{ $t('menu.productLines.distribution') }}
+          nuxt-link.nav-link(:to="localePath('/distribution')") {{ $t('menu.productLines.distribution') }}
           nuxt-link.nav-link(:to="localePath('/product-lines/substations')") {{ $t('menu.productLines.substations') }}
           nuxt-link.nav-link(:to="localePath('/product-lines-transmission-lines/')") {{ $t('menu.productLines.transmition') }}
           nuxt-link.nav-link(:to="localePath('/product-lines/industrial')") {{ $t('menu.productLines.industrial') }}

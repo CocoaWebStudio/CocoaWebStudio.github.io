@@ -1,8 +1,9 @@
+<i18n src="./substations.json"></i18n>
 <template lang="pug">
   .container
     .row
       .col.text-center
-        h1.title Substations Smarensol
+        h1.title {{ $t('substations')}}
         br
     .row
       gallery(:gallerys="gallerys")

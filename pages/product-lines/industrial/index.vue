@@ -1,8 +1,9 @@
+<i18n src="./industrial.json"></i18n>
 <template lang="pug">
   .container
     .row
       .col.text-center
-        h1.title Industrial Smarensol
+        h1.title {{ $t('industrial')}}
         br
     .row
       gallery(:gallerys="gallerys")
