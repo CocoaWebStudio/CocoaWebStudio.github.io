@@ -5,16 +5,16 @@
         facebook-icon
     .col.py-3
       a.text-light(href="https://ec.linkedin.com/", target="_blank", rel="noopener noreferrer")
-        TwitterIcon
+        twitter-icon
     .col.py-3
       a.text-light(href="https://ec.linkedin.com/", target="_blank", rel="noopener noreferrer")
-        LinkedinIcon
+        linkedin-icon
     .col.py-3
-      a.text-light(href="mailto:ventas@smarensol.com", target="_blank")
-        MailIcon
+      a.text-light(href="mailto:ventas@smarensol.com")
+        mail-icon
     .col-md-5.text-center.py-3
-      a.text-light(href="whatsapp://tel:593994138795", target="_blank")
-        PhoneIcon
+      a.text-light(href="whatsapp://tel:593994138795")
+        phone-icon
         span  (+593) 994138795
 </template>
 <script>
