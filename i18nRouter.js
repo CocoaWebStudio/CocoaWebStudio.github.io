@@ -12,23 +12,23 @@ module.exports= {
       en: '/customers',
       es: '/clientes'
     },
-    'product-lines': {
-      en: '/product-lines',
+    'productLines': {
+      en: '/productLines',
       es: '/lineas-producto'
     },
-    'product-lines/distribution': {
+    'productLines/distribution': {
       en: '/distribution',
       es: '/distribucion'
     },
-    'product-lines/substations/index': {
+    'productLines/substations/index': {
       en: '/substations',
       es: '/subestaciones'
     },
-    'product-lines/transmission-lines/_transmission': {
+    'pproductLines/transmission-lines/_transmission': {
       en: '/transmission-lines',
       es: '/lineas-transmision'
     },
-    'product-lines/_industrial/insdustrial': {
+    'productLines/_industrial/insdustrial': {
       en: '/industrial',
       es: '/industrial'
     }
