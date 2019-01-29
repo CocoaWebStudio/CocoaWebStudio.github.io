@@ -1,9 +1,14 @@
 <template lang="pug">
   div
+    navMenu
     nuxt
 </template>
 <script>
+  import navMenu from '~/components/nav/navMenu'
   export default {
+    components: {
+      navMenu
+    },
     head() {
       return this.$nuxtI18nSeo()
     }
