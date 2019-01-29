@@ -1,9 +1,9 @@
 <i18n src="./content.json" ></i18n>
 <template lang="pug">
   .container
-    h1.title {{ $t('about-us') }}
     .row
       .col
+        h1.title {{ $t('about-us') }}
         p.blockquote {{ $t('description') }}
     .row
       .col
@@ -13,7 +13,7 @@
         h2.title {{ $t('vision') }}
         p.blockquote {{ $t('vision-content') }}
     .row
-      .col.center-tex
+      .col.text-center
         h2.title  {{ $t('values') }}
         h4.center {{ $t('honesty') }}
         p.text  {{ $t('honesty-content') }}
