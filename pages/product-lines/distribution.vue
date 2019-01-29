@@ -1,10 +1,11 @@
+<i18n src="./product-lines.json"></i18n>
 <template lang="pug">
   .distribution
     navMenu
     .container
       .row
         .col.text-center
-          h1.title Distribution Smarensol
+          h1.title {{ $t('distribution')}}
           br
       .row
         gallery(:gallerys="gallerys")
