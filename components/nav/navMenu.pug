@@ -1,7 +1,7 @@
 #nav.container-fluid
   b-navbar.row(toggleable="md")
     b-navbar-toggle(target="nav_collapse")
-    b-navbar-brand(to="/")
+    b-navbar-brand(:to="localePath('home')")
       img(src="~/assets/SmarensolLogo.svg" alt="Smaresol" class='img-fluid' style="width:200px;")
     b-collapse(is-nav id="nav_collapse")
       b-navbar-nav.ml-auto
