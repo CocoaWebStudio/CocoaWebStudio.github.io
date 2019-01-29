@@ -19,12 +19,14 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#0002F5' },
 
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    '@/assets/style/main.scss'
+  ],
 
   /*
   ** Plugins to load before mounting the App
@@ -38,14 +40,14 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
+    ['bootstrap-vue/nuxt', { css: false }],
     '@nuxtjs/pwa',
     ['nuxt-i18n', {
       locales: [
         { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
         { code: 'es', iso: 'es-EC', file: 'es.js', name: 'Español' }
       ],
-      strategy: 'prefix',
+      strategy: 'prefix_and_default',
       defaultLocale: 'es',
       parsePages: false,
       pages,

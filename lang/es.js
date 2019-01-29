@@ -13,7 +13,9 @@ export default () => {
         },
         customers: "CLIENTES",
         contactUs: "CONTÁCTENOS"
-      }
+      },
+      rights: " Todos los derechos reservados ",
+      chacun: "Diseño web de "
     })
   });
 }

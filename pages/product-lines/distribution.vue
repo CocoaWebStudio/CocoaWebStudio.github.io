@@ -1,22 +1,18 @@
 <template lang="pug">
-  .distribution
-    navMenu
-    .container
-      .row
-        .col.text-center
-          h1.title Distribution Smarensol
-          br
-      .row
-        gallery(:gallerys="gallerys")
+  .container
+    .row
+      .col.text-center
+        h1.title Distribution Smarensol
+        br
+    .row
+      gallery(:gallerys="gallerys")
 </template>
 <script>
-import navMenu from '~/components/nav/navMenu.vue'
 import gallery from '~/components/gallery/gallery.vue'
 
 export default {
   name: 'Distribution',
   components: {
-    navMenu,
     gallery
   },
   data() {
