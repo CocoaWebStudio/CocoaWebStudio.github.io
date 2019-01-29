@@ -7,7 +7,13 @@ export default {
   name: 'footerSection',
   components: {
     socialNetworks
+  },
+  data() {
+    return {
+      year: (new Date()).getFullYear()
+    }
   }
+
 }
 </script>
 

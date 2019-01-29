@@ -1,20 +1,21 @@
 <template lang="pug">
   .row
-    .col
-      a.text-light(href="https://ec.linkedin.com/")
+    .col.py-3
+      a.text-light(href="https://ec.linkedin.com/", target="_blank", rel="noopener noreferrer")
         facebook-icon
-    .col
-      a.text-light(href="https://ec.linkedin.com/")
+    .col.py-3
+      a.text-light(href="https://ec.linkedin.com/", target="_blank", rel="noopener noreferrer")
         TwitterIcon
-    .col
-      a.text-light(href="https://ec.linkedin.com/")
+    .col.py-3
+      a.text-light(href="https://ec.linkedin.com/", target="_blank", rel="noopener noreferrer")
         LinkedinIcon
-    .col
-      a.text-light(href="mailto:ventas@smarensol.com")
+    .col.py-3
+      a.text-light(href="mailto:ventas@smarensol.com", target="_blank")
         MailIcon
-    .col
-      a.text-light(href="whatsapp://tel:3216541234")
+    .col-md-5.text-center.py-3
+      a.text-light(href="whatsapp://tel:593994138795", target="_blank")
         PhoneIcon
+        span  (+593) 994138795
 </template>
 <script>
   import { FacebookIcon,  TwitterIcon, LinkedinIcon, MailIcon, PhoneIcon } from 'vue-feather-icons'

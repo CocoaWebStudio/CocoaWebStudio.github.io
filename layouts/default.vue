@@ -2,7 +2,7 @@
   wraper.d-flex.flex-column
     navMenu
     nuxt.container-fluid.py-3.flex-fill
-    footerSection.w-100.text-light.py-3
+    footerSection.w-100.text-light
 </template>
 <script>
   import navMenu from '~/components/nav/navMenu'
