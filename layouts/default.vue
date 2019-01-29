@@ -1,5 +1,5 @@
 <template lang="pug">
-  wraper.d-flex.flex-column
+  .wraper.d-flex.flex-column
     navMenu
     nuxt.container-fluid.py-3.flex-fill
     footerSection.w-100.text-light
