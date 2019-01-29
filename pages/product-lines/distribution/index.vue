@@ -1,10 +1,10 @@
-<i18n src="./product-lines.json"></i18n>
+<i18n src="./distribution.json"></i18n>
 <template lang="pug">
   .container
     .row
       .col.text-center
           h1.title {{ $t('distribution')}}
-        br
+          br
     .row
       gallery(:gallerys="gallerys")
 </template>
@@ -12,7 +12,7 @@
 import gallery from '~/components/gallery/gallery.vue'
 
 export default {
-  name: 'Distribution',
+  name: 'distribution',
   components: {
     gallery
   },

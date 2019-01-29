@@ -11,7 +11,7 @@
 import gallery from '~/components/gallery/gallery.vue'
 
 export default {
-  name: 'Transmission',
+  name: 'transmission-lines',
   components: {
     gallery
   },

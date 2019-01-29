@@ -12,25 +12,25 @@ module.exports= {
       en: '/customers',
       es: '/clientes'
     },
-    'productLines': {
-      en: '/productLines',
-      es: '/lineas-producto'
+    'product-lines/index': {
+      en: '/product-lines',
+      es: '/lineas-de-productos'
     },
-    'productLines/distribution': {
+    'product-lines/industrial/index': {
+      en: '/product-lines/industrial',
+      es: '/lineas-de-productos/industrial'
+    },
+    'product-lines/distribution/index': {
       en: '/distribution',
       es: '/distribucion'
     },
-    'productLines/substations/index': {
+    'product-lines/substations/index': {
       en: '/substations',
       es: '/subestaciones'
     },
-    'pproductLines/transmission-lines/_transmission': {
+    'product-lines/transmission-lines/index': {
       en: '/transmission-lines',
       es: '/lineas-transmision'
-    },
-    'productLines/_industrial/insdustrial': {
-      en: '/industrial',
-      es: '/industrial'
     }
   }
 }
