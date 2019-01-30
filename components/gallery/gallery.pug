@@ -3,7 +3,7 @@ div
     .row
       .col-6.col-lg-3(v-for="gallery in gallerys", :key="gallery.id")
         b-card(
-          :title="gallery.title"
+          :title="$t(gallery.title)"
           :img-src="gallery.url"
           img-alt="Img"
           img-top

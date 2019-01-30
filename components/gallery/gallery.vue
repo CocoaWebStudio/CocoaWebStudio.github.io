@@ -3,7 +3,7 @@
 export default {
   props: {
     gallerys: {
-      type: Object,
+      type: Array,
       required: true
      }
    }

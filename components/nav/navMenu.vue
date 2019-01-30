@@ -1,12 +1,28 @@
 <template src="./navMenu.pug" />
 <script>
-import socialNetworks from '~/components/socialNetworks/socialNetworks.vue'
-export default {
-  name: 'NavMenu',
-  components: {
-    socialNetworks
+  export default {
+    name: 'NavMenu',
+    beforeMount: function () {
+      window.addEventListener('scroll', this.Scroll);
+    },
+    beforeDestroy () {
+      window.removeEventListener('scroll', this.Scroll);
+    },
+    methods: {
+  		Scroll: function() {
+        if (window.scrollY > 0) {
+          this.imgHeight = 45
+        } else {
+          this.imgHeight = 80
+        }
+  		}
+  	},
+    data() {
+      return {
+        imgHeight: 80
+      }
+    }
   }
-}
 </script>
 
 <style src="./navMenu.scss" lang="scss" scoped />

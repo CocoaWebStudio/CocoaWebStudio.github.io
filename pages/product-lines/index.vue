@@ -1,9 +1,10 @@
 <template lang="pug">
   .products
+    p aqui estoy
 </template>
 <script>
 
 export default {
-  name: 'Products',
+  name: 'product-lines',
 }
 </script>

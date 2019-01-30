@@ -1,8 +1,9 @@
 <template lang="pug">
-  wraper.d-flex.flex-column
+  div
     navMenu
-    nuxt.container-fluid.py-3.flex-fill
-    footerSection.w-100.text-light
+    .wraper.d-flex.flex-column
+      nuxt.flex-fill
+      footerSection.w-100.text-light
 </template>
 <script>
   import navMenu from '~/components/nav/navMenu'
