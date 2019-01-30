@@ -1,6 +1,6 @@
 b-navbar.sticky-top.bd-navbar.navbar-light.bg-light(toggleable="md")
   nuxt-link.nav-link(:to="localePath('index')")
-    img(src="~/assets/SmarensolLogo.svg" alt="Smaresol" class='img-fluid' style="width:200px;")
+    img(src="~/assets/SmarensolLogo.svg", alt="Smaresol", :height="imgHeight")
   b-navbar-toggle(target="nav_collapse")
   b-collapse(is-nav id="nav_collapse")
     b-navbar-nav.ml-auto
