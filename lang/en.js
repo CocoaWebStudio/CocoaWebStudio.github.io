@@ -1,7 +1,7 @@
 export default () => {
   return new Promise(function (resolve) {
     resolve({
-      welcome: "WE ARE SPECIALISTS PROVIDING EQUIPMENT AND ELECTRICAL SUPPLIES",
+      welcome: "WE ARE SPECIALISTS IN EQUIPMENT AND SUPPLIES FOR HALF AND HIGH VOLTAGE",
       menu: {
         company: "COMPANY",
         productLines: {

@@ -1,7 +1,7 @@
 export default () => {
   return new Promise(function (resolve) {
     resolve({
-      welcome: "SOMOS ESPECIALISTAS EN PROVEER EQUIPOS Y SUMINISTROS ELECTRICOS",
+      welcome: "SOMOS ESPECIALISTAS EN EQUIPOS Y SUMINISTROS PARA MEDIA Y ALTA TENSIÓN",
       menu: {
         company: "LA EMPRESA",
         productLines: {
