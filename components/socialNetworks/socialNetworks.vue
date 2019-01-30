@@ -12,6 +12,7 @@
         href="linkedin.com/company/smarensol-s-a",
         target="_blank",
         rel="noopener noreferrer"
+      )
         linkedin-icon
     .col.py-3
       a.text-light(href="mailto:ventas@smarensol.com")
