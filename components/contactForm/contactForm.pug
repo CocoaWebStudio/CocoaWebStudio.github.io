@@ -2,13 +2,12 @@
   b-form(@submit="onSubmit" @reset="onReset")
     b-form-group(id="exampleInputGroup1"
       label-for="exampleInput1"
-      description="We'll never share your email with anyone else."
     ) {{ $t('email') }}
       b-form-input(id="exampleInput1"
         type="email"
         v-model="form.email"
         required
-        placeholder="Enter email")
+        )
     b-form-group(id="exampleInputGroup2"
       label-for="exampleInput2"
     ) {{ $t('your-name') }}
@@ -16,7 +15,7 @@
         type="text"
         v-model="form.name"
         required
-        placeholder="Enter name")
+        )
     b-form-group(id="exampleInputGroup3"
       label-for="exampleInput3"
     ) {{ $t('telephone') }}
@@ -24,7 +23,7 @@
         type="tel"
         v-model="form.telephone"
         required
-        placeholder="Telephone")
+        )
     b-form-group(id="exampleInputGroup4"
       label-for="textarea1"
     ) {{ $t('comentary') }}
@@ -34,7 +33,7 @@
         required
         :rows="3"
         :max-rows="6"
-        placeholder="Comentary")
+        )
     b-form-group(id="exampleGroup5")
-      b-button(type="submit" variant="primary") {{ $t('submit') }}
-      b-button(type="reset" variant="danger") {{ $t('reset') }}
+      b-button.mx-2(type="submit" variant="primary") {{ $t('submit') }}
+      b-button(type="reset" variant="success") {{ $t('reset') }}

@@ -10,6 +10,7 @@
   "es": {
     "submit": "Enviar",
     "reset": "Restaurar",
+    "email": "Dirección de Correo Electrónico:",
     "your-name": "Nombre:",
     "telephone": "Teléfono:",
     "comentary": "Comentario:"
