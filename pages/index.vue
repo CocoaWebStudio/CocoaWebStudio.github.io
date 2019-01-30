@@ -2,9 +2,9 @@
 <template lang="pug">
   .home
     .container-fluid
-      .row
-        .col.text-center.title-box
-          h3.title {{ $t('welcome')}}
+      .row.bg-primary
+        .col.text-center.text-light.py-2
+          h5.title {{ $t('welcome')}}
     slider(:sliders="sliders")
     .container-fluid
       .row
@@ -33,17 +33,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.title-box{
-  background-color:  #0002F5;
-  .title {
-    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-    padding-top: 10px;
-  }
-}
-
 .subtitle {
   font-weight: 300;
   font-size: 30px;
