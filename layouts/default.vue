@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     navMenu
-    wraper.d-flex.flex-column
+    .wraper.d-flex.flex-column
       nuxt.flex-fill
       footerSection.w-100.text-light
 </template>

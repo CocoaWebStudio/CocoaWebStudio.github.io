@@ -9,7 +9,7 @@
       window.removeEventListener('scroll', this.Scroll);
     },
     methods: {
-  		Scroll: function (e) {
+  		Scroll: function() {
         if (window.scrollY > 0) {
           this.imgHeight = 45
         } else {
