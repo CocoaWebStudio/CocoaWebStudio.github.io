@@ -19,13 +19,16 @@ export default {
   data() {
     return {
       gallerys: [
-        {id:0,title:'Insulators', url:'https://picsum.photos/300/300/?image=41'},
-        {id:1,title: 'Capacitor Banks' , url:'https://picsum.photos/300/300/?image=28'},
-        {id:2,title: 'Connectors and Distribution Terminals' , url:'https://picsum.photos/300/300/?image=61'},
-        {id:3,title: 'Equipment and Accessories for Underground Networks' , url:'https://picsum.photos/300/300/?image=26'},
-        {id:4,title: 'Fuses' , url:'https://picsum.photos/300/300/?image=50'},
-        {id:5,title: 'Lighting rod' , url:'https://picsum.photos/300/300/?image=45'},
-        {id:6,title: 'Medium Voltage Regulators' , url:'https://picsum.photos/300/300/?image=37'}
+        {id:0,title: 'insulators', url:'https://picsum.photos/300/300/?image=41'},
+        {id:1,title: 'capacitorBa' , url:'https://picsum.photos/300/300/?image=28'},
+        {id:2,title: 'distributionTe' , url:'https://picsum.photos/300/300/?image=61'},
+        {id:3,title: 'equipment' , url:'https://picsum.photos/300/300/?image=26'},
+        {id:4,title: 'fuses' , url:'https://picsum.photos/300/300/?image=50'},
+        {id:5,title: 'switches' , url:'https://picsum.photos/300/300/?image=45'},
+        {id:6,title: 'lighting' , url:'https://picsum.photos/300/300/?image=37'},
+        {id:7,title: 'regulators' , url:'https://picsum.photos/300/300/?image=39'},
+        {id:8,title: 'disconnectors' , url:'https://picsum.photos/300/300/?image=47'},
+        {id:9,title: 'transformersMe' , url:'https://picsum.photos/300/300/?image=46'}
       ]
     }
   }

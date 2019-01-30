@@ -19,9 +19,9 @@ export default {
   data() {
     return {
       gallerys: [
-        {id:0,title:'Tools', url:'https://picsum.photos/300/300/?image=41'},
-        {id:1,title: 'Security equipments' , url:'https://picsum.photos/300/300/?image=28'},
-        {id:2,title: 'Motors and Variators' , url:'https://picsum.photos/300/300/?image=61'}
+        {id:0,title: 'tools', url:'https://picsum.photos/300/300/?image=41'},
+        {id:1,title: 'security' , url:'https://picsum.photos/300/300/?image=28'},
+        {id:2,title: 'motors' , url:'https://picsum.photos/300/300/?image=61'}
       ]
     }
   }
