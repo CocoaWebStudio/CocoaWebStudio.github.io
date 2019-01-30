@@ -1,3 +1,4 @@
+<i18n src="./gallery.json"></i18n>
 <template src="./gallery.pug" />
 <script>
 export default {
