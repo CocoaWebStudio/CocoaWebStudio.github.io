@@ -1,17 +1,18 @@
+<i18n src="./contact-us.json"></i18n>
 <template lang="pug">
   .contacUs
     .container
       .row
         .col
-          h1.title Institutional Data Smarensol
+          h1.title {{ $t('data') }}
           br
-      p Teléfonos: +593 4 2071092 / +593 9 994138795
-      p Dirección: Torres del Mall del Sol – Torre B Piso 4
-      p Email: ventas@smarensol.com
-      p Guayaquil – Ecuador
+      p {{ $t('data-telephone') }}
+      p {{ $t('data-addres') }}
+      p {{ $t('data-email') }}
+      p {{ $t('data-city') }}
     location
     .container
-     h1.title Contact Us Smarensol
+     h1.title {{ $t('contact-us') }}
      contactForm
 </template>
 <script>

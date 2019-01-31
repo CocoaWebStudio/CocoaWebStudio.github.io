@@ -1,3 +1,4 @@
+<i18n src="./contactForm.json"></i18n>
 <template src="./contactForm.pug" />
 <script>
 export default {
