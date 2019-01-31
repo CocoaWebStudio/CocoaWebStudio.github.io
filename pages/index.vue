@@ -4,9 +4,7 @@
     .container-fluid
       .row.bg-primary
         .col.text-center.text-light.py-2
-          button(@click="show = !show") Toggle show
-          transition(name="bounce")
-            h4.title(v-if="show") {{ $t('welcome')}}
+           h4.title.bounce-enter-active {{ $t('welcome')}}
     slider(:sliders="sliders")
     .container-fluid.py-4
       .row
@@ -43,14 +41,11 @@ export default {
 
 <style scoped>
 .bounce-enter-active {
-  animation: bounce-in .5s;
-}
-.bounce-leave-active {
-  animation: bounce-in .5s reverse;
+  animation: bounce-in 1.2s;
 }
 @keyframes bounce-in {
-  0% {
-    transform: scale(0);
+  100% {
+    transform: scale(1);
   }
   50% {
     transform: scale(1.5);
