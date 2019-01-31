@@ -31,7 +31,7 @@ export default {
         {id:3,title: 'oil' , url:'/images/energy3.jpg'}
       ],
       imageSections: [
-        {id:0 , image:'/images/allies/delta-conectores.jpeg', link:'https://www.deltaconectores.com'}
+        {id:0 , image:'/images/allies/delta-conectores.jpeg', link:'https://www.deltaconectores.com', name:"Delta Conductores S.A. de C.V."}
       ]
     }
   }

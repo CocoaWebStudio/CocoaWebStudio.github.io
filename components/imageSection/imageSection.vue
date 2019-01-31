@@ -9,7 +9,10 @@
 
       )
         a(:href="image.link")
-          b-img.zoom(thumbnail, fluid
+          b-img.zoom(
+            :alt="image.name",
+            thumbnail,
+            fluid,
             :src="image.image"
           )
 </template>
