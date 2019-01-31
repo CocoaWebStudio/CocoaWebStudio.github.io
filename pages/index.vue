@@ -5,6 +5,8 @@
       .row.bg-primary
         .col.text-center.text-light.py-2
           h4.title {{ $t('welcome')}}
+          transition(name="bounce")
+            h5.title(v-if="show") {{ $t('welcome')}}
     slider(:sliders="sliders")
     .container-fluid.py-4
       .row
@@ -24,6 +26,7 @@ export default {
   },
   data() {
     return {
+      show: true,
       sliders: [
         {id:0,title:'smarensol', url:'/images/sliderSmarensolLogo.jpg'},
         {id:1,title: 'energy' , url:'/images/energy1.jpg'},
@@ -37,3 +40,21 @@ export default {
   }
 }
 </script>
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
