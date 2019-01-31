@@ -19,4 +19,11 @@
 .col {
   margin-top: 30px;
   margin-bottom: 40px;
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes example {
+  0%   {left:0px; top:0px; opacity:0.3;}
+  25%  {left:200px; top:0px;}
 }
