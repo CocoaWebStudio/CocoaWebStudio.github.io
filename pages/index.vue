@@ -4,12 +4,12 @@
     .container-fluid
       .row.bg-primary
         .col.text-center.text-light.py-2
-          h5.title {{ $t('welcome')}}
+          h4.title {{ $t('welcome')}}
     slider(:sliders="sliders")
-    .container-fluid
+    .container-fluid.py-4
       .row
         .col.text-center
-          h1.allies {{ $t('allies-us')}}
+          h3.allies {{ $t('our-allies')}}
     imageSection(:imageSections="imageSections")
 </template>
 
@@ -31,30 +31,9 @@ export default {
         {id:3,title: 'oil' , url:'/images/energy3.jpg'}
       ],
       imageSections: [
-        {id:0 , url:'/images/allies/delta.jpg'}
+        {id:0 , image:'/images/allies/delta-conectores.jpeg', link:'https://www.deltaconectores.com'}
       ]
     }
   }
 }
 </script>
-
-<style scoped lang="scss">
-.subtitle {
-  font-weight: 300;
-  font-size: 30px;
-  color: #526488;
-  word-spacing: 1px;
-  padding-bottom: 15px;
-}
-
-.allies{
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-  'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 60px;
-  color: #35495e;
-  letter-spacing: 1px;
-  text-align: center;
-}
-</style>

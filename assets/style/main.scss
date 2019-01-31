@@ -4,4 +4,8 @@
 }
 @import '~bootstrap/scss/functions';
 @import './customVariables.scss';
+.zoom:hover {
+  transform: scale(1.02);
+  box-shadow: -1px 2px $gray-300;
+}
 @import '~bootstrap/scss/bootstrap';
