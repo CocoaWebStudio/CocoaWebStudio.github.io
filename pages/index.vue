@@ -26,7 +26,6 @@ export default {
   },
   data() {
     return {
-      show: true,
       sliders: [
         {id:0,title:'smarensol', url:'/images/sliderSmarensolLogo.jpg'},
         {id:1,title: 'energy' , url:'/images/energy1.jpg'},
@@ -41,20 +40,4 @@ export default {
 }
 </script>
 
-.bounce-enter-active {
-  animation: bounce-in .5s;
-}
-.bounce-leave-active {
-  animation: bounce-in .5s reverse;
-}
-@keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+<style scoped lang="scss">

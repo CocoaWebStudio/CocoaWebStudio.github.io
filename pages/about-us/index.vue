@@ -4,14 +4,11 @@
     .row
       .col
         h1.title {{ $t('about-us') }}
-        button(@click="show = !show") Toggle show
-        transition(name="slide-fade")
-          p.blockquote(v-if="show") {{ $t('description') }}
+        p.blockquote {{ $t('description') }}
     .row
       .col
         h2.title {{ $t('mission') }}
-        transition(name="slide-fade")
-         p.blockquote {{ $t('mission-content') }}
+        p.blockquote {{ $t('mission-content') }}
       .col
         h2.title {{ $t('vision') }}
         p.blockquote {{ $t('vision-content') }}
@@ -32,11 +29,6 @@
 <script>
 export default {
   name: 'about-us',
-   data() {
-    return {
-      show: true,
-    }
-   }
 }
 </script>
 <style src="./about-us.scss" lang="scss" scoped/>
