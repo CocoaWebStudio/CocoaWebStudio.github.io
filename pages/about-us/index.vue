@@ -28,10 +28,7 @@
 </template>
 <script>
 export default {
-  name: 'about-us',
-   data: {
-    show: true
-  }
+  name: 'about-us'
 }
 </script>
 <style src="./about-us.scss" lang="scss" scoped/>
