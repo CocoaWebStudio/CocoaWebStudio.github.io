@@ -24,5 +24,3 @@
     }
   }
 </script>
-
-<style src="./navMenu.scss" lang="scss" scoped />
