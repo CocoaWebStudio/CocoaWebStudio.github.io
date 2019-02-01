@@ -8,7 +8,7 @@
         cols="6"
 
       )
-        a(:href="image.link")
+        a(:href="image.link" target="_blank")
           b-img.zoom(
             :alt="image.name",
             thumbnail,
