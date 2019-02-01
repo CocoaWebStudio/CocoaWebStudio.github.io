@@ -1,4 +1,4 @@
-<template src="./navMenu.pug" />
+<template src="./navMenu.pug"></template>
 <script>
   export default {
     name: 'NavMenu',
@@ -24,3 +24,9 @@
     }
   }
 </script>
+<style scoped>
+  a:hover {
+    border-bottom: 1px solid #020bfd;
+    line-height: 1.3em;
+}
+</style>
