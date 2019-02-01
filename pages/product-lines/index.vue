@@ -1,7 +1,4 @@
-<template lang="pug">
-  .products
-    p aqui estoy
-</template>
+<template lang="pug"></template>
 <script>
 
 export default {
