@@ -40,11 +40,14 @@ export default {
 
 <style scoped>
 .bounce-enter-active {
-  animation: bounce-in 1.2s;
+  animation: bounce-in .8s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
 }
 @keyframes bounce-in {
-  100% {
-    transform: scale(1);
+  0% {
+    transform: scale(0);
   }
   50% {
     transform: scale(1.5);

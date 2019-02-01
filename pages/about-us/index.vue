@@ -3,18 +3,18 @@
   .container
     .row
       .col
-        h1.title {{ $t('about-us') }}
+        h1.title.bounce-enter-active {{ $t('about-us') }}
         p.blockquote {{ $t('description') }}
     .row
       .col
-        h2.title {{ $t('mission') }}
+        h2.title.bounce-enter-active {{ $t('mission') }}
         p.blockquote {{ $t('mission-content') }}
       .col
-        h2.title {{ $t('vision') }}
+        h2.title.bounce-enter-active {{ $t('vision') }}
         p.blockquote {{ $t('vision-content') }}
     .row
       .col.text-center
-        h2.title  {{ $t('values') }}
+        h2.title.bounce-enter-active  {{ $t('values') }}
         h4.center {{ $t('honesty') }}
         p.text  {{ $t('honesty-content') }}
         h4.center {{ $t('efficiency') }}
@@ -29,6 +29,9 @@
 <script>
 export default {
   name: 'about-us',
+   data: {
+    show: true
+  }
 }
 </script>
 <style src="./about-us.scss" lang="scss" scoped/>
