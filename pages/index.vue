@@ -24,7 +24,6 @@ export default {
   },
   data() {
     return {
-      show: true,
       sliders: [
         {id:0,title:'smarensol', url:'/images/sliderSmarensolLogo.jpg'},
         {id:1,title: 'energy' , url:'/images/energy1.jpg'},
