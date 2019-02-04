@@ -22,6 +22,14 @@ export default {
     slider,
     imageSection
   },
+  head() {
+  return {
+    title: 'Smarensol',
+    meta: [
+      { hid: 'description', name: 'description', content: this.$t('welcome') }
+    ]
+  }
+},
   data() {
     return {
       sliders: [
@@ -57,4 +65,3 @@ export default {
   }
 }
 </style>
-
