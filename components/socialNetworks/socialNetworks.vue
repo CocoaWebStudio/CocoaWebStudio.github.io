@@ -18,9 +18,9 @@
       a.text-light(href="mailto:ventas@smarensol.com")
         mail-icon
     .col-md-5.text-center.py-3
-      a.text-light(href="whatsapp://tel:593994138795")
+      a.text-light(href="tel:+59342071092")
         phone-icon
-        span  (+593) 994138795
+        span  (+593) 42071092
 </template>
 <script>
   import { FacebookIcon, LinkedinIcon, MailIcon, PhoneIcon } from 'vue-feather-icons'
