@@ -1,18 +1,20 @@
 {
   "en": {
-    "data": "INSTITUTIONAL DATA",
-    "data-telephone": "Telephone: +593 4 2071092 / +593 9 994138795",
-    "data-addres": "Addres: Torres del Mall del Sol – Torre B Piso 4",
-    "data-email": "Email: ventas@smarensol.com",
-    "data-city": "City: Guayaquil – Ecuador",
+    "data": "Smarensol S.A",
+    "data-telephone": "+(593)42071092 / +(593)9994138795",
+    "data-addres": "Torres del Mall del Sol – Torre B Piso 4",
+    "data-email": "ventas@smarensol.com",
+    "data-city": "Guayaquil – Ecuador",
+    "data-zip": "Zip Code: 090505",
     "contact-us": "CONTACT US"
   },
   "es": {
-    "data": "DATOS DE LA INSTITUCIÓN",
-    "data-telephone": "Teléfono: +593 4 2071092 / +593 9 994138795",
-    "data-addres": "Direción: Torres del Mall del Sol – Torre B Piso 4",
-    "data-email": "Correo Electronico: ventas@smarensol.com",
-    "data-city": "Ciudad: Guayaquil – Ecuador",
+    "data": "Smarensol S.A",
+    "data-telephone": "+(593)42071092 / +(593)9994138795",
+    "data-addres": "Torres del Mall del Sol – Torre B Piso 4",
+    "data-email": "ventas@smarensol.com",
+    "data-zip": "Código Postal: 090505",
+    "data-city": "Guayaquil – Ecuador",
     "contact-us": "CONTÁCTENOS"
   }
 }
