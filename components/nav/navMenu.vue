@@ -19,7 +19,8 @@
   	},
     data() {
       return {
-        imgHeight: 80
+        imgHeight: 80,
+        icon: 35
       }
     }
   }

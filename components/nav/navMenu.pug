@@ -14,12 +14,12 @@ div
         nuxt-link.nav-link(:to="localePath('customers')") {{ $t('menu.customers') }}
         nuxt-link.nav-link(:to="localePath('contact-us')") {{ $t('menu.contactUs') }}
         nuxt-link.nav-link.bg-success.text-light(:to="localePath('contact-us')") DOWNLOAD BROCHURE
-        b-nav-item-dropdown(:text="$i18n.locales.filter(function(i){return i.code == $i18n.locale})[0].name" right)
+        b-nav-item-dropdown(:img-src="$i18n.locales.filter(function(i){return i.code == $i18n.locale})[0].flag" right)
           nuxt-link.nav-link(
             v-for="locale in $i18n.locales",
             v-if="locale.code !== $i18n.locale",
             :key="locale.code",
-            :to="switchLocalePath(locale.code)") {{ locale.name }}
+            :to="switchLocalePath(locale.code)") {{ locale.flag }}
   .container-fluid
     .row.bg-primary
       .col.text-center.text-light.py-2

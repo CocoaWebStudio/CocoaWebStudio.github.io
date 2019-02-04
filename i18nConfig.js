@@ -4,13 +4,15 @@ module.exports = {
 			code: 'en',
 			iso: 'en-US',
 			file: 'en.js',
-			name: 'ENGLISH'
+      name: 'ENGLISH',
+      flag: '~/assets/icon-usa.png'
 		},
 		{
 			code: 'es',
 			iso: 'es-EC',
 			file: 'es.js',
-			name: 'ESPAÑOL'
+      name: 'ESPAÑOL',
+      flag: '~/assets/icon-ec.png'
 		}
 	],
 	strategy: 'prefix_and_default',
