@@ -1,26 +1,27 @@
 <i18n src="./content-index.json"></i18n>
 <template lang="pug">
   .home
-    .container-fluid
-      .row.bg-primary
-        .col.text-center.text-light.py-2
-           h4.title.bounce-enter-active {{ $t('welcome')}}
     slider(:sliders="sliders")
     .container-fluid.py-4
       .row
         .col.text-center
           h3.allies {{ $t('our-allies')}}
     imageSection(:imageSections="imageSections")
+    about-us
+
 </template>
 
 <script>
 import slider from '~/components/slider/slider.vue'
 import imageSection from '~/components/imageSection/imageSection.vue'
+import aboutUs from '~/pages/about-us/index.vue'
+
 
 export default {
   components: {
     slider,
-    imageSection
+    imageSection,
+    aboutUs
   },
   head() {
   return {

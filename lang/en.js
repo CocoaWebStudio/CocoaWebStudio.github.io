@@ -9,7 +9,7 @@ export default () => {
           distribution: "DISTRIBUTION",
           substations: "SUBSTATIONS",
           transmition: "TRANSMISSION LINES",
-          industrial: "INDUSTRIAL"
+          industrial: "INDUSTRY"
         },
         customers: "CUSTOMERS",
         contactUs: "CONTACT US"
@@ -19,7 +19,7 @@ export default () => {
       //industrial
       tools: "Tools",
       security: "Security Equipments",
-      motors: "Motors and Variators",
+      motors: "Motors and Drives",
       //substations
       isolatorsSt: "Station type isolators",
       capacitors: "Banks of High Voltage Capacitors",

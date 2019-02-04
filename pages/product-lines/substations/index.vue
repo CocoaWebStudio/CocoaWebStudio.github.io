@@ -29,7 +29,7 @@ export default {
         {id:7,title: 'lighting' , url:'https://picsum.photos/300/300/?image=39'},
         {id:8,title: 'relays' , url:'https://picsum.photos/300/300/?image=47'},
         {id:9,title: 'energy' , url:'https://picsum.photos/300/300/?image=46'},
-        {id:10,title: 'disconnectors' , url:'https://picsum.photos/300/300/?image=51'},
+        {id:10,title: 'disconnectors' , url:'/images/substation/seccionador-de-subestacion.jpeg'},
         {id:11,title: 'systems' , url:'https://picsum.photos/300/300/?image=54'},
         {id:12,title: 'transformersMe' , url:'https://picsum.photos/300/300/?image=52'},
         {id:13,title: 'transformersPo' , url:'https://picsum.photos/300/300/?image=55'}

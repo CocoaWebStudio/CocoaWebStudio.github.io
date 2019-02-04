@@ -4,13 +4,13 @@ module.exports = {
 			code: 'en',
 			iso: 'en-US',
 			file: 'en.js',
-			name: 'English'
+			name: 'ENGLISH'
 		},
 		{
 			code: 'es',
 			iso: 'es-EC',
 			file: 'es.js',
-			name: 'Español'
+			name: 'ESPAÑOL'
 		}
 	],
 	strategy: 'prefix_and_default',

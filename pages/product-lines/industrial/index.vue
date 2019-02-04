@@ -3,7 +3,7 @@
   .container
     .row
       .col.text-center
-        h1.title {{ $t('industrial')}}
+        h1.title {{ $t('industry')}}
         br
     .row
       gallery(:gallerys="gallerys")
@@ -21,7 +21,7 @@ export default {
       gallerys: [
         {id:0,title: 'tools', url:'https://picsum.photos/300/300/?image=41'},
         {id:1,title: 'security' , url:'https://picsum.photos/300/300/?image=28'},
-        {id:2,title: 'motors' , url:'https://picsum.photos/300/300/?image=61'}
+        {id:2,title: 'motors' , url:'https://www.tecowestinghouse.com/wp-content/uploads/2018/08/metricie3cutout.jpg'}
       ]
     }
   }

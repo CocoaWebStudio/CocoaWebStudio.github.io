@@ -1,19 +1,19 @@
 <i18n src="./content.json" ></i18n>
 <template lang="pug">
-  .container
+  .container-fluid(style="background-image: linear-gradient(to bottom right, lightgreen, white);")
     .row
-      .col
+      .col-md-6.offset-md-3
         h1.title.bounce-enter-active {{ $t('about-us') }}
         p.blockquote {{ $t('description') }}
     .row
-      .col
+      .col-md-6
         h2.title.bounce-enter-active {{ $t('mission') }}
         p.blockquote {{ $t('mission-content') }}
-      .col
+      .col-md-6
         h2.title.bounce-enter-active {{ $t('vision') }}
         p.blockquote {{ $t('vision-content') }}
     .row
-      .col.text-center
+      .col-md-6.offset-md-3.text-center
         h2.title.bounce-enter-active  {{ $t('values') }}
         h4.center {{ $t('honesty') }}
         p.text  {{ $t('honesty-content') }}
