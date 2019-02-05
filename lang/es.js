@@ -46,7 +46,9 @@ export default () => {
       beacons: "Balizas de Señalización ",
       cables: "Conductores y Cables de Fibra Óptica",
       chains: "Ensambles para cadenas",
-      hardware: "Herrajes y Accesorios"
+      hardware: "Herrajes y Accesorios",
+      yourName: "Your Name:",
+      email: "Email:"
     })
   });
 }

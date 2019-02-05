@@ -46,7 +46,9 @@ export default () => {
       beacons:"Signaling Beacons",
       cables:"Conductors and Fiber Optic Cables",
       chains:"Assemblies for Chains",
-      hardware: "Hardware and Accessories"
+      hardware: "Hardware and Accessories",
+      yourName: "Nombre:",
+      email: "Correo Electrónico:"
     })
   });
 }
