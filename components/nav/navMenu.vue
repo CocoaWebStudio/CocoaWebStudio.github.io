@@ -1,7 +1,12 @@
 <template src="./navMenu.pug"></template>
 <script>
+import popup from '~/components/popup/popup.vue'
+
   export default {
     name: 'NavMenu',
+    components: {
+     popup
+    },
     beforeMount: function () {
       window.addEventListener('scroll', this.Scroll);
     },
