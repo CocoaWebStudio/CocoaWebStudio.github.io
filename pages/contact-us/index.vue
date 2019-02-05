@@ -10,9 +10,13 @@
         .col-md-6
           address(itemscope itemtype="http://schema.org/LocalBusiness")
             h1(itemprop="name") {{ $t('data') }}
+            br
             a(href="tel:+59342071092")
               phone-icon
-              strong {{ $t('data-telephone') }}
+              strong {{ $t('data-telephone1') }} &nbsp/
+            a(href="tel:+5939994138795")
+              strong.mx-2 {{ $t('data-telephone2') }}
+            br
             br
             map-pin-icon
             strong {{ $t('data-addres') }}
@@ -20,6 +24,7 @@
             strong.mx-4 {{ $t('data-city') }}
             br
             strong.mx-4 {{ $t('data-zip')}}
+            br
             br
             a.text-dark(href="mailto:ventas@smarensol.com")
                mail-icon
