@@ -5,14 +5,14 @@ module.exports = {
 			iso: 'en-US',
 			file: 'en.js',
       name: 'ENGLISH',
-      flag: '~/assets/icon-usa.png'
+      flag: '/images/flags/en-US.png'
 		},
 		{
 			code: 'es',
 			iso: 'es-EC',
 			file: 'es.js',
       name: 'ESPAÑOL',
-      flag: '~/assets/icon-ec.png'
+      flag: 'images/flags/es-EC.png'
 		}
 	],
 	strategy: 'prefix_and_default',

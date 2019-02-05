@@ -24,8 +24,7 @@ import popup from '~/components/popup/popup.vue'
   	},
     data() {
       return {
-        imgHeight: 80,
-        icon: 35
+        imgHeight: 80
       }
     }
   }
@@ -34,5 +33,8 @@ import popup from '~/components/popup/popup.vue'
   a:hover {
     border-bottom: 1px solid #020bfd;
     line-height: 1.3em;
+}
+img.img-fluid {
+   max-width:25%;
 }
 </style>
