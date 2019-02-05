@@ -5,7 +5,7 @@
       ref="modal"
       title= "Smarensol Brochure"
       @oks="handleOk"
-      @shown="clearName"
+      @shown="clear"
      )
       form(@submit.stop.prevent="handleSubmit")
         b-form-group(id="exampleInputGroup1"
