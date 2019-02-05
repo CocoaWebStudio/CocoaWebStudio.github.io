@@ -19,16 +19,16 @@ export default {
   data() {
     return {
       gallerys: [
-        {id:0,title: 'insulators', url:'https://picsum.photos/300/300/?image=41'},
-        {id:1,title: 'capacitorBa' , url:'https://picsum.photos/300/300/?image=28'},
-        {id:2,title: 'distributionTe' , url:'https://picsum.photos/300/300/?image=61'},
-        {id:3,title: 'equipment' , url:'https://picsum.photos/300/300/?image=26'},
-        {id:4,title: 'fuses' , url:'https://picsum.photos/300/300/?image=50'},
-        {id:5,title: 'switches' , url:'https://picsum.photos/300/300/?image=45'},
-        {id:6,title: 'lighting' , url:'https://picsum.photos/300/300/?image=37'},
-        {id:7,title: 'regulators' , url:'https://picsum.photos/300/300/?image=39'},
-        {id:8,title: 'disconnectors' , url:'https://picsum.photos/300/300/?image=47'},
-        {id:9,title: 'transformersMe' , url:'https://picsum.photos/300/300/?image=46'}
+        {id:0,title: 'insulators', url:'/images/distribution/insulators.jpg'},
+        {id:1,title: 'capacitorBa' , url:'/images/distribution/capacitor-banks.jpg'},
+        {id:2,title: 'distributionTe' , url:'/images/distribution/distribution-terminals.jpg'},
+        {id:3,title: 'equipment' , url:'/images/substation/underground-networks.jpg'},
+        {id:4,title: 'fuses' , url:'/images/distribution/fuses.jpg'},
+        {id:5,title: 'switches' , url:'/images/distribution/switches.jpg'},
+        {id:6,title: 'lighting' , url:'/images/substation/lighting-rod.jpg'},
+        {id:7,title: 'regulators' , url:'/images/distribution/regulators.jpg'},
+        {id:8,title: 'disconnectors' , url:'/images/substation/seccionador-de-subestacion.jpeg'},
+        {id:9,title: 'transformersMe' , url:'/images/substation/measurement-transformers.jpg'}
       ]
     }
   }

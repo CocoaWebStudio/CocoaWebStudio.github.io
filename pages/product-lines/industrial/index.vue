@@ -19,9 +19,9 @@ export default {
   data() {
     return {
       gallerys: [
-        {id:0,title: 'tools', url:'https://picsum.photos/300/300/?image=41'},
-        {id:1,title: 'security' , url:'https://picsum.photos/300/300/?image=28'},
-        {id:2,title: 'motors' , url:'https://www.tecowestinghouse.com/wp-content/uploads/2018/08/metricie3cutout.jpg'}
+        {id:0,title: 'tools', url:'/images/industrial/tools.jpg'},
+        {id:1,title: 'security' , url:'/images/industrial/security-equipments.jpg'},
+        {id:2,title: 'motors' , url:'/images/industrial/motors.jpg'}
       ]
     }
   }
