@@ -12,7 +12,8 @@ export default () => {
           industrial: "INDUSTRY"
         },
         customers: "CUSTOMERS",
-        contactUs: "CONTACT US"
+        contactUs: "CONTACT US",
+        brochure: "DOWNLOAD BROCHURE"
       },
       rights: " All rights reserverd ",
       chacun: "Web Design by ",

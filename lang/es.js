@@ -12,7 +12,8 @@ export default () => {
           industrial: "INDUSTRIAL"
         },
         customers: "CLIENTES",
-        contactUs: "CONTÁCTENOS"
+        contactUs: "CONTÁCTENOS",
+        brochure: "DESCARGAR FOLLETO"
       },
       rights: " Todos los derechos reservados ",
       chacun: "Diseño web de ",

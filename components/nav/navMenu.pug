@@ -13,7 +13,7 @@ div.sticky-top.bd-navbar
           nuxt-link.nav-link(:to="localePath('product-lines-industrial')") {{ $t('menu.productLines.industrial') }}
         nuxt-link.nav-link(:to="localePath('customers')") {{ $t('menu.customers') }}
         nuxt-link.nav-link(:to="localePath('contact-us')") {{ $t('menu.contactUs') }}
-        b-btn(v-b-modal.modalPrevent variant="success") DOWNLOAD BROCHURE
+        b-btn(v-b-modal.modalPrevent variant="success") {{ $t('menu.brochure') }}
         popup
         b-nav-item-dropdown(variant="link", size="lg", right )
           template(slot="button-content")
