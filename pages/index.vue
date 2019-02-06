@@ -35,9 +35,10 @@ export default {
     return {
       sliders: [
         {id:0,title:'smarensol', url:'/images/sliderSmarensolLogo.jpg'},
-        {id:1,title: 'energy' , url:'/images/energy1.jpg'},
-        {id:2,title: 'industry' , url:'/images/energy4.jpg'},
-        {id:3,title: 'oil' , url:'/images/energy3.jpg'}
+        {id:1,title: 'energy' , url:'/images/energy2.jpg'},
+        {id:2,title: 'industry' , url:'/images/energy5.jpg'},
+        {id:3,title: 'oil' , url:'/images/energy6.jpg'},
+        {id:4,title: 'power' , url:'/images/energy4.jpg'}
       ],
       imageSections: [
         {id:0 , image:'/images/allies/delta-conectores.jpeg', link:'https://www.deltaconectores.com', name:"Delta Conductores S.A. de C.V."}
