@@ -27,7 +27,7 @@ export default {
         {id:5,title: 'switches' , url:'/images/distribution/switches.jpg'},
         {id:6,title: 'lighting' , url:'/images/substation/lighting-rod.jpg'},
         {id:7,title: 'regulators' , url:'/images/distribution/regulators.jpg'},
-        {id:8,title: 'disconnectors' , url:'/images/substation/seccionador-de-subestacion.jpeg'},
+        {id:8,title: 'disconnectors' , url:'/images/substation/seccionador-de-subestacion.jpg'},
         {id:9,title: 'transformersMe' , url:'/images/substation/measurement-transformers.jpg'}
       ]
     }

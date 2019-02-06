@@ -25,7 +25,7 @@ export default {
         {id:3,title: 'chains' , url:'/images/transmission-lines/assemblies-chains.jpg'},
         {id:4,title: 'hardware' , url:'/images/transmission-lines/accessories.jpg'},
         {id:5,title: 'lighting' , url:'/images/substation/lighting-rod.jpg'},
-        {id:6,title: 'disconnectors' , url:'/images/substation/seccionador-de-subestacion.jpeg'}
+        {id:6,title: 'disconnectors' , url:'/images/substation/seccionador-de-subestacion.jpg'}
       ]
     }
   }

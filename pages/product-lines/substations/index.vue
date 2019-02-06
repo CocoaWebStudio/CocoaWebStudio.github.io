@@ -29,7 +29,7 @@ export default {
         {id:7,title: 'lighting' , url:'/images/substation/lighting-rod.jpg'},
         {id:8,title: 'relays' , url:'/images/substation/relays.jpg'},
         {id:9,title: 'energy' , url:'/images/substation/energy-meters.jpg'},
-        {id:10,title: 'disconnectors' , url:'/images/substation/seccionador-de-subestacion.jpeg'},
+        {id:10,title: 'disconnectors' , url:'/images/substation/seccionador-de-subestacion.jpg'},
         {id:11,title: 'systems' , url:'/images/substation/protection-systems.jpg'},
         {id:12,title: 'transformersMe' , url:'/images/substation/measurement-transformers.jpg'},
         {id:13,title: 'transformersPo' , url:'/images/substation/power-transformers.jpg'}
