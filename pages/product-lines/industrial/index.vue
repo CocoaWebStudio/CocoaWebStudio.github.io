@@ -21,7 +21,8 @@ export default {
       gallerys: [
         {id:0,title: 'tools', url:'/images/industrial/tools.jpg'},
         {id:1,title: 'security' , url:'/images/industrial/security-equipments.jpg'},
-        {id:2,title: 'motors' , url:'/images/industrial/motors.jpg'}
+        {id:2,title: 'motors' , url:'/images/industrial/motors.jpg'},
+        {id:3,title: 'beacons' , url:'/images/transmission-lines/beacons.jpg'}
       ]
     }
   }
