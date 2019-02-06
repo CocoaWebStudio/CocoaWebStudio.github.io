@@ -13,22 +13,22 @@
             br
             a(href="tel:+59342071092")
               phone-icon
-              strong {{ $t('data-telephone1') }} &nbsp/
+              strong.mx-3 {{ $t('data-telephone1') }} &nbsp/
             a(href="tel:+5939994138795")
-              strong.mx-2 {{ $t('data-telephone2') }}
+              strong.mx-1 {{ $t('data-telephone2') }}
             br
             br
             map-pin-icon
-            strong {{ $t('data-addres') }}
+            strong.mx-3 {{ $t('data-addres') }}
             br
-            strong.mx-4 {{ $t('data-city') }}
+            strong.mx-5 {{ $t('data-city') }}
             br
-            strong.mx-4 {{ $t('data-zip')}}
+            strong.mx-5 {{ $t('data-zip')}}
             br
             br
             a.text-dark(href="mailto:ventas@smarensol.com")
                mail-icon
-               strong {{ $t('data-email') }}
+               strong.mx-3 {{ $t('data-email') }}
         .col-md-6
           contactForm
     location.d-none.d-md-block
