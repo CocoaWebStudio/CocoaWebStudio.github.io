@@ -41,7 +41,8 @@ export default {
         {id:4,title: 'power' , url:'/images/energy4.jpg'}
       ],
       imageSections: [
-        {id:0 , image:'/images/allies/delta-conectores.jpeg', link:'https://www.deltaconectores.com', name:"Delta Conductores S.A. de C.V."}
+        {id:0 , image:'/images/allies/delta-conectores.jpeg', link:'https://www.deltaconectores.com', name:"Delta Conductores S.A. de C.V."},
+        {id:1 , image:'/images/allies/gaon-cable.jpg', link:'https://www.gaoncable.com', name:"Gaon Cable Co. Ltd."}
       ]
     }
   }
