@@ -1,12 +1,13 @@
 <i18n src="./transmission-lines.json"></i18n>
 <template lang="pug">
-  .container
-    .row
-      .col.text-center
-        h1.title {{ $t('transmission-lines')}}
-        br
-    .row
-      gallery(:gallerys="gallerys")
+  .container-fluid.bg
+    .container
+      .row
+        .col.text-center
+          h1.title {{ $t('transmission-lines')}}
+          br
+      .row
+        gallery(:gallerys="gallerys")
 </template>
 <script>
 import gallery from '~/components/gallery/gallery.vue'
@@ -31,3 +32,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.bg {
+  background-image: url('/images/about4.jpg');
+}
+</style>
