@@ -1,6 +1,6 @@
 <i18n src="./content.json" ></i18n>
 <template lang="pug">
-  .container-fluid(style="background-image: linear-gradient(to bottom right, lightgreen, white);")
+  .container-fluid.bg
     .row
       .col-md-6.offset-md-3
         h1.title.bounce-enter-active {{ $t('about-us') }}
