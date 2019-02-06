@@ -2,18 +2,19 @@
 <template lang="pug">
   .container-fluid.bg
     .row
-      .col-md-6.offset-md-3
+      .col-md-6.offset-md-3.bg-color
         h1.title.bounce-enter-active {{ $t('about-us') }}
         p.blockquote {{ $t('description') }}
+    .container
+      .row
+        .col-md-6.bg-color
+          h2.title.bounce-enter-active {{ $t('mission') }}
+          p.blockquote {{ $t('mission-content') }}
+        .col-md-6.bg-color
+          h2.title.bounce-enter-active {{ $t('vision') }}
+          p.blockquote {{ $t('vision-content') }}
     .row
-      .col-md-6
-        h2.title.bounce-enter-active {{ $t('mission') }}
-        p.blockquote {{ $t('mission-content') }}
-      .col-md-6
-        h2.title.bounce-enter-active {{ $t('vision') }}
-        p.blockquote {{ $t('vision-content') }}
-    .row
-      .col-md-6.offset-md-3.text-center
+      .col-md-6.offset-md-3.text-center.bg-color
         h2.title.bounce-enter-active  {{ $t('values') }}
         h4.center {{ $t('honesty') }}
         p.text  {{ $t('honesty-content') }}
