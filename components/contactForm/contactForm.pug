@@ -35,5 +35,18 @@
         :max-rows="6"
         )
     b-form-group(id="exampleGroup5")
-      b-button.mx-2(type="submit" variant="primary") {{ $t('submit') }}
+      recaptcha(
+        ref="recaptcha"
+        @verify="onCaptchaVerified"
+        @expired="onCaptchaExpired"
+        size="invisible"
+        sitekey="6LcF8I8UAAAAAJFIsfntPW7gFvASavxIH6u6h6FM"
+        )
+      b-button.mx-2(:disabled="status==='submitting'"
+        type="submit" variant="primary"
+        ) {{ $t('submit') }}
       b-button(type="reset" variant="success") {{ $t('reset') }}
+    div(v-cloak class="")
+      div(v-show="serverError") {{serverError}}
+  div.successful-server-response-wrapper(v-cloak)
+    div.successful-server-response(v-show="sucessfulServerResponse") {{sucessfulServerResponse}}

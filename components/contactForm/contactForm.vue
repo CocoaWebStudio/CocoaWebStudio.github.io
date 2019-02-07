@@ -1,6 +1,9 @@
 <i18n src="./contactForm.json"></i18n>
-<template src="./contactForm.pug" />
+<template src="./contactForm.pug"></template>
+
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -8,7 +11,10 @@ export default {
         email: '',
         name: '',
         telephone: '',
-        comentary: ''
+        comentary: '',
+        status: '',
+        sucessfulServerResponse: '',
+        serverError: ''
       }
     }
   },
@@ -28,6 +34,45 @@ export default {
       this.form.name = ''
       this.form.telephone = ''
       this.form.comentary = ''
+    },
+    submit: function () {
+      // this.status = "submitting";
+      this.$refs.recaptcha.execute();
+    },
+     onCaptchaVerified: function (recaptchaToken) {
+      const self = this;
+      self.status = "submitting";
+      self.$refs.recaptcha.reset();
+      axios.post("https://vue-recaptcha-demo.herokuapp.com/signup", {
+        email: self.email,
+        name: self.name,
+        recaptchaToken: recaptchaToken
+      }).then((response) => {
+        self.sucessfulServerResponse = response.data.message;
+      }).catch((err) => {
+        self.serverError = getErrorMessage(err);
+
+        //helper to get a displayable message to the user
+        function getErrorMessage(err) {
+          let responseBody;
+          responseBody = err.response;
+          if (!responseBody) {
+            responseBody = err;
+          }
+          else {
+            responseBody = err.response.data || responseBody;
+          }
+          return responseBody.message || JSON.stringify(responseBody);
+        }
+
+      }).then(() => {
+        self.status = "";
+      });
+
+
+    },
+    onCaptchaExpired: function () {
+      this.$refs.recaptcha.reset();
     }
   }
 }
