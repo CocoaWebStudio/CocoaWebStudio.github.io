@@ -1,9 +1,8 @@
 <template lang="pug">
-  .container-fluid.bg
-    .container
-      .row
-        .col.text-center
-          h1.title Customers Smarensol
+  .container
+    .row
+      .col.text-center
+        h1.title Customers Smarensol
 </template>
 <script>
 
