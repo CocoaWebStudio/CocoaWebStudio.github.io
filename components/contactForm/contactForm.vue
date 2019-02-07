@@ -11,11 +11,11 @@ export default {
         email: '',
         name: '',
         telephone: '',
-        comentary: '',
-        status: '',
-        sucessfulServerResponse: '',
-        serverError: ''
-      }
+        comentary: ''
+      },
+      status: '',
+      sucessfulServerResponse: '',
+      serverError: ''
     }
   },
   methods: {
@@ -51,7 +51,6 @@ export default {
         self.sucessfulServerResponse = response.data.message;
       }).catch((err) => {
         self.serverError = getErrorMessage(err);
-
         //helper to get a displayable message to the user
         function getErrorMessage(err) {
           let responseBody;
@@ -64,12 +63,9 @@ export default {
           }
           return responseBody.message || JSON.stringify(responseBody);
         }
-
       }).then(() => {
         self.status = "";
       });
-
-
     },
     onCaptchaExpired: function () {
       this.$refs.recaptcha.reset();
