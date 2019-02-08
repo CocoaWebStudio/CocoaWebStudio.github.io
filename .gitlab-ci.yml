@@ -1,0 +1,33 @@
+# Full project: https://gitlab.com/pages/plain-html
+
+image: node:lts-slim
+
+stages:
+  - build
+  - test
+
+cache:
+  paths:
+  - node_modules/
+
+build:
+  stage: build
+  only:
+  - origin
+  script:
+  - mkdir public
+  - chown -R node:node .
+  - yarn
+  - yarn build
+  artifacts:
+    paths:
+    - public
+
+test:
+  stage: test
+  only:
+  - origin
+  script:
+   - cd app
+   - yarn
+   - yarn test
