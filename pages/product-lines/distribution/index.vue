@@ -37,9 +37,27 @@ export default {
       title: 'Smarensol',
       meta: [
         { hid: 'description', name: 'description', content: this.$t('welcome') },
-        { property: "og:title", name: 'about', content: this.$t('description') },
-        { property: "og:image", content: "http://euro-travel-example.com/thumbnail.jpg" },
-        { property: "og:url", content: "http://euro-travel-example.com/index.htm" }
+        { property: "og:url", content: "https://smarensol.com" },
+        { property: 'og:title',  content: this.$t('insulators') },
+        { property: 'og:title',  content: this.$t('capacitorBa') },
+        { property: 'og:title',  content: this.$t('distributionTe') },
+        { property: 'og:title',  content: this.$t('equipment') },
+        { property: 'og:title',  content: this.$t('fuses') },
+        { property: 'og:title',  content: this.$t('switches') },
+        { property: 'og:title',  content: this.$t('lighting') },
+        { property: 'og:title',  content: this.$t('regulators') },
+        { property: 'og:title',  content: this.$t('disconnectors') },
+        { property: 'og:title',  content: this.$t('transformersMe') },
+        { property: "og:image", content: "https://smarensol.com/images/distribution/insulators.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/distribution/capacitor-banks.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/distribution/distribution-terminals.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/underground-networks.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/distribution/fuses.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/distribution/switches.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/lighting-rod.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/distribution/regulators.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/seccionador-de-subestacion.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/measurement-transformers.jpg" }
       ]
     }
   }

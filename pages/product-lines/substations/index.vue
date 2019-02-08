@@ -41,9 +41,35 @@ export default {
       title: 'Smarensol',
       meta: [
         { hid: 'description', name: 'description', content: this.$t('welcome') },
-        { property: "og:title", name: 'about', content: this.$t('description') },
-        { property: "og:image", content: "http://euro-travel-example.com/thumbnail.jpg" },
-        { property: "og:url", content: "http://euro-travel-example.com/index.htm" }
+        { property: "og:url", content: "https://smarensol.com" },
+        { property: 'og:title',  content: this.$t('isolatorsSt') },
+        { property: 'og:title',  content: this.$t('capacitors') },
+        { property: 'og:title',  content: this.$t('batteries') },
+        { property: 'og:title',  content: this.$t('cells') },
+        { property: 'og:title',  content: this.$t('connectors') },
+        { property: 'og:title',  content: this.$t('equipment') },
+        { property: 'og:title',  content: this.$t('power') },
+        { property: 'og:title',  content: this.$t('lighting') },
+        { property: 'og:title',  content: this.$t('relays') },
+        { property: 'og:title',  content: this.$t('energy') },
+        { property: 'og:title',  content: this.$t('disconnectors') },
+        { property: 'og:title',  content: this.$t('systems') },
+        { property: 'og:title',  content: this.$t('transformersMe') },
+        { property: 'og:title',  content: this.$t('transformersPo') },
+        { property: "og:image", content: "https://smarensol.com/images/substation/insulator.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/capacitors.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/chargers.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/cells.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/connectors.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/underground-networks.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/power-switches.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/lighting-rod.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/relays.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/energy-meters.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/seccionador-de-subestacion.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/protection-systems.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/measurement-transformers.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/power-transformers.jpg" }
       ]
     }
   }

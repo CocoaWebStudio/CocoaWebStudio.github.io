@@ -34,9 +34,21 @@ export default {
       title: 'Smarensol',
       meta: [
         { hid: 'description', name: 'description', content: this.$t('welcome') },
-        { property: "og:title", name: 'about', content: this.$t('description') },
-        { property: "og:image", content: "http://euro-travel-example.com/thumbnail.jpg" },
-        { property: "og:url", content: "http://euro-travel-example.com/index.htm" }
+        { property: "og:url", content: "https://smarensol.com" },
+        { property: 'og:title',  content: this.$t('isolators') },
+        { property: 'og:title',  content: this.$t('beacons') },
+        { property: 'og:title',  content: this.$t('cables') },
+        { property: 'og:title',  content: this.$t('chains') },
+        { property: 'og:title',  content: this.$t('hardware') },
+        { property: 'og:title',  content: this.$t('lighting') },
+        { property: 'og:title',  content: this.$t('disconnectors') },
+        { property: "og:image", content: "https://smarensol.com/images/distribution/insulator.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/transmission-lines/beacons.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/transmission-lines/fiber-optic-cables.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/transmission-lines/assemblies-chains.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/transmission-lines/accessories.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/lighting-rod.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/substation/seccionador-de-subestacion.jpg" },
       ]
     }
   }

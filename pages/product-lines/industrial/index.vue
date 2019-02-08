@@ -31,9 +31,15 @@ export default {
       title: 'Smarensol',
       meta: [
         { hid: 'description', name: 'description', content: this.$t('welcome') },
-        { property: "og:title", name: 'about', content: this.$t('description') },
-        { property: "og:image", content: "http://euro-travel-example.com/thumbnail.jpg" },
-        { property: "og:url", content: "http://euro-travel-example.com/index.htm" }
+        { property: "og:url", content: "https://smarensol.com" },
+        { property: 'og:title',  content: this.$t('tools') },
+        { property: 'og:title',  content: this.$t('security') },
+        { property: 'og:title',  content: this.$t('motors') },
+        { property: 'og:title',  content: this.$t('beacons') },
+        { property: "og:image", content: "https://smarensol.com/images/industrial/tools.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/industrial/security-equipments.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images/industrial/motors.jpg" },
+        { property: "og:image", content: "https://smarensol.com/images//transmission-lines/beacons.jpg" },
       ]
     }
   }

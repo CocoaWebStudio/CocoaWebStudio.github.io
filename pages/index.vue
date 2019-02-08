@@ -30,7 +30,7 @@ export default {
         { hid: 'description', name: 'description', content: this.$t('welcome') },
         { property: "og:title", name: 'about', content: this.$t('description') },
         { property: "og:image", content: "http://euro-travel-example.com/thumbnail.jpg" },
-        { property: "og:url", content: "http://euro-travel-example.com/index.htm" }
+        { property: "og:url", content: "https://smarensol.com" }
       ]
     }
   },
