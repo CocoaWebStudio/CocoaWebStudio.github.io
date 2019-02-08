@@ -2,9 +2,23 @@
 <template src="./contactForm.pug"></template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
+import VueRecaptcha from 'vue-recaptcha'
 
 export default {
+  components: {
+    VueRecaptcha
+  },
+  head () {
+    return {
+      script: [
+        { src: 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
+          async: true,
+          defer: true
+        }
+      ]
+    }
+  },
   data() {
     return {
       form: {
@@ -35,14 +49,18 @@ export default {
       this.form.telephone = ''
       this.form.comentary = ''
     },
-    submit: function () {
+    submit() {
       // this.status = "submitting";
       this.$refs.recaptcha.execute();
     },
-     onCaptchaVerified: function (recaptchaToken) {
+     onCaptchaVerified(recaptchaToken) {
+             /*eslint no-console: 1 */
+      console.log("it's alive!!");
       const self = this;
       self.status = "submitting";
+
       self.$refs.recaptcha.reset();
+      /*
       axios.post("https://vue-recaptcha-demo.herokuapp.com/signup", {
         email: self.email,
         name: self.name,
@@ -66,6 +84,7 @@ export default {
       }).then(() => {
         self.status = "";
       });
+      */
     },
     onCaptchaExpired: function () {
       this.$refs.recaptcha.reset();

@@ -1,5 +1,5 @@
 .container
-  b-form(@submit="onSubmit" @reset="onReset")
+  b-form(@reset="onReset" @submit.prevent="submit")
     b-form-group(id="exampleInputGroup1"
       label-for="exampleInput1"
     ) {{ $t('email') }}
@@ -35,13 +35,11 @@
         :max-rows="6"
         )
     b-form-group(id="exampleGroup5")
-      recaptcha(
-        ref="recaptcha"
-        @verify="onCaptchaVerified"
-        @expired="onCaptchaExpired"
+      vue-recaptcha(sitekey="6LcF8I8UAAAAAJFIsfntPW7gFvASavxIH6u6h6FM",
+        @verify="onCaptchaVerified",
+        ref="recaptcha",
         size="invisible"
-        sitekey="6LcF8I8UAAAAAJFIsfntPW7gFvASavxIH6u6h6FM"
-        )
+      )
       b-button.mx-2(:disabled="status==='submitting'"
         type="submit" variant="primary"
         ) {{ $t('submit') }}

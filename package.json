@@ -23,6 +23,7 @@
     "nuxt": "^2.3.4",
     "nuxt-i18n": "^5.8.0",
     "vue-feather-icons": "^4.10.0",
+    "vue-recaptcha": "^1.1.1",
     "vue-social-sharing": "^2.3.3"
   },
   "devDependencies": {
