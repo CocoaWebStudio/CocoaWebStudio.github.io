@@ -23,14 +23,17 @@ export default {
     imageSection,
     aboutUs
   },
-  head() {
-  return {
-    title: 'Smarensol',
-    meta: [
-      { hid: 'description', name: 'description', content: this.$t('welcome') }
-    ]
-  }
-},
+   head() {
+    return {
+      title: 'Smarensol',
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('welcome') },
+        { property: "og:title", name: 'about', content: this.$t('description') },
+        { property: "og:image", content: "http://euro-travel-example.com/thumbnail.jpg" },
+        { property: "og:url", content: "http://euro-travel-example.com/index.htm" }
+      ]
+    }
+  },
   data() {
     return {
       sliders: [
