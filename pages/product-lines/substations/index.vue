@@ -35,6 +35,28 @@ export default {
         {id:13,title: 'transformersPo' , url:'/images/substation/power-transformers.jpg'}
       ]
     }
+  },
+   head() {
+    return {
+      title: 'Smarensol',
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('welcome') },
+        { property: "og:title", name: 'about', content: this.$t('description') },
+        { property: "og:image", content="http://euro-travel-example.com/thumbnail.jpg" },
+        { property: "og:url", content="http://euro-travel-example.com/index.htm" }
+      ]
+    }
+  },
+   head() {
+    return {
+      title: 'Smarensol',
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('welcome') },
+        { property: "og:title", name: 'about', content: this.$t('description') },
+        { property: "og:image", content="http://euro-travel-example.com/thumbnail.jpg" },
+        { property: "og:url", content="http://euro-travel-example.com/index.htm" }
+      ]
+    }
   }
 }
 </script>
