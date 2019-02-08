@@ -20,13 +20,12 @@ build:
   - yarn build
   artifacts:
     paths:
-    - public
+    - ./
 
 test:
   stage: test
   only:
   - origin
   script:
-   - cd app
    - yarn
    - yarn test
