@@ -32,18 +32,7 @@
 </template>
 <script>
 export default {
-  name: 'about-us',
-   head() {
-    return {
-      title: 'Smarensol',
-      meta: [
-        { hid: 'description', name: 'description', content: this.$t('welcome') },
-        { property: "og:title", name: 'about', content: this.$t('description') },
-        { property: "og:image", content="http://euro-travel-example.com/thumbnail.jpg" },
-        { property: "og:url", content="http://euro-travel-example.com/index.htm" }
-      ]
-    }
-  }
+  name: 'about-us'
 }
 </script>
 <style src="./about-us.scss" lang="scss" scoped/>
