@@ -15,7 +15,6 @@ build:
   only:
   - origin
   script:
-  - mkdir public
   - chown -R node:node .
   - yarn
   - yarn build
