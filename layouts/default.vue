@@ -1,17 +1,17 @@
 <template lang="pug">
   div
-    navMenu
+    nav
     .wraper.d-flex.flex-column
       nuxt.flex-fill
       footerSection.w-100.text-light
 </template>
 <script>
-  import navMenu from '~/components/nav/navMenu'
+  import nav from '~/components/nav/nav'
   import footerSection from '~/components/footerSection/footerSection'
 
   export default {
     components: {
-      navMenu,
+      nav,
       footerSection
     },
     head() {
