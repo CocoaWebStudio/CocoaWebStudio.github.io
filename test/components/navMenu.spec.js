@@ -39,7 +39,6 @@ describe('NavMenu', () => {
         $t: () => {}
       }
     })
-    expect(wrapper.find(RouterLinkStub).props().to).toBe('/some/path')
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 })
