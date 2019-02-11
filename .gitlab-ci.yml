@@ -34,12 +34,13 @@ deploy:
   only:
   - master
   before_script:
-  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-  - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-  - touch ~/.ssh/know_hosts
-  - ssh-keyscan $SERVER_IP >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
+  - apt-get update -qq -y
+  - apt-get install -qq git -y
+  # Setup SSH deploy keys
+  - 'which ssh-agent || ( apt-get install -qq openssh-client -y)'
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh && chmod 700 ~/.ssh
   - ssh $SERVER_IP -tt -p 7459
   script:
   - cd app
