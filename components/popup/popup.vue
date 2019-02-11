@@ -27,19 +27,19 @@
 </template>
 <script>
 export default {
-  name: 'popup',
-  data () {
+  name: 'Popup',
+  data() {
     return {
       name: '',
       email: ''
     }
   },
   methods: {
-    clear () {
+    clear() {
       this.name = ''
       this.email = ''
     },
-    handleOk (evt) {
+    handleOk(evt) {
       // Prevent modal from closing
       evt.preventDefault()
       if (!this.name) {
@@ -48,7 +48,7 @@ export default {
         this.handleSubmit()
       }
     },
-    handleSubmit () {
+    handleSubmit() {
       this.names.push(this.name)
       this.clear()
       this.$refs.modal.hide()
