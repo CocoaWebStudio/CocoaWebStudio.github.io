@@ -41,7 +41,10 @@ deploy:
   - mkdir -p ~/.ssh && chmod 700 ~/.ssh
   - touch ~/.ssh/know_hosts
   - ssh-keyscan -t rsa $SERVER_IP >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
+  - echo ~/.ssh/know_hosts
   - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
+  - ssh-add -l
+  - ssh -T -p 7459 $SERVER_IP
   script:
   - cd app
   - mkdir dist
