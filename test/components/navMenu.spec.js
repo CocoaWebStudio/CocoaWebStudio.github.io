@@ -1,11 +1,19 @@
-import { mount } from '@vue/test-utils'
+import { mount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
 import NavMenu from '@/components/navMenu/navMenu.vue'
+import BootstrapVue from 'bootstrap-vue'
+import i18n from 'nuxt-i18n'
 
-jest.mock
+const localVue = createLocalVue()
+
+localVue.use(BootstrapVue)
 
 describe('NavMenu', () => {
   test('is a Vue instance', () => {
     const wrapper = mount(NavMenu, {
+      localVue,
+      stubs: {
+        NuxtLink: RouterLinkStub
+      },
       mocks: {
         $i18n: {
           locale:'es',
@@ -27,10 +35,11 @@ describe('NavMenu', () => {
          	]
         },
         switchLocalePath: () => {},
-        localePath: () => {},
+        localePath: (e) => {},
         $t: () => {}
       }
     })
+    expect(wrapper.find(RouterLinkStub).props().to).toBe('/some/path')
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 })

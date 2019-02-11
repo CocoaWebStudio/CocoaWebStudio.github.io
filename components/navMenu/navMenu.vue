@@ -2,19 +2,11 @@
   include navMenu.pug
 </template>
 <script>
-  import bNavbar from 'bootstrap-vue/es/components/navbar/navbar'
-  import bNavbarBrand from 'bootstrap-vue/es/components/navbar/navbar-brand'
-  import bNavbarNav from 'bootstrap-vue/es/components/navbar/navbar-nav'
-  import bNavbarToggle from 'bootstrap-vue/es/components/navbar/navbar-toggle'
-  import bPopup from '~/components/popup/popup.vue'
+  import Popup from '~/components/popup/popup.vue'
 
   export default {
     name: 'nav-menu',
     components: {
-      bNavbar,
-      bNavbarBrand,
-      bNavbarNav,
-      bNavbarToggle,
       Popup
     },
     beforeMount: function () {
