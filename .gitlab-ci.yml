@@ -37,9 +37,10 @@ deploy:
   - apt-get update -y
   # Setup SSH deploy keys
   - 'which ssh-agent || ( apt-get install openssh-client -y)'
-  - eval $(ssh-agent -s)
+  - eval `ssh-agent -s`
   - mkdir -p ~/.ssh
-  - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
+  - ssh-add <(echo $SSH_PRIVATE_KEY)
+  - ssh-add -l
   - ssh $SERVER_IP -tt -p 7459
   script:
   - cd app
