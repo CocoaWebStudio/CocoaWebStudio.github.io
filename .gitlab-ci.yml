@@ -36,6 +36,7 @@ deploy:
   before_script:
   - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
   - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+  - touch ~/.ssh/know_hosts
   - ssh-keyscan test.smarensol.com >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/known_hosts
   - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
   - eval $(ssh-agent -s)
