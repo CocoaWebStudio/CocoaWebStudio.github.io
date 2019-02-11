@@ -39,6 +39,7 @@ deploy:
   - 'which ssh-agent || ( apt-get install openssh-client -y)'
   - eval `ssh-agent -s`
   - mkdir -p ~/.ssh
+  - ssh-keyscan $SERVER_IP >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
   - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
   - ssh-add -l
   - ssh $SERVER_IP -tt -p 7459
