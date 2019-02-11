@@ -42,7 +42,7 @@ deploy:
   - touch ~/.ssh/know_hosts
   - echo $KNOW_HOST >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
   - (echo $SSH_PRIVATE_KEY | base64 --decode) > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
-  - ssh -T -p 7459 -i -o StrictHostKeyChecking=no ~/.ssh/id_rsa $SERVER_DOMAIN
+  - ssh -T -p 7459 -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $SERVER_DOMAIN
   script:
   - cd app
   - mkdir dist
