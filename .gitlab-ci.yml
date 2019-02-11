@@ -5,6 +5,7 @@ image: node:lts-slim
 stages:
   - build
   - test
+  - generate
   - deploy
 
 cache:
@@ -29,10 +30,26 @@ test:
   - cd app
   - yarn test
 
+generate:
+  stage: generate
+  only:
+  - master
+  script:
+  - cd app
+  - yarn
+  - mkdir dist
+  - yarn generate
+  artifacts:
+    name: "$CI_JOB_NAME"
+    paths:
+    - ./app/dist
+    expire_in: 2 days
+
 deploy:
   stage: deploy
   only:
   - master
+  image: ubuntu:latest
   before_script:
   - apt-get update -y
   # Setup SSH deploy keys
@@ -45,11 +62,4 @@ deploy:
   - ssh -T -p 7459 -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $SERVER_DOMAIN
   script:
   - cd app
-  - mkdir dist
-  - yarn generate
-  - scp -P 7459 -r dist/. $SERVER_ADDRESS
-  artifacts:
-    name: "$CI_JOB_NAME"
-    paths:
-    - ./app/dist
-    expire_in: 2 days
+  - scp -i ~/.ssh/id_rsa -P 7459 -r dist/. $SERVER_ADDRESS
