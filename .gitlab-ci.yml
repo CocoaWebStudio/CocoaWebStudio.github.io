@@ -38,11 +38,10 @@ deploy:
   # Setup SSH deploy keys
   - 'which ssh-agent || ( apt-get install openssh-client -y)'
   - eval `ssh-agent -s`
-  - mkdir -p ~/.ssh
-  - ssh-keyscan $SERVER_IP >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
+  - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+  - touch ~/.ssh/know_hosts
+  - ssh-keyscan -t rsa $SERVER_IP >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
   - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
-  - ssh-add -l
-  - ssh $SERVER_IP -tt -p 7459
   script:
   - cd app
   - mkdir dist
