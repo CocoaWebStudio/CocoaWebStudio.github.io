@@ -4,16 +4,15 @@
 import socialNetworks from '~/components/socialNetworks/socialNetworks.vue'
 
 export default {
-  name: 'footerSection',
+  name: 'FooterSection',
   components: {
     socialNetworks
   },
   data() {
     return {
-      year: (new Date()).getFullYear()
+      year: new Date().getFullYear()
     }
   }
-
 }
 </script>
 

@@ -1,5 +1,5 @@
 <i18n src="./contactForm.json"></i18n>
-<template src="./contactForm.pug"></template>
+<template src="./contactForm.pug" />
 
 <script>
 // import axios from 'axios'
@@ -9,10 +9,12 @@ export default {
   components: {
     VueRecaptcha
   },
-  head () {
+  head() {
     return {
       script: [
-        { src: 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
+        {
+          src:
+            'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
           async: true,
           defer: true
         }
@@ -51,15 +53,15 @@ export default {
     },
     submit() {
       // this.status = "submitting";
-      this.$refs.recaptcha.execute();
+      this.$refs.recaptcha.execute()
     },
-     onCaptchaVerified(recaptchaToken) {
-             /*eslint no-console: 1 */
-      console.log("it's alive!!");
-      const self = this;
-      self.status = "submitting";
+    onCaptchaVerified(recaptchaToken) {
+      /* eslint no-console: 1 */
+      console.log("it's alive!!")
+      const self = this
+      self.status = 'submitting'
 
-      self.$refs.recaptcha.reset();
+      self.$refs.recaptcha.reset()
       /*
       axios.post("https://vue-recaptcha-demo.herokuapp.com/signup", {
         email: self.email,
@@ -86,11 +88,10 @@ export default {
       });
       */
     },
-    onCaptchaExpired: function () {
-      this.$refs.recaptcha.reset();
+    onCaptchaExpired: function() {
+      this.$refs.recaptcha.reset()
     }
   }
 }
 </script>
-<style src="./contactForm.scss" lang="scss" scoped>
-</style>
+<style src="./contactForm.scss" lang="scss" scoped></style>

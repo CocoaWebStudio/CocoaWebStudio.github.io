@@ -6,9 +6,9 @@ export default {
     gallerys: {
       type: Array,
       required: true
-     }
-   }
- }
+    }
+  }
+}
 </script>
 
 <style src="./gallery.scss" lang="scss" scoped />

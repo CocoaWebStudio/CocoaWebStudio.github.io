@@ -40,7 +40,7 @@ import location from '~/components/location/location.vue'
 import { PhoneIcon, MailIcon, MapPinIcon } from 'vue-feather-icons'
 
 export default {
-  name: 'contact-us',
+  name: 'ContactUs',
   components: {
     contactForm,
     location,
@@ -48,13 +48,21 @@ export default {
     MailIcon,
     MapPinIcon
   },
-   head() {
+  head() {
     return {
       title: 'Smarensol',
       meta: [
-        { hid: 'description', name: 'description', content: this.$t('welcome') },
-        { property: "og:title", name: 'about', content: this.$t('description') },
-        { property: "og:url", content: "https://smarensol.com" }
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('welcome')
+        },
+        {
+          property: 'og:title',
+          name: 'about',
+          content: this.$t('description')
+        },
+        { property: 'og:url', content: 'https://smarensol.com' }
       ]
     }
   }

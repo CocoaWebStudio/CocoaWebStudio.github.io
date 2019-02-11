@@ -16,36 +16,56 @@ import slider from '~/components/slider/slider.vue'
 import imageSection from '~/components/imageSection/imageSection.vue'
 import aboutUs from '~/pages/about-us/index.vue'
 
-
 export default {
   components: {
     slider,
     imageSection,
     aboutUs
   },
-   head() {
+  head() {
     return {
       title: 'Smarensol',
       meta: [
-        { hid: 'description', name: 'description', content: this.$t('welcome') },
-        { property: "og:title", name: 'about', content: this.$t('description') },
-        { property: "og:image", content: "http://euro-travel-example.com/thumbnail.jpg" },
-        { property: "og:url", content: "https://smarensol.com" }
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('welcome')
+        },
+        {
+          property: 'og:title',
+          name: 'about',
+          content: this.$t('description')
+        },
+        {
+          property: 'og:image',
+          content: 'http://euro-travel-example.com/thumbnail.jpg'
+        },
+        { property: 'og:url', content: 'https://smarensol.com' }
       ]
     }
   },
   data() {
     return {
       sliders: [
-        {id:0,title:'smarensol', url:'/images/sliderSmarensolLogo.jpg'},
-        {id:1,title: 'energy' , url:'/images/energy2.jpg'},
-        {id:2,title: 'industry' , url:'/images/energy5.jpg'},
-        {id:3,title: 'oil' , url:'/images/energy6.jpg'},
-        {id:4,title: 'power' , url:'/images/energy4.jpg'}
+        { id: 0, title: 'smarensol', url: '/images/sliderSmarensolLogo.jpg' },
+        { id: 1, title: 'energy', url: '/images/energy2.jpg' },
+        { id: 2, title: 'industry', url: '/images/energy5.jpg' },
+        { id: 3, title: 'oil', url: '/images/energy6.jpg' },
+        { id: 4, title: 'power', url: '/images/energy4.jpg' }
       ],
       imageSections: [
-        {id:0 , image:'/images/allies/delta-conectores.jpeg', link:'https://www.deltaconectores.com', name:"Delta Conductores S.A. de C.V."},
-        {id:1 , image:'/images/allies/gaon-cable.jpg', link:'https://www.gaoncable.com', name:"Gaon Cable Co. Ltd."}
+        {
+          id: 0,
+          image: '/images/allies/delta-conectores.jpeg',
+          link: 'https://www.deltaconectores.com',
+          name: 'Delta Conductores S.A. de C.V.'
+        },
+        {
+          id: 1,
+          image: '/images/allies/gaon-cable.jpg',
+          link: 'https://www.gaoncable.com',
+          name: 'Gaon Cable Co. Ltd.'
+        }
       ]
     }
   }
@@ -54,10 +74,10 @@ export default {
 
 <style scoped>
 .bounce-enter-active {
-  animation: bounce-in .8s;
+  animation: bounce-in 0.8s;
 }
 .bounce-leave-active {
-  animation: bounce-in .5s reverse;
+  animation: bounce-in 0.5s reverse;
 }
 @keyframes bounce-in {
   0% {

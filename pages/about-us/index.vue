@@ -1,4 +1,4 @@
-<i18n src="./content.json" ></i18n>
+<i18n src="./content.json"></i18n>
 <template lang="pug">
   .container-fluid.bg
     br
@@ -32,17 +32,25 @@
 </template>
 <script>
 export default {
-  name: 'about-us',
-   head() {
+  name: 'AboutUs',
+  head() {
     return {
       title: 'Smarensol',
       meta: [
-        { hid: 'description', name: 'description', content: this.$t('welcome') },
-        { property: "og:title", name: 'about', content: this.$t('description') },
-        { property: "og:url", content: "https://smarensol.com" }
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('welcome')
+        },
+        {
+          property: 'og:title',
+          name: 'about',
+          content: this.$t('description')
+        },
+        { property: 'og:url', content: 'https://smarensol.com' }
       ]
     }
   }
 }
 </script>
-<style src="./about-us.scss" lang="scss" scoped/>
+<style src="./about-us.scss" lang="scss" scoped />

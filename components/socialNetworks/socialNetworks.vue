@@ -23,14 +23,19 @@
         span  (+593) 42071092
 </template>
 <script>
-  import { FacebookIcon, LinkedinIcon, MailIcon, PhoneIcon } from 'vue-feather-icons'
+import {
+  FacebookIcon,
+  LinkedinIcon,
+  MailIcon,
+  PhoneIcon
+} from 'vue-feather-icons'
 
-  export default {
-    components: {
-      FacebookIcon,
-      LinkedinIcon,
-      MailIcon,
-      PhoneIcon
-    }
+export default {
+  components: {
+    FacebookIcon,
+    LinkedinIcon,
+    MailIcon,
+    PhoneIcon
   }
+}
 </script>

@@ -19,12 +19,11 @@
 
 <script>
 export default {
-
   props: {
     imageSections: {
       type: Array,
       required: true
-     }
-   }
- }
+    }
+  }
+}
 </script>

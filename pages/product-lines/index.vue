@@ -1,7 +1,6 @@
 <template lang="pug"></template>
 <script>
-
 export default {
-  name: 'product-lines',
+  name: 'ProductLines'
 }
 </script>
