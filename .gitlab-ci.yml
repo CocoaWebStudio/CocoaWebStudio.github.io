@@ -5,6 +5,7 @@ image: node:lts-slim
 stages:
   - build
   - test
+  - deploy
 
 cache:
   paths:
@@ -13,19 +14,40 @@ cache:
 build:
   stage: build
   only:
-  - origin
+  - master
   script:
   - chown -R node:node .
+  - cd app
   - yarn
   - yarn build
-  artifacts:
-    paths:
-    - ./
 
 test:
   stage: test
   only:
-  - origin
+  - master
   script:
-   - yarn
-   - yarn test
+  - cd app
+  - yarn test
+
+deploy:
+  stage: deploy
+  only:
+  - master
+  before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  script:
+  - cd app
+  - mkdir dist
+  - yarn generate
+  - scp -P 7459 -r dist/. $SERVER_ADDRESS
+  artifacts:
+    name: "$CI_JOB_NAME"
+    paths:
+    - ./app/dist
+    expire_in: 2 days

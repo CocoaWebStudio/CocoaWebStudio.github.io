@@ -1,7 +1,7 @@
 <i18n src="./popup.json"></i18n>
 <template lang="pug">
   div
-    b-modal(id="modalPrevent"
+    b-modal(id="popup-wraper"
       ref="modal"
       title= "Smarensol Brochure"
       @oks="handleOk"

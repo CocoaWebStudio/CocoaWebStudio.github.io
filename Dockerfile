@@ -6,13 +6,13 @@ WORKDIR /home/node/app
 
 RUN chown -R node:node .
 
-COPY package.json ./
+COPY app/package.json ./
 
-COPY yarn.lock  ./
+COPY app/yarn.lock  ./
 
 RUN yarn
 
-COPY --chown=node:node . .
+COPY --chown=node:node ./app .
 
 RUN yarn build
 
