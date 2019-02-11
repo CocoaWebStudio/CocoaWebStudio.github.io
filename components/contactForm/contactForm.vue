@@ -56,7 +56,7 @@ export default {
       this.$refs.recaptcha.execute()
     },
     onCaptchaVerified(recaptchaToken) {
-      /* eslint no-console: 1 */
+      // eslint-disable-next-line
       console.log("it's alive!!")
       const self = this
       self.status = 'submitting'
