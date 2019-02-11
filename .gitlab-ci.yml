@@ -40,7 +40,7 @@ deploy:
   - ssh-keyscan $SERVER_IP >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SSH_PRIVATE_KEY")
-  - ssh $SERVER_IP
+  - ssh -P 7459 $SERVER_IP
   script:
   - cd app
   - mkdir dist
