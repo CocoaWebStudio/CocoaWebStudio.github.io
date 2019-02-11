@@ -39,9 +39,7 @@ deploy:
   - 'which ssh-agent || ( apt-get install openssh-client -y)'
   - eval $(ssh-agent -s)
   - mkdir -p ~/.ssh
-  - echo $SSH_PRIVATE_KEY > ~/.ssh/id_rsa
-  - chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa
-  - ssh-add < ~/.ssh/id_rsa
+  - ssh-add <(echo $SSH_PRIVATE_KEY)
   - ssh $SERVER_IP -tt -p 7459
   script:
   - cd app
