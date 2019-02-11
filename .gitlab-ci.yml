@@ -40,7 +40,7 @@ deploy:
   - eval `ssh-agent -s`
   - mkdir -p ~/.ssh && chmod 700 ~/.ssh
   - touch ~/.ssh/know_hosts
-  - ssh-keyscan -t -p 7459 rsa $SERVER_DOMAIN >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
+  - echo $KNOW_HOST >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
   - cat ~/.ssh/know_hosts
   - ssh-add <(echo $SSH_PRIVATE_KEY | base64 --decode)
   - ssh -T -p 7459 $SERVER_DOMAIN
