@@ -9,12 +9,7 @@ module.exports = api => {
       test: {
         presets: [
           [
-            "@babel/preset-env",
-            {
-              "targets": {
-                "node": "current"
-              }
-            }
+            "@babel/preset-env"
           ],
           "@nuxt/babel-preset-app"
         ]
