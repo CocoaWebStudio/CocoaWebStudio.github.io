@@ -22,7 +22,7 @@ export default {
         {
           id: 0,
           title: 'insulators',
-          url: '/images/distribution/insulators.jpg'
+          url: '/images/transmission-lines/insulators.jpg'
         },
         {
           id: 1,
@@ -47,12 +47,12 @@ export default {
         {
           id: 5,
           title: 'lighting',
-          url: '/images/substation/lighting-rod.jpg'
+          url: '/images/transmission-lines/lighting-rod.jpg'
         },
         {
           id: 6,
           title: 'disconnectors',
-          url: '/images/substation/seccionador-de-subestacion.jpg'
+          url: '/images/transmission-lines/disconnectors.jpg'
         }
       ]
     }

@@ -37,29 +37,34 @@ export default {
         {
           id: 3,
           title: 'equipment',
-          url: '/images/substation/underground-networks.jpg'
+          url: '/images/distribution/underground-networks.jpg'
         },
         { id: 4, title: 'fuses', url: '/images/distribution/fuses.jpg' },
-        { id: 5, title: 'switches', url: '/images/distribution/switches.jpg' },
         {
-          id: 6,
-          title: 'lighting',
-          url: '/images/substation/lighting-rod.jpg'
+          id: 5,
+          title: 'reclosers',
+          url: '/images/distribution/reclosers.jpg'
         },
+        { id: 6, title: 'switches', url: '/images/distribution/switches.jpg' },
         {
           id: 7,
+          title: 'lighting',
+          url: '/images/distribution/lighting-rod.jpg'
+        },
+        {
+          id: 8,
           title: 'regulators',
           url: '/images/distribution/regulators.jpg'
         },
         {
-          id: 8,
-          title: 'disconnectors',
-          url: '/images/substation/seccionador-de-subestacion.jpg'
-        },
-        {
           id: 9,
           title: 'transformersMe',
-          url: '/images/substation/measurement-transformers.jpg'
+          url: '/images/distribution/measurement-transformers.jpg'
+        },
+        {
+          id: 10,
+          title: 'premolded',
+          url: '/images/distribution/pre-molded-accessories.jpg'
         }
       ]
     }
