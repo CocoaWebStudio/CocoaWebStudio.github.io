@@ -12,7 +12,7 @@ module.exports = {
 			iso: 'es-EC',
 			file: 'es.js',
       name: 'ESPAÑOL',
-      flag: 'images/flags/es-EC.png'
+      flag: '/images/flags/es-EC.png'
 		}
 	],
 	strategy: 'prefix_and_default',
