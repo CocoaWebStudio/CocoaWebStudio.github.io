@@ -55,11 +55,13 @@ deploy:
   # Setup SSH deploy keys
   - 'which ssh-agent || ( apt-get install openssh-client -y)'
   - eval `ssh-agent -s`
-  - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-  - touch ~/.ssh/know_hosts
-  - echo $KNOW_HOST >> ~/.ssh/know_hosts && chmod 644 ~/.ssh/know_hosts
-  - (echo $SSH_PRIVATE_KEY | base64 --decode) > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
-  - ssh -T -p 7459 -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $SERVER_DOMAIN
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - ssh-keyscan -p "$PORT" "$SERVER_IP" >> ~/.ssh/know_hosts
+  - ssh-keyscan -p "$PORT" "$SERVER_DOMAIN" >> ~/.ssh/know_hosts
+  - chmod 644 ~/.ssh/know_hosts
+  - (echo "$SSH_PRIVATE_KEY" | base64 -d) > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
+  - ssh -T -p "$PORT" -i ~/.ssh/id_rsa "$USER_AND_DOMAIN"
   script:
   - cd app
-  - scp -i ~/.ssh/id_rsa -P 7459 -r dist/. $SERVER_ADDRESS
+  - scp -i ~/.ssh/id_rsa -P "$PORT" -r dist/. "$SERVER_ADDRESS"
