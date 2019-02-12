@@ -3,7 +3,47 @@
 image: node:lts-slim
 
 stages:
+  - build
+  - test
+  - generate
   - deploy
+
+cache:
+  paths:
+  - app/node_modules/
+
+build:
+  stage: build
+  only:
+  - master
+  script:
+  - chown -R node:node .
+  - cd app
+  - yarn
+  - yarn build
+
+test:
+  stage: test
+  only:
+  - master
+  script:
+  - cd app
+  - yarn test
+
+generate:
+  stage: generate
+  only:
+  - master
+  script:
+  - cd app
+  - yarn
+  - mkdir dist
+  - yarn generate
+  artifacts:
+    name: "$CI_JOB_NAME"
+    paths:
+    - ./app/dist
+    expire_in: 2 days
 
 deploy:
   stage: deploy
@@ -24,4 +64,4 @@ deploy:
   - ssh -o StrictHostKeyChecking=no -p "$PORT" "$USER_AND_DOMAIN" 'rm -rf /home/smarensol/web/*'
   script:
   - cd app
-  - scp -i ~/.ssh/id_rsa -P "$PORT" -r dist/. "$SERVER_ADDRESS"
+  - scp -P "$PORT" -r dist/. "$SERVER_ADDRESS"
