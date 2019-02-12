@@ -1,12 +1,28 @@
+<i18n src="./customers.json"></i18n>
 <template lang="pug">
-  .container
+  .container-fluid.bg
     .row
-      .col.text-center
-        h1.title Customers Smarensol
+      .col-md-6.offset-md-3
+        h1.title.bg-color {{ $t('customers')}}
+        br
+        br
+        br
+        br
+        br
+        br
+    .container
+      .row
+        .col-md-6.offset-md-3.text-center
+          h1.bg-color {{ $t('information')}}
+            alert-triangle-icon.mx-3
 </template>
 <script>
+import { AlertTriangleIcon } from 'vue-feather-icons'
 export default {
   name: 'Customers',
+  components: {
+    AlertTriangleIcon
+  },
   head() {
     return {
       title: 'Smarensol',
