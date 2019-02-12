@@ -64,4 +64,4 @@ deploy:
   - ssh -o StrictHostKeyChecking=no -p "$PORT" "$USER_AND_DOMAIN" 'rm -rf /home/smarensol/web/*'
   script:
   - cd app
-  - scp -P "$PORT" -r dist/. "$SERVER_ADDRESS"
+  - scp -P "$PORT" -r dist/* "$SERVER_ADDRESS"
