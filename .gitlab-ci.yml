@@ -3,9 +3,9 @@
 image: node:lts-slim
 
 stages:
-  - build
-  - test
-  - generate
+#  - build
+#  - test
+#  - generate
   - deploy
 
 cache:
