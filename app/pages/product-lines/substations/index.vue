@@ -36,36 +36,31 @@ export default {
           title: 'connectors',
           url: '/images/substation/connectors.jpg'
         },
+        { id: 5, title: 'power', url: '/images/substation/power-switches.jpg' },
         {
-          id: 5,
-          title: 'equipment',
-          url: '/images/substation/underground-networks.jpg'
-        },
-        { id: 6, title: 'power', url: '/images/substation/power-switches.jpg' },
-        {
-          id: 7,
+          id: 6,
           title: 'lighting',
           url: '/images/substation/lighting-rod.jpg'
         },
-        { id: 8, title: 'relays', url: '/images/substation/relays.jpg' },
-        { id: 9, title: 'energy', url: '/images/substation/energy-meters.jpg' },
+        { id: 7, title: 'relays', url: '/images/substation/relays.jpg' },
+        { id: 8, title: 'energy', url: '/images/substation/energy-meters.jpg' },
         {
-          id: 10,
+          id: 9,
           title: 'disconnectors',
-          url: '/images/substation/seccionador-de-subestacion.jpg'
+          url: '/images/substation/disconnectors.jpg'
         },
         {
-          id: 11,
+          id: 10,
           title: 'systems',
           url: '/images/substation/protection-systems.jpg'
         },
         {
-          id: 12,
+          id: 11,
           title: 'transformersMe',
           url: '/images/substation/measurement-transformers.jpg'
         },
         {
-          id: 13,
+          id: 12,
           title: 'transformersPo',
           url: '/images/substation/power-transformers.jpg'
         }
