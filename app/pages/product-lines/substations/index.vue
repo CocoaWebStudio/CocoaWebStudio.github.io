@@ -6,7 +6,8 @@
         h1.title {{ $t('substations')}}
         br
     .row
-      gallery(:gallerys="gallerys")
+      .col
+        gallery(:gallerys="gallerys")
 </template>
 <script>
 import gallery from '~/components/gallery/gallery.vue'
@@ -22,52 +23,76 @@ export default {
         {
           id: 0,
           title: 'isolatorsSt',
-          url: '/images/substation/insulator.jpg'
+          url: '/images/products/substation/smarensol_substations_insulator.jpg'
         },
         {
           id: 1,
           title: 'capacitors',
-          url: '/images/substation/capacitors.jpg'
+          url:
+            '/images/products/substation/smarensol_substations_capacitors.jpg'
         },
-        { id: 2, title: 'batteries', url: '/images/substation/chargers.jpg' },
-        { id: 3, title: 'cells', url: '/images/substation/cells.jpg' },
+        {
+          id: 2,
+          title: 'batteries',
+          url: '/images/products/substation/smarensol_substations_chargers.jpg'
+        },
+        {
+          id: 3,
+          title: 'cells',
+          url: '/images/products/substation/smarensol_substations_cells.jpg'
+        },
         {
           id: 4,
           title: 'connectors',
-          url: '/images/substation/connectors.jpg'
+          url:
+            '/images/products/substation/smarensol_substations_connectors.jpg'
         },
         {
           id: 5,
-          title: 'equipment',
-          url: '/images/substation/underground-networks.jpg'
+          title: 'power',
+          url:
+            '/images/products/substation/smarensol_substations_power_switches.jpg'
         },
-        { id: 6, title: 'power', url: '/images/substation/power-switches.jpg' },
+        {
+          id: 6,
+          title: 'lighting',
+          url:
+            '/images/products/substation/smarensol_substations_lighting_rod.jpg'
+        },
         {
           id: 7,
-          title: 'lighting',
-          url: '/images/substation/lighting-rod.jpg'
+          title: 'relays',
+          url: '/images/products/substation/smarensol_substations_relays.jpg'
         },
-        { id: 8, title: 'relays', url: '/images/substation/relays.jpg' },
-        { id: 9, title: 'energy', url: '/images/substation/energy-meters.jpg' },
+        {
+          id: 8,
+          title: 'energy',
+          url:
+            '/images/products/substation/smarensol_substations_energy_meters.jpg'
+        },
+        {
+          id: 9,
+          title: 'disconnectors',
+          url:
+            '/images/products/substation/smarensol_substations_disconnectors.jpg'
+        },
         {
           id: 10,
-          title: 'disconnectors',
-          url: '/images/substation/seccionador-de-subestacion.jpg'
+          title: 'systems',
+          url:
+            '/images/products/substation/smarensol_substations_protection_systems.jpg'
         },
         {
           id: 11,
-          title: 'systems',
-          url: '/images/substation/protection-systems.jpg'
+          title: 'transformersMe',
+          url:
+            '/images/products/substation/smarensol_substations_measurement_transformers.jpg'
         },
         {
           id: 12,
-          title: 'transformersMe',
-          url: '/images/substation/measurement-transformers.jpg'
-        },
-        {
-          id: 13,
           title: 'transformersPo',
-          url: '/images/substation/power-transformers.jpg'
+          url:
+            '/images/products/substation/smarensol_substations_power_transformers.jpg'
         }
       ]
     }
@@ -98,64 +123,73 @@ export default {
         { property: 'og:title', content: this.$t('transformersPo') },
         {
           property: 'og:image',
-          content: 'https://smarensol.com/images/substation/insulator.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/capacitors.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/chargers.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/cells.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/connectors.jpg'
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_insulator.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/substation/underground-networks.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/power-switches.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/lighting-rod.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/relays.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/energy-meters.jpg'
+            'https://smarensol.com/images/products/substation/smarensol_substations_capacitors.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/substation/seccionador-de-subestacion.jpg'
+            'https://smarensol.com/images/products/substation/smarensol_substations_chargers.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/substation/protection-systems.jpg'
+            'https://smarensol.com/images/products/substation/smarensol_substations_cells.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/substation/measurement-transformers.jpg'
+            'https://smarensol.com/images/products/substation/smarensol_substations_connectors.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/substation/power-transformers.jpg'
+            'https://smarensol.com/images/products/substation/smarensol_substations_underground_networks.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_power_switches.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_lighting_rod.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_relays.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_energy_meters.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_disconnectors.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_protection_systems.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_measurement_transformers.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/products/substation/smarensol_substations_power_transformers.jpg'
         }
       ]
     }

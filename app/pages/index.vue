@@ -47,11 +47,18 @@ export default {
   data() {
     return {
       sliders: [
-        { id: 0, title: 'smarensol', url: '/images/sliderSmarensolLogo.jpg' },
-        { id: 1, title: 'energy', url: '/images/energy2.jpg' },
-        { id: 2, title: 'industry', url: '/images/energy5.jpg' },
-        { id: 3, title: 'oil', url: '/images/energy6.jpg' },
-        { id: 4, title: 'power', url: '/images/energy4.jpg' }
+        {
+          id: 0,
+          title: 'smarensol',
+          url: '/images/slider/smarensol_slider1.jpg'
+        },
+        { id: 1, url: '/images/slider/smarensol_slider2.jpg' },
+        {
+          id: 2,
+          url: '/images/slider/smarensol_slider3.jpg'
+        },
+        { id: 3, url: '/images/slider/smarensol_slider4.jpg' },
+        { id: 4, url: '/images/slider/smarensol_slider5.jpg' }
       ],
       imageSections: [
         {
