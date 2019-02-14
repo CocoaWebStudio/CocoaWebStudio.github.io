@@ -8,7 +8,8 @@
         br
         br
     .row
-      gallery(:gallerys="gallerys")
+      .col
+        gallery(:gallerys="gallerys")
 </template>
 <script>
 import gallery from '~/components/gallery/gallery.vue'
@@ -21,17 +22,21 @@ export default {
   data() {
     return {
       gallerys: [
-        { id: 0, title: 'tools', url: '/images/industrial/tools.jpg' },
+        {
+          id: 0,
+          title: 'tools',
+          url: '/images/products/industrial/smarensol_industrial_tools.jpg'
+        },
         {
           id: 1,
           title: 'security',
-          url: '/images/industrial/security-equipments.jpg'
+          url:
+            '/images/products/industrial/smarensol_industrial_security_equipments.jpg'
         },
-        { id: 2, title: 'motors', url: '/images/industrial/motors.jpg' },
         {
-          id: 3,
-          title: 'beacons',
-          url: '/images/transmission-lines/beacons.jpg'
+          id: 2,
+          title: 'motors',
+          url: '/images/products/industrial/smarensol_industrial_motors.jpg'
         }
       ]
     }
@@ -52,21 +57,16 @@ export default {
         { property: 'og:title', content: this.$t('beacons') },
         {
           property: 'og:image',
-          content: 'https://smarensol.com/images/industrial/tools.jpg'
+          content: 'https://smarensol.com/images/products/industrial/tools.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/industrial/security-equipments.jpg'
+            'https://smarensol.com/images/products/industrial/security-equipments.jpg'
         },
         {
           property: 'og:image',
-          content: 'https://smarensol.com/images/industrial/motors.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images//transmission-lines/beacons.jpg'
+          content: 'https://smarensol.com/images/products/industrial/motors.jpg'
         }
       ]
     }

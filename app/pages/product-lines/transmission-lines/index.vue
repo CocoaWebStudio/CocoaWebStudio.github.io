@@ -6,7 +6,8 @@
         h1.title {{ $t('transmission-lines')}}
         br
     .row
-      gallery(:gallerys="gallerys")
+      .col
+        gallery(:gallerys="gallerys")
 </template>
 <script>
 import gallery from '~/components/gallery/gallery.vue'
@@ -22,37 +23,44 @@ export default {
         {
           id: 0,
           title: 'insulators',
-          url: '/images/transmission-lines/insulators.jpg'
+          url:
+            '/images/products/transmission-lines/smarensol_transmission_lines_insulators.jpg'
         },
         {
           id: 1,
           title: 'beacons',
-          url: '/images/transmission-lines/beacons.jpg'
+          url:
+            '/images/products/transmission-lines/smarensol_transmission_lines_beacons.jpg'
         },
         {
           id: 2,
           title: 'cables',
-          url: '/images/transmission-lines/fiber-optic-cables.jpg'
+          url:
+            '/images/products/transmission-lines/smarensol_transmission_lines_fiber_optic_cables.jpg'
         },
         {
           id: 3,
           title: 'chains',
-          url: '/images/transmission-lines/assemblies-chains.jpg'
+          url:
+            '/images/products/transmission-lines/smarensol_transmission_lines_assemblies_chains.jpg'
         },
         {
           id: 4,
           title: 'hardware',
-          url: '/images/transmission-lines/accessories.jpg'
+          url:
+            '/images/products/transmission-lines/smarensol_transmission_lines_accessories.jpg'
         },
         {
           id: 5,
           title: 'lighting',
-          url: '/images/transmission-lines/lighting-rod.jpg'
+          url:
+            '/images/products/transmission-lines/smarensol_transmission_lines_lighting_rod.jpg'
         },
         {
           id: 6,
           title: 'disconnectors',
-          url: '/images/transmission-lines/disconnectors.jpg'
+          url:
+            '/images/products/transmission-lines/smarensol_transmission_lines_disconnectors.jpg'
         }
       ]
     }
@@ -76,35 +84,38 @@ export default {
         { property: 'og:title', content: this.$t('disconnectors') },
         {
           property: 'og:image',
-          content: 'https://smarensol.com/images/distribution/insulator.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/transmission-lines/beacons.jpg'
+          content:
+            'https://smarensol.com/images/distribution/smarensol_transmission_lines_insulator.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/transmission-lines/fiber-optic-cables.jpg'
+            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_beacons.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/transmission-lines/assemblies-chains.jpg'
+            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_fiber_optic_cables.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/transmission-lines/accessories.jpg'
-        },
-        {
-          property: 'og:image',
-          content: 'https://smarensol.com/images/substation/lighting-rod.jpg'
+            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_assemblies_chains.jpg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/substation/seccionador-de-subestacion.jpg'
+            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_accessories.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/substation/smarensol_transmission_lines_lighting_rod.jpg'
+        },
+        {
+          property: 'og:image',
+          content:
+            'https://smarensol.com/images/substation/smarensol_transmission_lines_disconnectors.jpg'
         }
       ]
     }
