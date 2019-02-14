@@ -51,8 +51,9 @@ export default () => {
       cables: 'Conductores y Cables de Fibra Óptica',
       chains: 'Ensambles para cadenas',
       hardware: 'Herrajes y Accesorios',
-      yourName: 'Your Name:',
-      email: 'Email:'
+      //
+      yourName: 'Nombre:',
+      email: 'Correo Electrónico:'
     })
   })
 }

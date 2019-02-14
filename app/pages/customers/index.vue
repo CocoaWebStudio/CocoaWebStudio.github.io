@@ -1,27 +1,66 @@
 <i18n src="./customers.json"></i18n>
 <template lang="pug">
-  .container-fluid.bg
-    .row
-      .col-md-6.offset-md-3
-        h1.title.bg-color {{ $t('customers')}}
-        br
-        br
-        br
-        br
-        br
-        br
-    .container
+  .customers
+    imageBg(:images="images")
+    .container-fluid
       .row
-        .col-md-6.offset-md-3.text-center
-          h1.bg-color {{ $t('information')}}
-            alert-triangle-icon.mx-3
+        .col-md-6.offset-md-3.text-center.bounce-enter-active
+          h1.title {{ $t('customers-text')}}
+          br
+          br
+      .row
+        .col-md-6.offset-md-3.text-left
+          h4
+            li {{ $t('electric-company')}}
+            br
+      .row
+        .col-md-6.offset-md-3.text-left
+          h4
+            li {{ $t('oil-company')}}
+            br
+      .row
+        .col-md-6.offset-md-3.text-left
+         h4
+            li {{ $t('installation-company')}}
+            br
+      .row
+        .col-md-6.offset-md-3.text-left
+          h4
+            li {{ $t('engineering-company')}}
+            br
+      .row
+        .col-md-6.offset-md-3.text-left
+          h4
+            li {{ $t('warehouses')}}
+            br
+      .row
+        .col-md-6.offset-md-3.text-left
+         h4
+            li {{ $t('manufacturers')}}
+            br
+      .row
+        .col-md-6.offset-md-3.text-left
+          h4
+            li {{ $t('industrial-customers')}}
+            br
 </template>
 <script>
-import { AlertTriangleIcon } from 'vue-feather-icons'
+import imageBg from '~/components/imageBg/imageBg.vue'
+
 export default {
   name: 'Customers',
   components: {
-    AlertTriangleIcon
+    imageBg
+  },
+  data() {
+    return {
+      images: [
+        {
+          id: 0,
+          url: '/images/customers/bg_customer.jpg'
+        }
+      ]
+    }
   },
   head() {
     return {

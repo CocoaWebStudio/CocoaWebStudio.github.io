@@ -51,8 +51,10 @@ export default () => {
       cables: 'Conductors and Fiber Optic Cables',
       chains: 'Assemblies for Chains',
       hardware: 'Hardware and Accessories',
-      yourName: 'Nombre:',
-      email: 'Correo Electrónico:'
+      //
+      yourName: 'Your Name:',
+      email: 'Email:'
+      //
     })
   })
 }
