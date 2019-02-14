@@ -1,10 +1,26 @@
 {
   "en": {
     "customers": "SMARENSOL CUSTOMERS",
-    "information": "IN CONSTRUCTION"
+    "customers-text": "OUR CORE CUSTOMERS ARE:",
+    "electric-company": "Utilities (Distribution, Trasmisions, Generators)",
+    "oil-company": "Oil Companies",
+    "installation-company": "Electrial Installations Companies",
+    "engineering-company": "Engineering Companies",
+    "warehouses": "Stores Distribution of Electrical Equipment",
+    "manufacturers": "Local Manufactures",
+    "industrial-customers": "End user (Industry)"
   },
   "es": {
     "customers": "CLIENTES SMARENSOL",
-    "information": "EN CONSTRUCCIÓN"
+    "customers-text": "NUESTROS CLIENTES PRINCIPALES SON:",
+    "electric-company": "Empresas Eléctricas (Distribuidoras, Trasmisión y Generadoras)",
+    "oil-company": "Empresas del Sector Petrolero",
+    "installation-company": "Empresas de Instalaciones Eléctricas",
+    "engineering-company": "Empresa de Ingenierías",
+    "warehouses": "Almacenes de Distribución de Material Eléctrico",
+    "manufacturers": "Fabricantes Electromecánicos",
+    "industrial-customers": "Clientes finales (Industriales)"
+
+
   }
 }
