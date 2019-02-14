@@ -58,7 +58,8 @@ export default {
           url: '/images/slider/smarensol_slider3.jpg'
         },
         { id: 3, url: '/images/slider/smarensol_slider4.jpg' },
-        { id: 4, url: '/images/slider/smarensol_slider5.jpg' }
+        { id: 4, url: '/images/slider/smarensol_slider5.jpg' },
+        { id: 5, url: '/images/slider/smarensol_slider6.jpg' }
       ],
       imageSections: [
         {
