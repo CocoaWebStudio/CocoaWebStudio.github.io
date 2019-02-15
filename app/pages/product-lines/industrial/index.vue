@@ -5,6 +5,8 @@
       .col.text-center
         h1.title {{ $t('industry')}}
         br
+        br
+        br
     .row
       .col
         gallery(:gallerys="gallerys")
