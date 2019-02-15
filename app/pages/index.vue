@@ -22,28 +22,6 @@ export default {
     imageSection,
     aboutUs
   },
-  head() {
-    return {
-      title: 'Smarensol',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.$t('welcome')
-        },
-        {
-          property: 'og:title',
-          name: 'about',
-          content: this.$t('description')
-        },
-        {
-          property: 'og:image',
-          content: 'http://euro-travel-example.com/thumbnail.jpg'
-        },
-        { property: 'og:url', content: 'https://smarensol.com' }
-      ]
-    }
-  },
   data() {
     return {
       sliders: [
@@ -54,8 +32,11 @@ export default {
         },
         { id: 1, url: '/images/slider/smarensol_slider2.jpg' },
         { id: 2, url: '/images/slider/smarensol_slider3.jpg' },
-        { id: 3, url: '/images/slider/smarensol_slider5.jpg' },
-        { id: 4, url: '/images/slider/smarensol_slider6.jpg' }
+        { id: 3, url: '/images/slider/smarensol_slider9.jpg' },
+        { id: 4, url: '/images/slider/smarensol_slider6.jpg' },
+        { id: 5, url: '/images/slider/smarensol_slider5.jpg' },
+        { id: 6, url: '/images/slider/smarensol_slider7.jpg' },
+        { id: 7, url: '/images/slider/smarensol_slider8.jpg' }
       ],
       imageSections: [
         {
@@ -76,6 +57,28 @@ export default {
           link: 'https://www.gaoncable.com',
           name: 'Gaon Cable Co. Ltd.'
         }
+      ]
+    }
+  },
+  head() {
+    return {
+      title: 'Smarensol',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('welcome')
+        },
+        {
+          property: 'og:title',
+          name: 'about',
+          content: this.$t('description')
+        },
+        {
+          property: 'og:image',
+          content: 'http://euro-travel-example.com/thumbnail.jpg'
+        },
+        { property: 'og:url', content: 'https://smarensol.com' }
       ]
     }
   }
