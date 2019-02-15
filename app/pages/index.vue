@@ -60,12 +60,18 @@ export default {
       imageSections: [
         {
           id: 0,
-          image: '/images/allies/delta-conectores.jpeg',
+          image: '/images/allies/delta-conectores.jpg',
           link: 'https://www.deltaconectores.com',
           name: 'Delta Conductores S.A. de C.V.'
         },
         {
           id: 1,
+          image: '/images/allies/ever_exceed.jpg',
+          link: 'http://www.everexceed.com',
+          name: 'Ever Exceed.'
+        },
+        {
+          id: 2,
           image: '/images/allies/gaon-cable.jpg',
           link: 'https://www.gaoncable.com',
           name: 'Gaon Cable Co. Ltd.'
