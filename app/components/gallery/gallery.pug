@@ -1,6 +1,6 @@
-b-card-group
-  .row
-    .col-6.col-lg-3(v-for="gallery in gallerys", :key="gallery.id")
+.row
+  .col-6.col-md-3(v-for="gallery in gallerys", :key="gallery.id")
+    b-card-group
       b-card.zoom(
         :title="$t(gallery.title)"
         :img-src="gallery.url"
