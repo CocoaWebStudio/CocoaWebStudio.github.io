@@ -1,5 +1,6 @@
 {
   "en": {
+    "customers": "SMARENSOL CUSTOMERS"
     "customers": "SMARENSOL CUSTOMERS",
     "customers-text": "OUR CORE CUSTOMERS ARE:",
     "electric-company": "Utilities (Distribution, Trasmisions, Generators)",
@@ -11,7 +12,7 @@
     "industrial-customers": "End user (Industry)"
   },
   "es": {
-    "customers": "CLIENTES SMARENSOL",
+    "customers": "CLIENTES SMARENSOL"
     "customers-text": "NUESTROS CLIENTES PRINCIPALES SON:",
     "electric-company": "Empresas Eléctricas (Distribuidoras, Trasmisión y Generadoras)",
     "oil-company": "Empresas del Sector Petrolero",
