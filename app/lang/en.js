@@ -7,8 +7,8 @@ export default () => {
         company: 'COMPANY',
         productLines: {
           title: 'PRODUCT LINES',
-          distribution: 'DISTRIBUTION',
-          substations: 'SUBSTATIONS',
+          distribution: 'DISTRIBUTION NETWORKS',
+          substations: 'ELECTRICAL SUBSTATIONS',
           transmition: 'TRANSMISSION LINES',
           industrial: 'INDUSTRY'
         },
