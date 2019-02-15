@@ -7,8 +7,8 @@ export default () => {
         company: 'LA EMPRESA',
         productLines: {
           title: 'LÍNEAS DE PRODUCTOS',
-          distribution: 'DISTRIBUCIÓN',
-          substations: 'SUBESTACIONES',
+          distribution: 'REDES DE DISTRIBUCIÓN',
+          substations: 'SUBESTACIONES ELÉCTRICAS',
           transmition: 'LÍNEAS DE TRANSMISIÓN',
           industrial: 'INDUSTRIAL'
         },
