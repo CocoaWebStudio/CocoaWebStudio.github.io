@@ -22,6 +22,38 @@ export default {
     imageSection,
     aboutUs
   },
+  data() {
+    return {
+      sliders: [
+        {
+          id: 0,
+          title: 'smarensol',
+          url: '/images/slider/smarensol_slider1.jpg'
+        },
+        { id: 1, url: '/images/slider/smarensol_slider2.jpg' },
+        { id: 2, url: '/images/slider/smarensol_slider3.jpg' },
+        { id: 3, url: '/images/slider/smarensol_slider9.jpg' },
+        { id: 4, url: '/images/slider/smarensol_slider6.jpg' },
+        { id: 5, url: '/images/slider/smarensol_slider5.jpg' },
+        { id: 6, url: '/images/slider/smarensol_slider7.jpg' },
+        { id: 7, url: '/images/slider/smarensol_slider8.jpg' }
+      ],
+      imageSections: [
+        {
+          id: 0,
+          image: '/images/allies/delta-conectores.jpeg',
+          link: 'https://www.deltaconectores.com',
+          name: 'Delta Conductores S.A. de C.V.'
+        },
+        {
+          id: 1,
+          image: '/images/allies/gaon-cable.jpg',
+          link: 'https://www.gaoncable.com',
+          name: 'Gaon Cable Co. Ltd.'
+        }
+      ]
+    }
+  },
   head() {
     return {
       title: 'Smarensol',
@@ -41,35 +73,6 @@ export default {
           content: 'http://euro-travel-example.com/thumbnail.jpg'
         },
         { property: 'og:url', content: 'https://smarensol.com' }
-      ]
-    }
-  },
-  data() {
-    return {
-      sliders: [
-        {
-          id: 0,
-          title: 'smarensol',
-          url: '/images/slider/smarensol_slider1.jpg'
-        },
-        { id: 1, url: '/images/slider/smarensol_slider2.jpg' },
-        { id: 2, url: '/images/slider/smarensol_slider3.jpg' },
-        { id: 3, url: '/images/slider/smarensol_slider5.jpg' },
-        { id: 4, url: '/images/slider/smarensol_slider6.jpg' }
-      ],
-      imageSections: [
-        {
-          id: 0,
-          image: '/images/allies/delta-conectores.jpeg',
-          link: 'https://www.deltaconectores.com',
-          name: 'Delta Conductores S.A. de C.V.'
-        },
-        {
-          id: 1,
-          image: '/images/allies/gaon-cable.jpg',
-          link: 'https://www.gaoncable.com',
-          name: 'Gaon Cable Co. Ltd.'
-        }
       ]
     }
   }
