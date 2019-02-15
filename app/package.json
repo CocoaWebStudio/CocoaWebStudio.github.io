@@ -20,6 +20,7 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "cross-env": "^5.2.0",
     "koa": "^2.6.2",
+    "nodemailer": "^5.1.1",
     "nuxt": "^2.4.3",
     "nuxt-i18n": "^5.8.1",
     "vue-feather-icons": "^4.10.0",
