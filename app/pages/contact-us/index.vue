@@ -35,8 +35,8 @@
     location.d-block.d-md-none
 </template>
 <script>
-import contactForm from '~/components/contactForm/contactForm.vue'
-import location from '~/components/location/location.vue'
+import contactForm from '~/components/contactForm/contactForm'
+import location from '~/components/location/location'
 import { PhoneIcon, MailIcon, MapPinIcon } from 'vue-feather-icons'
 
 export default {
@@ -55,7 +55,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('welcome')
+          content: this.$t('description')
         },
         {
           property: 'og:title',

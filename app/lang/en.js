@@ -4,7 +4,7 @@ export default () => {
       welcome:
         'WE ARE SPECIALISTS IN EQUIPMENT AND SUPPLIES FOR HALF AND HIGH VOLTAGE',
       menu: {
-        company: 'COMPANY',
+        company: 'ABOUT US',
         productLines: {
           title: 'PRODUCT LINES',
           distribution: 'DISTRIBUTION NETWORKS',

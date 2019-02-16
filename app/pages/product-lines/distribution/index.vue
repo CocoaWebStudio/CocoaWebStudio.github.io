@@ -10,7 +10,7 @@
         gallery(:gallerys="gallerys")
 </template>
 <script>
-import gallery from '~/components/gallery/gallery.vue'
+import gallery from '~/components/gallery/gallery'
 
 export default {
   name: 'Distribution',
@@ -95,19 +95,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('welcome')
+          content: this.$t('distribution')
         },
         { property: 'og:url', content: 'https://smarensol.com' },
         { property: 'og:title', content: this.$t('insulators') },
-        { property: 'og:title', content: this.$t('capacitorBa') },
-        { property: 'og:title', content: this.$t('distributionTe') },
-        { property: 'og:title', content: this.$t('equipment') },
-        { property: 'og:title', content: this.$t('fuses') },
-        { property: 'og:title', content: this.$t('switches') },
-        { property: 'og:title', content: this.$t('lighting') },
-        { property: 'og:title', content: this.$t('regulators') },
-        { property: 'og:title', content: this.$t('disconnectors') },
-        { property: 'og:title', content: this.$t('transformersMe') },
         {
           property: 'og:image',
           content:

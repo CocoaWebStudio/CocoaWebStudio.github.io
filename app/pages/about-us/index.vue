@@ -35,17 +35,17 @@ export default {
   name: 'AboutUs',
   head() {
     return {
-      title: 'Smarensol',
+      title: 'Smarensol - About Us',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('welcome')
+          content: this.$t('description')
         },
         {
           property: 'og:title',
-          name: 'about',
-          content: this.$t('description')
+          name: 'title',
+          content: 'About Us'
         },
         { property: 'og:url', content: 'https://smarensol.com' }
       ]
