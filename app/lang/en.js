@@ -16,6 +16,11 @@ export default () => {
         contactUs: 'CONTACT US',
         brochure: 'DOWNLOAD BROCHURE'
       },
+      errors: {
+        404: {
+          title: 'ERROR 404 - Page not Found'
+        }
+      },
       rights: ' All rights reserverd ',
       chacun: 'Web Design by ',
       // industrial
