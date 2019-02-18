@@ -48,3 +48,5 @@
       div(v-show="serverError") {{serverError}}
   div.successful-server-response-wrapper(v-cloak)
     div.successful-server-response(v-show="sucessfulServerResponse") {{sucessfulServerResponse}}
+  b-button(@click="getTest") TEST
+  p {{ test }}

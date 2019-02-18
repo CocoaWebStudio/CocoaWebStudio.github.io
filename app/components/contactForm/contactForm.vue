@@ -2,7 +2,6 @@
 <template src="./contactForm.pug" />
 
 <script>
-// import axios from 'axios'
 import VueRecaptcha from 'vue-recaptcha'
 
 export default {
@@ -31,17 +30,33 @@ export default {
       },
       status: '',
       sucessfulServerResponse: '',
-      serverError: ''
+      serverError: '',
+      test: ''
     }
   },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault()
-      alert(JSON.stringify(this.form))
-      this.form.email = ''
-      this.form.name = ''
-      this.form.telephone = ''
-      this.form.comentary = ''
+    onSubmit() {
+      // eslint-disable-next-line
+      console.log('here')
+      this.$axios
+        .post('/pepito', this.form, {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(res => {
+          // eslint-disable-next-line
+          console.log(res, "ok aca esta")
+          this.form.email = ''
+          this.form.name = ''
+          this.form.telephone = ''
+          this.form.comentary = ''
+        })
+        .catch(e => {
+          // eslint-disable-next-line
+          console.log("buuu")
+          this.serverError = e
+        })
     },
     onReset(evt) {
       evt.preventDefault()
@@ -62,6 +77,8 @@ export default {
       self.status = 'submitting'
 
       self.$refs.recaptcha.reset()
+
+      this.onSubmit(recaptchaToken)
       /*
       axios.post("https://vue-recaptcha-demo.herokuapp.com/signup", {
         email: self.email,
@@ -90,6 +107,18 @@ export default {
     },
     onCaptchaExpired: function() {
       this.$refs.recaptcha.reset()
+    },
+    getTest() {
+      this.$axios
+        .$get('/en/api')
+        .then(res => {
+          this.test = res.body
+        })
+        .catch(e => {
+          // eslint-disable-next-line
+          console.log("no funciona :(")
+          this.serverError = e
+        })
     }
   }
 }

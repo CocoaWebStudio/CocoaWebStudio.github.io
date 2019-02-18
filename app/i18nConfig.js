@@ -27,11 +27,11 @@ module.exports = {
 		// Cookie name
 		cookieKey: 'i18n_redirected',
 		// Set to always redirect to value stored in the cookie, not just once
-		alwaysRedirect: true,
+		alwaysRedirect: false,
 		// If no locale for the browsers locale is a match, use this one as a fallback
-		fallbackLocale: 'es'
+		fallbackLocale: null
 	},
-	vueI18nLoader: true,
+	vueI18nLoader: false,
 	parsePages: false,
 	pages: {
 		'contact-us/index': {
