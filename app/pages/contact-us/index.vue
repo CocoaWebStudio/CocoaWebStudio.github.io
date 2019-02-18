@@ -35,8 +35,8 @@
     location.d-block.d-md-none
 </template>
 <script>
-import contactForm from '~/components/contactForm/contactForm'
-import location from '~/components/location/location'
+import contactForm from '@/components/contactForm/contactForm.vue'
+import location from '@/components/location/location.vue'
 import { PhoneIcon, MailIcon, MapPinIcon } from 'vue-feather-icons'
 
 export default {
