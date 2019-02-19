@@ -24,43 +24,43 @@ export default {
           id: 0,
           title: 'insulators',
           url:
-            '/images/products/transmission-lines/smarensol_transmission_lines_insulators.jpg'
+            '/images/products/transmission-lines/smarensol_transmission_lines_insulators.jpeg'
         },
         {
           id: 1,
           title: 'beacons',
           url:
-            '/images/products/transmission-lines/smarensol_transmission_lines_beacons.jpg'
+            '/images/products/transmission-lines/smarensol_transmission_lines_beacons.jpeg'
         },
         {
           id: 2,
           title: 'cables',
           url:
-            '/images/products/transmission-lines/smarensol_transmission_lines_fiber_optic_cables.jpg'
+            '/images/products/transmission-lines/smarensol_transmission_lines_fiber_optic_cables.jpeg'
         },
         {
           id: 3,
           title: 'chains',
           url:
-            '/images/products/transmission-lines/smarensol_transmission_lines_assemblies_chains.jpg'
+            '/images/products/transmission-lines/smarensol_transmission_lines_assemblies_chains.jpeg'
         },
         {
           id: 4,
           title: 'hardware',
           url:
-            '/images/products/transmission-lines/smarensol_transmission_lines_accessories.jpg'
+            '/images/products/transmission-lines/smarensol_transmission_lines_accessories.jpeg'
         },
         {
           id: 5,
           title: 'lighting',
           url:
-            '/images/products/transmission-lines/smarensol_transmission_lines_lighting_rod.jpg'
+            '/images/products/transmission-lines/smarensol_transmission_lines_lighting_rod.jpeg'
         },
         {
           id: 6,
           title: 'disconnectors',
           url:
-            '/images/products/transmission-lines/smarensol_transmission_lines_disconnectors.jpg'
+            '/images/products/transmission-lines/smarensol_transmission_lines_disconnectors.jpeg'
         }
       ]
     }
@@ -85,37 +85,37 @@ export default {
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/distribution/smarensol_transmission_lines_insulator.jpg'
+            'https://smarensol.com/images/distribution/smarensol_transmission_lines_insulator.jpeg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_beacons.jpg'
+            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_beacons.jpeg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_fiber_optic_cables.jpg'
+            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_fiber_optic_cables.jpeg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_assemblies_chains.jpg'
+            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_assemblies_chains.jpeg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_accessories.jpg'
+            'https://smarensol.com/images/products/transmission-lines/smarensol_transmission_lines_accessories.jpeg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/substation/smarensol_transmission_lines_lighting_rod.jpg'
+            'https://smarensol.com/images/substation/smarensol_transmission_lines_lighting_rod.jpeg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/substation/smarensol_transmission_lines_disconnectors.jpg'
+            'https://smarensol.com/images/substation/smarensol_transmission_lines_disconnectors.jpeg'
         }
       ]
     }
