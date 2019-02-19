@@ -56,6 +56,7 @@ export default () => {
       cables: 'Conductores y Cables de Fibra Óptica',
       chains: 'Ensambles para cadenas',
       hardware: 'Herrajes y Accesorios',
+      arresters: 'Pararrayos',
       //
       yourName: 'Nombre:',
       email: 'Correo Electrónico:'
