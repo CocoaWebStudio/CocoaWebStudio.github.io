@@ -14,7 +14,7 @@
             a(href="tel:+59342071092")
               phone-icon
               strong.mx-3 {{ $t('data-telephone1') }} &nbsp/
-            a(href="tel:+5939994138795")
+            a(href="tel:+593994138795")
               strong.mx-1 {{ $t('data-telephone2') }}
             br
             br

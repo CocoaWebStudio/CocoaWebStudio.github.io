@@ -1,5 +1,5 @@
 const pkg = require('./package')
-const i18n = require('./i18nConfig')
+const i18n = require('./i18n.config')
 module.exports = {
 	mode: 'universal',
 
