@@ -53,19 +53,19 @@ export default {
       imageSections: [
         {
           id: 0,
-          image: '/images/allies/allies_delta_conectores.jpeg',
+          image: '/images/allies/smarensol_allies_delta_conectores.jpeg',
           link: 'https://www.deltaconectores.com',
           name: 'Delta Conductores S.A. de C.V.'
         },
         {
           id: 1,
-          image: '/images/allies/allies_ever_exceed.jpeg',
+          image: '/images/allies/smarensol_allies_ever_exceed.jpeg',
           link: 'http://www.everexceed.com',
           name: 'Ever Exceed.'
         },
         {
           id: 2,
-          image: '/images/allies/allies_gaon_cable.jpeg',
+          image: '/images/allies/smarensol_allies_gaon_cable.jpeg',
           link: 'https://www.gaoncable.com',
           name: 'Gaon Cable Co. Ltd.'
         }
