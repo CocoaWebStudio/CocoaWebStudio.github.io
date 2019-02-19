@@ -52,9 +52,9 @@ export default {
         },
         {
           id: 5,
-          title: 'lighting',
+          title: 'arresters',
           url:
-            '/images/products/transmission-lines/smarensol_transmission_lines_lighting_rod.jpg'
+            '/images/products/transmission-lines/smarensol_transmission_lines_arrester.jpg'
         },
         {
           id: 6,

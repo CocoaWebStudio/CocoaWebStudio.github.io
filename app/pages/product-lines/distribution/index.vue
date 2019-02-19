@@ -10,7 +10,7 @@
         gallery(:gallerys="gallerys")
 </template>
 <script>
-import gallery from '~/components/gallery/gallery'
+import gallery from '~/components/gallery/gallery.vue'
 
 export default {
   name: 'Distribution',
@@ -98,56 +98,11 @@ export default {
           content: this.$t('distribution')
         },
         { property: 'og:url', content: 'https://smarensol.com' },
-        { property: 'og:title', content: this.$t('insulators') },
+        { property: 'og:title', content: this.$t('distribution') },
         {
           property: 'og:image',
           content:
             'https://smarensol.com/images/products/distribution/insulators.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/capacitor-banks.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/distribution-terminals.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/substation/underground-networks.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/fuses.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/switches.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/substation/lighting-rod.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/regulators.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/substation/seccionador-de-subestacion.jpg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/substation/measurement-transformers.jpg'
         }
       ]
     }
