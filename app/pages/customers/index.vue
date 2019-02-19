@@ -57,7 +57,7 @@ export default {
       images: [
         {
           id: 0,
-          url: '/images/customers/bg_customer.jpg'
+          url: '/images/customers/smarensol_background_customers.jpeg'
         }
       ]
     }
