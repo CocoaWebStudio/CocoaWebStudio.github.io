@@ -25,18 +25,18 @@ export default {
         {
           id: 0,
           title: 'tools',
-          url: '/images/products/industrial/smarensol_industrial_tools.jpg'
+          url: '/images/products/industrial/smarensol_industrial_tools.jpeg'
         },
         {
           id: 1,
           title: 'security',
           url:
-            '/images/products/industrial/smarensol_industrial_security_equipments.jpg'
+            '/images/products/industrial/smarensol_industrial_security_equipments.jpeg'
         },
         {
           id: 2,
           title: 'motors',
-          url: '/images/products/industrial/smarensol_industrial_motors.jpg'
+          url: '/images/products/industrial/smarensol_industrial_motors.jpeg'
         }
       ]
     }
@@ -57,16 +57,17 @@ export default {
         { property: 'og:title', content: this.$t('beacons') },
         {
           property: 'og:image',
-          content: 'https://smarensol.com/images/products/industrial/tools.jpg'
+          content: 'https://smarensol.com/images/products/industrial/tools.jpeg'
         },
         {
           property: 'og:image',
           content:
-            'https://smarensol.com/images/products/industrial/security-equipments.jpg'
+            'https://smarensol.com/images/products/industrial/security-equipments.jpeg'
         },
         {
           property: 'og:image',
-          content: 'https://smarensol.com/images/products/industrial/motors.jpg'
+          content:
+            'https://smarensol.com/images/products/industrial/motors.jpeg'
         }
       ]
     }
