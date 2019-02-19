@@ -28,44 +28,44 @@ export default {
         {
           id: 0,
           title: 'smarensol',
-          url: '/images/slider/smarensol_slider_logo.png'
+          url: '/images/slider/smarensol_slider_logo.jpeg'
         },
-        { id: 1, url: '/images/slider/smarensol_slider_electric_tower.png' },
+        { id: 1, url: '/images/slider/smarensol_slider_electric_tower.jpeg' },
         {
           id: 2,
-          url: '/images/slider/smarensol_slider_security_equipments.png'
+          url: '/images/slider/smarensol_slider_security_equipments.jpeg'
         },
-        { id: 3, url: '/images/slider/smarensol_slider_insulators.png' },
+        { id: 3, url: '/images/slider/smarensol_slider_insulators.jpeg' },
         {
           id: 4,
-          url: '/images/slider/smarensol_slider_electrical_substations.png'
+          url: '/images/slider/smarensol_slider_electrical_substations.jpeg'
         },
-        { id: 5, url: '/images/slider/smarensol_slider_substations.png' },
+        { id: 5, url: '/images/slider/smarensol_slider_substations.jpeg' },
         {
           id: 6,
-          url: '/images/slider/smarensol_slider_electricity_towers.png'
+          url: '/images/slider/smarensol_slider_electricity_towers.jpeg'
         },
         {
           id: 7,
-          url: '/images/slider/smarensol_slider_electricity substations.png'
+          url: '/images/slider/smarensol_slider_electricity substations.jpeg'
         }
       ],
       imageSections: [
         {
           id: 0,
-          image: '/images/allies/delta-conectores.jpg',
+          image: '/images/allies/allies_delta_conectores.jpeg',
           link: 'https://www.deltaconectores.com',
           name: 'Delta Conductores S.A. de C.V.'
         },
         {
           id: 1,
-          image: '/images/allies/ever_exceed.jpg',
+          image: '/images/allies/allies_ever_exceed.jpeg',
           link: 'http://www.everexceed.com',
           name: 'Ever Exceed.'
         },
         {
           id: 2,
-          image: '/images/allies/gaon-cable.jpg',
+          image: '/images/allies/allies_gaon_cable.jpeg',
           link: 'https://www.gaoncable.com',
           name: 'Gaon Cable Co. Ltd.'
         }
