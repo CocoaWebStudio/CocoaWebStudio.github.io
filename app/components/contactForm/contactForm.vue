@@ -25,37 +25,28 @@ export default {
       form: {
         email: '',
         name: '',
-        telephone: '',
-        comentary: ''
+        phone: '',
+        msg: '',
+        recaptcha: ''
       },
       status: '',
-      sucessfulServerResponse: '',
-      serverError: '',
       test: ''
     }
   },
   methods: {
     onSubmit() {
-      // eslint-disable-next-line
-      console.log('here')
       this.$axios
-        .post('/pepito', this.form, {
+        .post('/contact-us', this.form, {
           headers: {
             'Content-Type': 'application/json'
           }
         })
         .then(res => {
-          // eslint-disable-next-line
-          console.log(res, "ok aca esta")
-          this.form.email = ''
-          this.form.name = ''
-          this.form.telephone = ''
-          this.form.comentary = ''
+          this.status = 'success'
+          this.onReset()
         })
         .catch(e => {
-          // eslint-disable-next-line
-          console.log("buuu")
-          this.serverError = e
+          this.status = 'error'
         })
     },
     onReset(evt) {
@@ -63,62 +54,22 @@ export default {
       /* Reset our form values */
       this.form.email = ''
       this.form.name = ''
-      this.form.telephone = ''
-      this.form.comentary = ''
+      this.form.phone = ''
+      this.form.msg = ''
+      this.form.recaptcha = ''
     },
     submit() {
       // this.status = "submitting";
       this.$refs.recaptcha.execute()
     },
     onCaptchaVerified(recaptchaToken) {
-      // eslint-disable-next-line
-      console.log("it's alive!!")
-      const self = this
-      self.status = 'submitting'
-
-      self.$refs.recaptcha.reset()
-
-      this.onSubmit(recaptchaToken)
-      /*
-      axios.post("https://vue-recaptcha-demo.herokuapp.com/signup", {
-        email: self.email,
-        name: self.name,
-        recaptchaToken: recaptchaToken
-      }).then((response) => {
-        self.sucessfulServerResponse = response.data.message;
-      }).catch((err) => {
-        self.serverError = getErrorMessage(err);
-        //helper to get a displayable message to the user
-        function getErrorMessage(err) {
-          let responseBody;
-          responseBody = err.response;
-          if (!responseBody) {
-            responseBody = err;
-          }
-          else {
-            responseBody = err.response.data || responseBody;
-          }
-          return responseBody.message || JSON.stringify(responseBody);
-        }
-      }).then(() => {
-        self.status = "";
-      });
-      */
+      this.status = 'submitting'
+      this.$refs.recaptcha.reset()
+      this.form.recaptcha = recaptchaToken
+      this.onSubmit()
     },
     onCaptchaExpired: function() {
       this.$refs.recaptcha.reset()
-    },
-    getTest() {
-      this.$axios
-        .$get('/en/api')
-        .then(res => {
-          this.test = res.body
-        })
-        .catch(e => {
-          // eslint-disable-next-line
-          console.log("no funciona :(")
-          this.serverError = e
-        })
     }
   }
 }

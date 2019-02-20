@@ -31,7 +31,7 @@ module.exports = {
 		// If no locale for the browsers locale is a match, use this one as a fallback
 		fallbackLocale: null
 	},
-	vueI18nLoader: false,
+	vueI18nLoader: true,
 	parsePages: false,
 	pages: {
 		'contact-us/index': {
