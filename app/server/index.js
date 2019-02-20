@@ -1,29 +1,24 @@
-const Koa = require('koa')
-const Router = require('koa-router')
-const koaBody = require('koa-body')
-const consola = require('consola')
-const { Nuxt, Builder } = require('nuxt')
+const Koa = require('koa'),
+  consola = require('consola'),
+  { Nuxt, Builder } = require('nuxt'),
+  { router } = require('./router')
 
 const app = new Koa()
-const router = new Router()
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
 config.dev = !(app.env === 'production')
 
-
-async function sendEmail (ctx) {
-  console.log(ctx.request.body);
-  return ctx.body = JSON.stringify(ctx.request.body)
-}
-
+// add custom server routes
+app.use(router.routes())
+app.use(router.allowedMethods())
 
 async function start() {
   // Instantiate nuxt.js
   const nuxt = new Nuxt(config)
   const {
     host = process.env.HOST || '127.0.0.1',
-    port = process.env.PORT || 8080
+    port = process.env.PORT || 8081
   } = nuxt.options.server
 
   // Build in development
@@ -38,37 +33,6 @@ async function start() {
     ctx.req.ctx = ctx // This might be useful later on, e.g. in nuxtServerInit or with nuxt-stash
     nuxt.render(ctx.req, ctx.res)
   })
-  
-  router.post('/pepito', koaBody(), sendEmail)
-  router.post('/en', koaBody(),sendEmail)
-  router.post('/es', koaBody(),sendEmail)
-  router.get('/en/api', async ctx => {
-    "use strict";
-    var test = {
-      data: 'test',
-      jp: 'jojo'
-    }
-    return ctx.body = JSON.stringify(test)
-  })
-  router.get('/es/api', async ctx => {
-    "use strict";
-    var test = {
-      data: 'test',
-      jp: 'jojo'
-    }
-    return ctx.body = JSON.stringify(test)
-  })
-  router.get('/api', async ctx => {
-    "use strict";
-    var test = {
-      data: 'test',
-      jp: 'jojo'
-    }
-    return ctx.body = JSON.stringify(test)
-  })
-  
-  app.use(router.routes())
-  app.use(router.allowedMethods())
 
   app.listen(port, host)
   consola.ready({

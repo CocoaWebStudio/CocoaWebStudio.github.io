@@ -1,5 +1,7 @@
-const pkg = require('./package')
-const i18n = require('./i18n.config')
+const pkg = require('./package'),
+  i18n = require('./i18n.config')
+require('dotenv').config()
+
 module.exports = {
 	mode: 'universal',
 
@@ -58,6 +60,7 @@ module.exports = {
 		['bootstrap-vue/nuxt', {
 			css: false
 		}],
+    '@nuxtjs/dotenv',
 		'@nuxtjs/pwa',
 		['nuxt-i18n', i18n]
 	],
@@ -65,7 +68,7 @@ module.exports = {
 	 ** Axios module configuration
 	 */
 	axios: {
-	  baseURL: 'http://localhost:8080'
+	  baseURL: 'http://' + process.env.HOST + ':' + process.env.PORT
 		// See https://github.com/nuxt-community/axios-module#options
 	},
 
