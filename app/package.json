@@ -26,6 +26,7 @@
     "nodemailer": "^5.1.1",
     "nuxt": "^2.4.3",
     "nuxt-i18n": "^5.8.1",
+    "vee-validate": "^2.1.7",
     "vue-feather-icons": "^4.10.0",
     "vue-recaptcha": "^1.1.1",
     "vue-social-sharing": "^2.3.3"
