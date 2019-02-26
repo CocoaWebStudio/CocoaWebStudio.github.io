@@ -2,6 +2,7 @@
 <template src="./contactForm.pug" />
 
 <script>
+/* eslint-disable no-console */
 import VueRecaptcha from 'vue-recaptcha'
 
 export default {
@@ -33,8 +34,11 @@ export default {
       test: ''
     }
   },
+  $_veeValidate: {
+    validator: 'new' // give me my own validator scope.
+  },
   methods: {
-    onSubmit() {
+    onSend() {
       this.$axios
         .post('/contact-us', this.form, {
           headers: {
@@ -58,15 +62,23 @@ export default {
       this.form.msg = ''
       this.form.recaptcha = ''
     },
-    submit() {
-      // this.status = "submitting";
+    onSubmit() {
       this.$refs.recaptcha.execute()
     },
     onCaptchaVerified(recaptchaToken) {
       this.status = 'submitting'
       this.$refs.recaptcha.reset()
       this.form.recaptcha = recaptchaToken
-      this.onSubmit()
+      this.onSend()
+    },
+    validateState(ref) {
+      if (
+        this.veeFields[ref] &&
+        (this.veeFields[ref].dirty || this.veeFields[ref].validated)
+      ) {
+        return !this.errors.has(ref)
+      }
+      return null
     },
     onCaptchaExpired: function() {
       this.$refs.recaptcha.reset()

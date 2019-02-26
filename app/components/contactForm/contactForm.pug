@@ -1,24 +1,41 @@
 .container
-  b-form(@reset="onReset" @submit.prevent="submit")
-    b-form-group(label-for="emailInput") {{ $t('email') }}
-      b-form-input(id="emailInput"
-        type="email"
-        v-model="form.email"
+  b-form(@reset="onReset", @submit.prevent="onSubmit")
+    b-form-group(label-for="emailInput") {{ $t('email') }}:
+      b-form-input(
+        id="contactEmailInput",
+        :name="$t('email')"
+        type="email",
+        v-model="form.email",
+        v-validate="'required|email'",
+        :state="validateState($t('email'))",
+        aria-describedby="contactEmailInputFeedback",
+        placeholder="your@email.com",
+        :class="{'input': true, 'is-danger': errors.has($t('email')) }"
         required
-        )
-    b-form-group(label-for="nameInput") {{ $t('name') }}
-      b-form-input(id="nameInput"
-        type="text"
-        v-model="form.name"
+      )
+      b-form-invalid-feedback#contactEmailInputFeedback
+        small {{ errors.first($t('email')) }}
+    b-form-group(label-for="nameInput") {{ $t('name') }}:
+      b-form-input(
+        id="contactNameInput",
+        :name="$t('name')",
+        type="text",
+        v-model="form.name",
+        v-validate="'required|min:3|max:25'",
+        :state="validateState('name')",
+        aria-describedby="contactNameInputFeedback",
         required
-        )
-    b-form-group(label-for="phoneInput") {{ $t('phone') }}
-      b-form-input(id="phoneInput"
+      )
+      b-form-invalid-feedback#contactNameInputFeedback
+        small {{ errors.first('name') }}
+    b-form-group(label-for="phoneInput") {{ $t('phone') }}:
+      b-form-input(
+        id="contactPhoneInput",
+
         type="tel"
         v-model="form.phone"
-        required
-        )
-    b-form-group(label-for="msgInput") {{ $t('msg') }}
+      )
+    b-form-group(label-for="msgInput") {{ $t('msg') }}:
       b-form-textarea(id="msgInput"
         type="text",
         v-model="form.msg",
@@ -33,7 +50,7 @@
         ref="recaptcha",
         size="invisible"
       )
-      b-button.mx-2(:disabled="status==='submitting'",
+      b-button.mx-2(:disabled="errors.any()",
         type="submit", variant="primary"
         ) {{ $t('submit') }}
       b-button(type="reset", variant="success") {{ $t('reset') }}
