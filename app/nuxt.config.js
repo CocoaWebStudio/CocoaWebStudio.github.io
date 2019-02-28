@@ -21,6 +21,14 @@ module.exports = {
 				content: 'index, follow'
 			}
 		],
+    script: [
+      {
+        src:
+          'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
+        async: true,
+        defer: true
+      }
+    ],
 		noscript: [{
 			innerHTML: 'This website requires JavaScript.'
 		}],
