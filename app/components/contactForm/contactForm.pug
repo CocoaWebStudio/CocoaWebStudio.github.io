@@ -1,8 +1,9 @@
 .container
+  b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }}
+  b-alert(variant="success", v-model="success", dismissible) {{ $t('sucessfulServerResponse') }}
   b-form(@reset="onReset", @submit.prevent="onSubmit")
-    b-form-group(label-for="emailInput") {{ $t('email') }}:
-      b-form-input(
-        id="contactEmailInput",
+    b-form-group(label-for="contactEmailInput") {{ $t('email') }}:
+      b-form-input#contactEmailInput(
         :name="$t('email')"
         type="email",
         v-model="form.email",
@@ -10,51 +11,59 @@
         :state="validateState($t('email'))",
         aria-describedby="contactEmailInputFeedback",
         placeholder="your@email.com",
-        :class="{'input': true, 'is-danger': errors.has($t('email')) }"
         required
       )
       b-form-invalid-feedback#contactEmailInputFeedback
         small {{ errors.first($t('email')) }}
-    b-form-group(label-for="nameInput") {{ $t('name') }}:
-      b-form-input(
-        id="contactNameInput",
+    b-form-group(label-for="contactNameInput") {{ $t('name') }}:
+      b-form-input#contactNameInput(
         :name="$t('name')",
         type="text",
         v-model="form.name",
         v-validate="'required|min:3|max:25'",
-        :state="validateState('name')",
+        :state="validateState($t('name'))",
         aria-describedby="contactNameInputFeedback",
+        placeholder='Juan Aguilar',
         required
       )
       b-form-invalid-feedback#contactNameInputFeedback
-        small {{ errors.first('name') }}
-    b-form-group(label-for="phoneInput") {{ $t('phone') }}:
-      b-form-input(
-        id="contactPhoneInput",
-
+        small {{ errors.first($t('name')) }}
+    b-form-group(label-for="contactPhoneInput") {{ $t('phone') }}:
+      b-form-input#contactPhoneInput(
+        :name="$t('phone')"
         type="tel"
         v-model="form.phone"
+        v-validate="'min:9|max:20'",
+        :state="validateState($t('phone'))",
+        aria-describedby="contactPhoneInputFeedback",
+        placeholder='042345678',
+        onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 43"
       )
-    b-form-group(label-for="msgInput") {{ $t('msg') }}:
-      b-form-textarea(id="msgInput"
+      b-form-invalid-feedback#contactPhoneInputFeedback
+        small {{ errors.first($t('phone')) }}
+    b-form-group(label-for="contactMsgInput") {{ $t('msg') }}:
+      b-form-textarea#contactMsgInput(
+        :name="$t('msg')",
         type="text",
         v-model="form.msg",
-        required,
         :rows="3",
-        :max-rows="6"
-        )
+        :max-rows="6",
+        v-validate="'required|min:20|max:1000'",
+        :state="validateState($t('msg'))",
+        aria-describedby="contactMsgInputFeedback",
+        required
+      )
+      b-form-invalid-feedback#contactMsgInputFeedback
+        small {{ errors.first($t('msg')) }}
     b-form-group
       vue-recaptcha(
         sitekey="6LexHJIUAAAAAN904SFdAp3WMek6WX9jITYuoYC_",
         @verify="onCaptchaVerified",
-        ref="recaptcha",
+        @expired="onCaptchaExpired"
+        ref="contactRecaptcha",
         size="invisible"
       )
       b-button.mx-2(:disabled="errors.any()",
         type="submit", variant="primary"
         ) {{ $t('submit') }}
       b-button(type="reset", variant="success") {{ $t('reset') }}
-    div(v-cloak class="")
-      div(v-show="status==='error'") {{ $t('serverError') }}
-  div.successful-server-response-wrapper(v-cloak)
-    div.successful-server-response(v-show="status==='success'") {{ $t('sucessfulServerResponse') }}
