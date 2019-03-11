@@ -2,10 +2,10 @@
 <template src="./contactForm.pug" />
 
 <script>
-/* eslint-disable no-console */
 import VueRecaptcha from 'vue-recaptcha'
 
 export default {
+  name: 'ContactForm',
   components: {
     VueRecaptcha
   },
@@ -21,6 +21,7 @@ export default {
         msg: '',
         recaptcha: ''
       },
+      recaptcha_key: process.env.RECAPTCHA_PUBLIC,
       success: false,
       error: false
     }
@@ -30,20 +31,18 @@ export default {
   },
   methods: {
     send() {
-      this.$axios
-        .post('/contact-us', this.form, {
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })
+      this.$axios({
+        method: 'post',
+        url: '/contact-us',
+        timeout: 8000,
+        data: this.form
+      })
         .then(res => {
-          console.log('success', res)
           this.success = true
           this.error = false
           this.onReset()
         })
         .catch(e => {
-          console.log('error', e.response)
           this.error = true
           this.success = false
         })

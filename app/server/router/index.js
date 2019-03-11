@@ -1,20 +1,19 @@
-const router = new require('koa-router')(),
-  postContactUs = require('./contact-us').postContactUs,
-  koaBody = require('koa-body')
+const KoaRouter = require('koa-router')
+
+const router = new KoaRouter()
+
+const koaBody = require('koa-body')
+
+const postContactUs = require('./contact-us').postContactUs
+
+const postBrochure = require('./brochure').postBrochure
 
 router.post('/contact-us', koaBody(), async (ctx, next) => {
   await postContactUs(ctx, next)
 })
 
-
-
-router.get('/api', async ctx => {
-  "use strict";
-  var test = {
-    data: 'test',
-    jp: 'jojo'
-  }
-  return ctx.body = JSON.stringify(test)
+router.post('/brochure', koaBody(), async (ctx, next) => {
+  await postBrochure(ctx, next)
 })
 
 module.exports = { router }

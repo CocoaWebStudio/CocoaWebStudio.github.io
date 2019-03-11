@@ -1,5 +1,5 @@
 <i18n src="./popup.json" />
-<template src="./popup.pug" lang="pug" />
+<template src="./popup.pug" />
 <script>
 import VueRecaptcha from 'vue-recaptcha'
 export default {
@@ -11,40 +11,54 @@ export default {
     return {
       form: {
         name: '',
-        email: ''
-      }
+        email: '',
+        recaptcha: ''
+      },
+      recaptcha_key: process.env.RECAPTCHA_PUBLIC,
+      success: false,
+      error: false
     }
   },
   $_veeValidate: {
     validator: 'new' // give me my own validator scope.
   },
   methods: {
+    send() {
+      this.$axios({
+        method: 'post',
+        url: '/brochure',
+        data: this.form
+      })
+        .then(res => {
+          this.success = true
+          this.error = false
+          this.onReset()
+        })
+        .catch(e => {
+          this.error = true
+          this.success = false
+        })
+    },
     clear() {
       this.form.name = ''
       this.form.email = ''
+      this.form.recaptcha = ''
+      this.$validator.reset()
     },
     handleOk(evt) {
       // Prevent modal from closing
       evt.preventDefault()
-      if (!this.form.name) {
-        alert('Please enter your name')
-      } else {
-        this.handleSubmit()
-      }
-    },
-    handleSubmit() {
-      this.names.push(this.name)
-      this.clear()
-      this.$refs.modal.hide()
-    },
-    onSubmit() {
-      this.$refs.recaptcha.execute()
+      this.$validator.validateAll().then(res => {
+        if (res) {
+          this.$refs.popupRecaptcha.execute()
+        }
+      })
     },
     onCaptchaVerified(recaptchaToken) {
       this.status = 'submitting'
-      this.$refs.recaptcha.reset()
+      this.$refs.popupRecaptcha.reset()
       this.form.recaptcha = recaptchaToken
-      this.onSend()
+      this.send()
     },
     validateState(ref) {
       if (
@@ -56,7 +70,7 @@ export default {
       return null
     },
     onCaptchaExpired: function() {
-      this.$refs.recaptcha.reset()
+      this.$refs.popupRecaptcha.reset()
     }
   }
 }

@@ -1,4 +1,5 @@
 .container
+  p {{ recaptcha_key }}
   b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }}
   b-alert(variant="success", v-model="success", dismissible) {{ $t('sucessfulServerResponse') }}
   b-form(@reset="onReset", @submit.prevent="onSubmit")
@@ -57,7 +58,7 @@
         small {{ errors.first($t('msg')) }}
     b-form-group
       vue-recaptcha(
-        sitekey="6LexHJIUAAAAAN904SFdAp3WMek6WX9jITYuoYC_",
+        :sitekey="recaptcha_key",
         @verify="onCaptchaVerified",
         @expired="onCaptchaExpired"
         ref="contactRecaptcha",

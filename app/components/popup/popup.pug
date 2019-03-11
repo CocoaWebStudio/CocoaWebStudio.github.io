@@ -1,42 +1,41 @@
 b-modal(
-  id="popup-wraper",
-  ref="modal",
-  title= "Smarensol Brochure",
-  @oks="handleOk",
-  @shown="clear"
+id="popup-wraper",
+ref="modal",
+title= "Smarensol Brochure",
+@ok="handleOk",
+@shown="clear"
 )
   form(@submit.prevent="onSubmit")
-    b-form-group#popupEmailInputGroup(label-for="popupEmailInput") {{ $t('email') }}
+    b-form-group#popupEmailInputGroup(label-for="popupEmailInput") {{ $t('email') }}:
       b-form-input#popupEmailInput(
-        :name="$t('email')"
-        type="email",
-        v-model="form.email",
-        v-validate="'required|email'",
-        :state="validateState($t('email'))",
-        aria-describedby="popupEmailInputFeedback",
-        placeholder="your@email.com",
-        required
+      :name="$t('email')"
+      type="email",
+      v-model="form.email",
+      v-validate="'required|email'",
+      :state="validateState($t('email'))",
+      aria-describedby="popupEmailInputFeedback",
+      placeholder="your@email.com",
+      required
       )
       b-form-invalid-feedback#popupEmailInputFeedback
         small {{ errors.first($t('email')) }}
     b-form-group(label-for="popupNameInput") {{ $t('name') }}:
       b-form-input#popupNameInput(
-        :name="$t('name')",
-        type="text",
-        v-model="form.name",
-        v-validate="'required|min:3|max:25'",
-        :state="validateState($t('name'))",
-        aria-describedby="popupNameInputFeedback",
-        placeholder='Juan Aguilar',
-        required
+      :name="$t('name')",
+      type="text",
+      v-model="form.name",
+      v-validate="'required|min:3|max:25'",
+      :state="validateState($t('name'))",
+      aria-describedby="popupNameInputFeedback",
+      placeholder='Juan Aguilar',
+      required
       )
       b-form-invalid-feedback#popupNameInputFeedback
         small {{ errors.first($t('name')) }}
-    b-form-group
-      vue-recaptcha(
-        sitekey="6LexHJIUAAAAAN904SFdAp3WMek6WX9jITYuoYC_",
-        @verify="onCaptchaVerified",
-        @expired="onCaptchaExpired"
-        ref="recaptcha",
-        size="invisible"
-      )
+    vue-recaptcha(
+      :sitekey="recaptcha_key",
+      @verify="onCaptchaVerified",
+      @expired="onCaptchaExpired"
+      ref="popupRecaptcha",
+      size="invisible"
+    )

@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "dev-debug": "cross-env node --inspect server/index.js",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
@@ -26,6 +27,8 @@
     "nodemailer": "^5.1.1",
     "nuxt": "^2.4.3",
     "nuxt-i18n": "^5.8.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
     "validator": "^10.11.0",
     "vee-validate": "^2.1.7",
     "vue-feather-icons": "^4.10.0",

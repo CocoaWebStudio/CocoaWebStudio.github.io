@@ -1,12 +1,12 @@
 {
   "en": {
     "title": "Submit your Data",
-    "email": "Email:",
-    "name": "Your Name:"
+    "email": "Email",
+    "name": "Your Name"
   },
   "es": {
     "title": "Envíe sus Datos",
     "email": "Dirección de correo Electrónico",
-    "name": "Nombre:"
+    "name": "Nombre"
   }
 }

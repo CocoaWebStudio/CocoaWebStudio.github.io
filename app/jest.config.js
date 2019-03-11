@@ -19,9 +19,9 @@ module.exports = {
       },
       resources: {
         scss: [
-          "./node_modules/package/_mixins.scss",
-          "./assets/css/customVariables.scss",
-          "./assets/css/main.scss"
+          './node_modules/package/_mixins.scss',
+          './assets/css/customVariables.scss',
+          './assets/css/main.scss'
         ]
       }
     }

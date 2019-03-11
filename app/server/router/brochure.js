@@ -1,5 +1,6 @@
 'use strict'
 
+const { resolve } = require('path')
 const rp = require('request-promise-native')
 
 const validator = require('validator')
@@ -13,21 +14,17 @@ class Validation {
     this.email = validator.normalizeEmail(body.email, { all_lowercase: true })
     this.name = validator.blacklist(body.name, '\\[\\]="\'')
     this.name = validator.escape(this.name).trim()
-    this.phone = validator.whitelist(body.phone, '+1234567890')
-    this.msg = validator.blacklist(body.msg, '\\[\\]="\'')
-    this.msg = validator.escape(this.msg).trim()
   }
 
   validate() {
     consola.info({
-      message: `start validation`,
+      message: `start validation brochure`,
       badge: true
     })
 
     if (
       validator.isEmail(this.email) &&
-      validator.isLength(this.name, { min: 3, max: 25 }) &&
-      validator.isLength(this.msg, { min: 20, max: 1000 })
+      validator.isLength(this.name, { min: 3, max: 50 })
     ) {
       return true
     } else {
@@ -36,7 +33,7 @@ class Validation {
   }
 }
 
-async function postContactUs(ctx, next) {
+async function postBrochure(ctx, next) {
   await rp({
     method: 'POST',
     uri: config.RECAPTCHA_SERVER,
@@ -55,20 +52,35 @@ async function postContactUs(ctx, next) {
         })
         const email = {
           from: config.EMAIL_USER,
+          to: `${form.email}`,
+          subject: 'Brochure de Smarensol',
+          text: `Aqui puede encontrar adjunto nuestro brochure.  Smarensol S.A.,
+ 
+        `,
+          attachments: [
+            {
+              // file on disk as an attachment
+              filename: 'Smarensol.pdf',
+              path: resolve('../app/server/assets/Smarensol.pdf')
+            }
+          ]
+        }
+
+        sendEmail(email)
+        const emailAlert = {
+          from: config.EMAIL_USER,
           to: config.EMAIL_USER,
           subject: config.EMAIL_CONTACT_SUBJECT,
           html: ` 
           <ul>
             <li>nombre: ${form.name}</li>
             <li>email: ${form.email}</li>
-            <li>teléfono: ${form.phone}</li>
           </ul>
-          <p>${form.comentary}</p>
+          <p>Acaba de descargarse el brochure</p>
         `,
           replyTo: `${form.email}`
         }
-
-        sendEmail(email)
+        sendEmail(emailAlert)
         return (ctx.body = form)
       } else {
         consola.error({
@@ -90,4 +102,4 @@ async function postContactUs(ctx, next) {
     })
 }
 
-module.exports = { postContactUs }
+module.exports = { postBrochure }
