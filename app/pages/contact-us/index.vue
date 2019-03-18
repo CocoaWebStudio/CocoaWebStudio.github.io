@@ -14,7 +14,7 @@
             a(href="tel:+59342071092")
               phone-icon
               strong.mx-3 {{ $t('data-telephone1') }} &nbsp/
-            a(href="tel:+5939994138795")
+            a(href="tel:+593994138795")
               strong.mx-1 {{ $t('data-telephone2') }}
             br
             br
@@ -35,8 +35,8 @@
     location.d-block.d-md-none
 </template>
 <script>
-import contactForm from '~/components/contactForm/contactForm.vue'
-import location from '~/components/location/location.vue'
+import contactForm from '@/components/contactForm/contactForm.vue'
+import location from '@/components/location/location.vue'
 import { PhoneIcon, MailIcon, MapPinIcon } from 'vue-feather-icons'
 
 export default {
@@ -50,20 +50,7 @@ export default {
   },
   head() {
     return {
-      title: 'Smarensol',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.$t('welcome')
-        },
-        {
-          property: 'og:title',
-          name: 'about',
-          content: this.$t('description')
-        },
-        { property: 'og:url', content: 'https://smarensol.com' }
-      ]
+      title: 'Smarensol - About'
     }
   }
 }

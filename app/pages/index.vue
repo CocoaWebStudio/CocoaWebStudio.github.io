@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import slider from '~/components/slider/slider.vue'
-import imageSection from '~/components/imageSection/imageSection.vue'
+import slider from '~/components/slider/slider'
+import imageSection from '~/components/imageSection/imageSection'
 import aboutUs from '~/pages/about-us/index.vue'
 
 export default {
@@ -83,8 +83,8 @@ export default {
         },
         {
           property: 'og:title',
-          name: 'about',
-          content: this.$t('description')
+          name: 'title',
+          content: 'Smarensol'
         },
         {
           property: 'og:image',

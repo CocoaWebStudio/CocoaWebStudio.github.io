@@ -95,68 +95,14 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('welcome')
+          content: this.$t('distribution')
         },
         { property: 'og:url', content: 'https://smarensol.com' },
-        { property: 'og:title', content: this.$t('insulators') },
-        { property: 'og:title', content: this.$t('capacitorBa') },
-        { property: 'og:title', content: this.$t('distributionTe') },
-        { property: 'og:title', content: this.$t('equipment') },
-        { property: 'og:title', content: this.$t('fuses') },
-        { property: 'og:title', content: this.$t('switches') },
-        { property: 'og:title', content: this.$t('lighting') },
-        { property: 'og:title', content: this.$t('regulators') },
-        { property: 'og:title', content: this.$t('disconnectors') },
-        { property: 'og:title', content: this.$t('transformersMe') },
+        { property: 'og:title', content: this.$t('distribution') },
         {
           property: 'og:image',
           content:
             'https://smarensol.com/images/products/distribution/insulators.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/capacitor-banks.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/distribution-terminals.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/substation/underground-networks.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/fuses.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/switches.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/substation/lighting-rod.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/distribution/regulators.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/substation/seccionador-de-subestacion.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/substation/measurement-transformers.jpeg'
         }
       ]
     }

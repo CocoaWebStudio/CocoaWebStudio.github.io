@@ -13,7 +13,7 @@
             :alt="image.name",
             thumbnail,
             fluid,
-            :src="image.image"
+            v-lazy="image.image"
           )
 </template>
 

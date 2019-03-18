@@ -16,6 +16,11 @@ export default () => {
         contactUs: 'CONTÁCTENOS',
         brochure: 'DESCARGAR FOLLETO'
       },
+      errors: {
+        404: {
+          title: 'ERROR 404 - La página solicitada no existe'
+        }
+      },
       rights: ' Todos los derechos reservados ',
       chacun: 'Diseño web de ',
       // industrial
@@ -51,6 +56,7 @@ export default () => {
       cables: 'Conductores y Cables de Fibra Óptica',
       chains: 'Ensambles para cadenas',
       hardware: 'Herrajes y Accesorios',
+      arresters: 'Pararrayos',
       //
       yourName: 'Nombre:',
       email: 'Correo Electrónico:'

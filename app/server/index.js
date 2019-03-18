@@ -1,20 +1,29 @@
+debugger
 const Koa = require('koa')
+
 const consola = require('consola')
+
 const { Nuxt, Builder } = require('nuxt')
+
+const config = require('../nuxt.config.js')
+
+const { router } = require('./router')
 
 const app = new Koa()
 
 // Import and Set Nuxt.js options
-const config = require('../nuxt.config.js')
 config.dev = !(app.env === 'production')
+
+// add custom server routes
+app.use(router.routes())
+app.use(router.allowedMethods())
 
 async function start() {
   // Instantiate nuxt.js
   const nuxt = new Nuxt(config)
-
   const {
     host = process.env.HOST || '127.0.0.1',
-    port = process.env.PORT || 8080
+    port = process.env.PORT || 8081
   } = nuxt.options.server
 
   // Build in development

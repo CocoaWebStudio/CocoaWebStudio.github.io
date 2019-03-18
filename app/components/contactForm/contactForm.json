@@ -2,17 +2,21 @@
   "en": {
     "submit": "Submit",
     "reset": "Reset",
-    "email": "Email Address:",
-    "your-name": "Your Name:",
-    "telephone": "Telephone:",
-    "comentary": "Comentary:"
+    "email": "Email Address",
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "msg": "Message",
+    "sucessfulServerResponse": "Your message was send, thank you to communicate with us",
+    "serverError": "Something not works, please try more late"
   },
   "es": {
     "submit": "Enviar",
     "reset": "Restaurar",
-    "email": "Dirección de Correo Electrónico:",
-    "your-name": "Nombre:",
-    "telephone": "Teléfono:",
-    "comentary": "Comentario:"
+    "email": "Dirección de Correo Electrónico",
+    "name": "Nombre",
+    "phone": "Teléfono",
+    "msg": "Comentario",
+    "sucessfulServerResponse": "Su mensaje a sido enviado, gracias por comunicarse con nosotros",
+    "serverError": "Algo esta fallando, por favor reintente más tarde"
   }
 }

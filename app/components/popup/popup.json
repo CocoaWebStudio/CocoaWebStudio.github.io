@@ -1,12 +1,16 @@
 {
   "en": {
     "title": "Submit your Data",
-    "email": "Email:",
-    "name": "Your Name:"
+    "email": "Email",
+    "name": "Your Name",
+    "serverError": "Something not works, try in a few minutes.",
+    "sucessfulServerResponse": "The brochure was send to your email"
   },
   "es": {
     "title": "Envíe sus Datos",
     "email": "Dirección de correo Electrónico",
-    "name": "Nombre:"
+    "name": "Nombre",
+    "serverError": "Algo no funciona, inténtalo en unos minutos.",
+    "sucessfulServerResponse": "El brochure ha sido enviado a su correo eléctronico"
   }
 }

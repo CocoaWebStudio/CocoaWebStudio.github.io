@@ -5,7 +5,6 @@ image: node:lts-slim
 stages:
   - build
   - test
-  - generate
   - deploy
 
 cache:
@@ -21,6 +20,11 @@ build:
   - cd app
   - yarn
   - yarn build
+  artifacts:
+    name: "$CI_JOB_NAME"
+    paths:
+    - ./app
+    expire_in: 2 days
 
 test:
   stage: test
@@ -29,21 +33,6 @@ test:
   script:
   - cd app
   - yarn test
-
-generate:
-  stage: generate
-  only:
-  - master
-  script:
-  - cd app
-  - yarn
-  - mkdir dist
-  - yarn generate
-  artifacts:
-    name: "$CI_JOB_NAME"
-    paths:
-    - ./app/dist
-    expire_in: 2 days
 
 deploy:
   stage: deploy
@@ -61,7 +50,16 @@ deploy:
   - ssh-keyscan -p "$PORT" "$SERVER_DOMAIN" >> ~/.ssh/know_hosts
   - chmod 644 ~/.ssh/know_hosts
   - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 -d)
-  - ssh -o StrictHostKeyChecking=no -p "$PORT" "$USER_AND_DOMAIN" 'rm -rf /home/smarensol/web/*'
+  - ssh -o StrictHostKeyChecking=no -p "$PORT" "$USER_AND_DOMAIN" "$CLEAN_OLD_CODE"
   script:
   - cd app
-  - scp -P "$PORT" -r dist/* "$SERVER_ADDRESS"
+  - scp -P "$PORT" -r .nuxt "$SERVER_ADDRESS"
+  - scp -P "$PORT" -r lang "$SERVER_ADDRESS"
+  - scp -P "$PORT" -r server "$SERVER_ADDRESS"
+  - scp -P "$PORT" -r static "$SERVER_ADDRESS"
+  - scp -P "$PORT" -r store "$SERVER_ADDRESS"
+  - scp -P "$PORT" i18n.config.js "$SERVER_ADDRESS"
+  - scp -P "$PORT" nuxt.config.js "$SERVER_ADDRESS"
+  - scp -P "$PORT" package.json "$SERVER_ADDRESS"
+  - scp -P "$PORT" yarn.lock "$SERVER_ADDRESS"
+  - ssh -o StrictHostKeyChecking=no -p "$PORT" "$USER_AND_DOMAIN" "$DEPLOY_COMMAND"

@@ -9,8 +9,12 @@ b-carousel(id="carouselSlider"
   @sliding-end="onSlideEnd"
 )
   b-carousel-slide(
-    v-for="slide in sliders"
-    :key="slide.id"
-    :img-src="slide.url"
-    :title="slide.title"
+    v-for="slide in sliders",
+    :key="slide.id",
+    :title="slide.title",
   )
+    img.img-fluid(
+      slot="img",
+      v-lazy="slide.url",
+      :alt="slide.title"
+    )

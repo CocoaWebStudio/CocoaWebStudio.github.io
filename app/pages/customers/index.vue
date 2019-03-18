@@ -45,7 +45,7 @@
             br
 </template>
 <script>
-import imageBg from '~/components/imageBg/imageBg.vue'
+import imageBg from '~/components/imageBg/imageBg'
 
 export default {
   name: 'Customers',

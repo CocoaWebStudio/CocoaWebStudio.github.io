@@ -2,94 +2,84 @@
 <template src="./contactForm.pug" />
 
 <script>
-// import axios from 'axios'
 import VueRecaptcha from 'vue-recaptcha'
 
 export default {
+  name: 'ContactForm',
   components: {
     VueRecaptcha
   },
   head() {
-    return {
-      script: [
-        {
-          src:
-            'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
-          async: true,
-          defer: true
-        }
-      ]
-    }
+    return {}
   },
   data() {
     return {
       form: {
         email: '',
         name: '',
-        telephone: '',
-        comentary: ''
+        phone: '',
+        msg: '',
+        recaptcha: ''
       },
-      status: '',
-      sucessfulServerResponse: '',
-      serverError: ''
+      recaptcha_key: process.env.RECAPTCHA_PUBLIC,
+      success: false,
+      error: false
     }
   },
+  $_veeValidate: {
+    validator: 'new' // give me my own validator scope.
+  },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault()
-      alert(JSON.stringify(this.form))
-      this.form.email = ''
-      this.form.name = ''
-      this.form.telephone = ''
-      this.form.comentary = ''
+    send() {
+      this.$axios({
+        method: 'post',
+        url: '/contact-us',
+        timeout: 8000,
+        data: this.form
+      })
+        .then(res => {
+          this.success = true
+          this.error = false
+          this.onReset()
+        })
+        .catch(e => {
+          this.error = true
+          this.success = false
+        })
     },
-    onReset(evt) {
-      evt.preventDefault()
+    onReset() {
       /* Reset our form values */
       this.form.email = ''
       this.form.name = ''
-      this.form.telephone = ''
-      this.form.comentary = ''
+      this.form.phone = ''
+      this.form.msg = ''
+      this.form.recaptcha = ''
+      this.$validator.reset()
     },
-    submit() {
-      // this.status = "submitting";
-      this.$refs.recaptcha.execute()
+    onSubmit() {
+      this.$validator.validateAll().then(res => {
+        if (res) {
+          this.$refs.contactRecaptcha.execute()
+        }
+      })
     },
     onCaptchaVerified(recaptchaToken) {
-      // eslint-disable-next-line
-      console.log("it's alive!!")
-      const self = this
-      self.status = 'submitting'
-
-      self.$refs.recaptcha.reset()
-      /*
-      axios.post("https://vue-recaptcha-demo.herokuapp.com/signup", {
-        email: self.email,
-        name: self.name,
-        recaptchaToken: recaptchaToken
-      }).then((response) => {
-        self.sucessfulServerResponse = response.data.message;
-      }).catch((err) => {
-        self.serverError = getErrorMessage(err);
-        //helper to get a displayable message to the user
-        function getErrorMessage(err) {
-          let responseBody;
-          responseBody = err.response;
-          if (!responseBody) {
-            responseBody = err;
-          }
-          else {
-            responseBody = err.response.data || responseBody;
-          }
-          return responseBody.message || JSON.stringify(responseBody);
-        }
-      }).then(() => {
-        self.status = "";
-      });
-      */
+      this.status = 'submitting'
+      this.$refs.contactRecaptcha.reset()
+      this.form.recaptcha = recaptchaToken
+      this.send()
+    },
+    validateState(ref) {
+      if (
+        this.veeFields[ref] &&
+        (this.veeFields[ref].dirty || this.veeFields[ref].validated)
+      ) {
+        return !this.errors.has(ref)
+      }
+      return null
     },
     onCaptchaExpired: function() {
-      this.$refs.recaptcha.reset()
+      this.$refs.contactRecaptcha.reset()
     }
   }
 }

@@ -1,57 +1,78 @@
-<i18n src="./popup.json"></i18n>
-<template lang="pug">
-  div
-    b-modal(id="popup-wraper"
-      ref="modal"
-      title= "Smarensol Brochure"
-      @oks="handleOk"
-      @shown="clear"
-     )
-      form(@submit.stop.prevent="handleSubmit")
-        b-form-group(id="exampleInputGroup1"
-          label-for="exampleInput1"
-         ) {{ $t('email') }}
-          b-form-input(id="exampleInput1"
-            type="email"
-            v-model="email"
-            required
-          )
-        b-form-group(id="exampleInputGroup2"
-          label-for="exampleInput2"
-         ) {{ $t('name') }}
-          b-form-input(id="exampleInput2"
-            type="text"
-            v-model="name"
-            required
-          )
-</template>
+<i18n src="./popup.json" />
+<template src="./popup.pug" />
 <script>
+import VueRecaptcha from 'vue-recaptcha'
 export default {
   name: 'Popup',
+  components: {
+    VueRecaptcha
+  },
   data() {
     return {
-      name: '',
-      email: ''
+      form: {
+        name: '',
+        email: '',
+        recaptcha: ''
+      },
+      recaptcha_key: process.env.RECAPTCHA_PUBLIC,
+      success: false,
+      error: false
     }
   },
+  $_veeValidate: {
+    validator: 'new' // give me my own validator scope.
+  },
   methods: {
+    send() {
+      this.$axios({
+        method: 'post',
+        url: '/brochure',
+        data: this.form
+      })
+        .then(res => {
+          this.success = true
+          this.error = false
+          this.clear()
+        })
+        .catch(e => {
+          this.error = true
+          this.success = false
+        })
+    },
     clear() {
-      this.name = ''
-      this.email = ''
+      this.form.name = ''
+      this.form.email = ''
+      this.form.recaptcha = ''
+      this.$validator.reset()
     },
     handleOk(evt) {
       // Prevent modal from closing
       evt.preventDefault()
-      if (!this.name) {
-        alert('Please enter your name')
-      } else {
-        this.handleSubmit()
-      }
+      this.error = false
+      this.success = false
+      this.$validator.validateAll().then(res => {
+        if (res) {
+          this.$refs.popupRecaptcha.execute()
+        }
+      })
     },
-    handleSubmit() {
-      this.names.push(this.name)
-      this.clear()
-      this.$refs.modal.hide()
+    onCaptchaVerified(recaptchaToken) {
+      this.status = 'submitting'
+      this.$refs.popupRecaptcha.reset()
+      this.form.recaptcha = recaptchaToken
+      this.send()
+    },
+    validateState(ref) {
+      if (
+        this.veeFields[ref] &&
+        (this.veeFields[ref].dirty || this.veeFields[ref].validated)
+      ) {
+        return !this.errors.has(ref)
+      }
+      return null
+    },
+    onCaptchaExpired: function() {
+      this.$refs.popupRecaptcha.reset()
     }
   }
 }

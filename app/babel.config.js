@@ -10,16 +10,16 @@ module.exports = api => {
       test: {
         presets: [
           [
-            "@babel/preset-env", {
-            targets: {
-              node: "current"
+            '@babel/preset-env',
+            {
+              targets: {
+                node: 'current'
+              }
             }
-          }
           ],
-          "@nuxt/babel-preset-app"
+          '@nuxt/babel-preset-app'
         ]
       }
     }
   }
 }
-
