@@ -28,26 +28,35 @@ export default {
         {
           id: 0,
           title: 'smarensol',
-          url: '/images/slider/smarensol_slider_logo.jpeg'
+          url: '/images/slider/smarensol_slider_logo.jpg'
         },
-        { id: 1, url: '/images/slider/smarensol_slider_electric_tower.jpeg' },
+        {
+          id: 1,
+          url: '/images/slider/smarensol_slider_electric_tower.jpeg'
+        },
         {
           id: 2,
-          url: '/images/slider/smarensol_slider_security_equipments.jpeg'
+          url: '/images/slider/smarensol_slider_security_equipments.jpg'
         },
-        { id: 3, url: '/images/slider/smarensol_slider_insulators.jpeg' },
+        {
+          id: 3,
+          url: '/images/slider/smarensol_slider_insulators.jpeg'
+        },
         {
           id: 4,
-          url: '/images/slider/smarensol_slider_electrical_substations.jpeg'
+          url: '/images/slider/smarensol_slider_electrical_substations.jpg'
         },
-        { id: 5, url: '/images/slider/smarensol_slider_substations.jpeg' },
+        {
+          id: 5,
+          url: '/images/slider/smarensol_slider_substations.jpeg'
+        },
         {
           id: 6,
-          url: '/images/slider/smarensol_slider_electricity_towers.jpeg'
+          url: '/images/slider/smarensol_slider_electricity_towers.jpg'
         },
         {
           id: 7,
-          url: '/images/slider/smarensol_slider_electricity substations.jpeg'
+          url: '/images/slider/smarensol_slider_electricity_substations.jpeg'
         }
       ],
       imageSections: [
