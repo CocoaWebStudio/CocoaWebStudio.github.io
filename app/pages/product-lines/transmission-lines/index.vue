@@ -72,10 +72,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('welcome')
+          content: this.$t('transmission-lines')
         },
         { property: 'og:url', content: 'https://smarensol.com' },
-        { property: 'og:title', content: this.$t('isolators') },
+        { property: 'og:title', content: this.$t('transmission-lines') },
         {
           property: 'og:image',
           content:

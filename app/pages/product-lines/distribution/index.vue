@@ -1,4 +1,4 @@
-<i18n src="./distribution.json"></i18n>
+<i18n src="./distribution.json" />
 <template lang="pug">
   .container
     .row

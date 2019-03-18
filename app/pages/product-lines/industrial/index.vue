@@ -48,26 +48,12 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('welcome')
+          content: this.$t('industry')
         },
-        { property: 'og:url', content: 'https://smarensol.com' },
-        { property: 'og:title', content: this.$t('tools') },
-        { property: 'og:title', content: this.$t('security') },
-        { property: 'og:title', content: this.$t('motors') },
-        { property: 'og:title', content: this.$t('beacons') },
+        { property: 'og:title', content: this.$t('industry') },
         {
           property: 'og:image',
           content: 'https://smarensol.com/images/products/industrial/tools.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/industrial/security-equipments.jpeg'
-        },
-        {
-          property: 'og:image',
-          content:
-            'https://smarensol.com/images/products/industrial/motors.jpeg'
         }
       ]
     }
