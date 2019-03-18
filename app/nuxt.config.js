@@ -58,7 +58,11 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~plugins/vee-validate.js' }, { src: '~plugins/i18n.js' }],
+  plugins: [
+    { src: '~plugins/vee-validate.js'},
+    { src: '~plugins/i18n.js' },
+    { src: '~/plugins/vue-lazyload' }
+  ],
 
   /*
    ** Nuxt.js modules
@@ -81,7 +85,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
-    baseURL: 'http://' + process.env.HOST + ':' + process.env.PORT
+    baseURL: 'https://smarensol.com'
     // See https://github.com/nuxt-community/axios-module#options
   },
 
