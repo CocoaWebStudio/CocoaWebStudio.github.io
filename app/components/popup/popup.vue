@@ -32,7 +32,7 @@ export default {
         .then(res => {
           this.success = true
           this.error = false
-          this.onReset()
+          this.clear()
         })
         .catch(e => {
           this.error = true
@@ -48,6 +48,8 @@ export default {
     handleOk(evt) {
       // Prevent modal from closing
       evt.preventDefault()
+      this.error = false
+      this.success = false
       this.$validator.validateAll().then(res => {
         if (res) {
           this.$refs.popupRecaptcha.execute()

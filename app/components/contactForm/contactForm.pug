@@ -1,5 +1,4 @@
 .container
-  p {{ recaptcha_key }}
   b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }}
   b-alert(variant="success", v-model="success", dismissible) {{ $t('sucessfulServerResponse') }}
   b-form(@reset="onReset", @submit.prevent="onSubmit")
@@ -21,7 +20,7 @@
         :name="$t('name')",
         type="text",
         v-model="form.name",
-        v-validate="'required|min:3|max:25'",
+        v-validate="'required|min:3|max:50'",
         :state="validateState($t('name'))",
         aria-describedby="contactNameInputFeedback",
         placeholder='Juan Aguilar',

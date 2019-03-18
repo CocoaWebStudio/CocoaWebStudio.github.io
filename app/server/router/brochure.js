@@ -43,18 +43,28 @@ async function postBrochure(ctx, next) {
     },
     json: true // Automatically stringifies the body to JSON
   })
-    .then(body => {
+    .then(async body => {
       const form = new Validation(ctx.request.body)
       if (body.success && form.validate()) {
-        consola.ready({
-          message: `validation passed `,
-          badge: true
-        })
+        ctx.response.status = 200
+        const emailAlert = {
+          from: config.EMAIL_USER,
+          to: config.EMAIL_USER,
+          subject: config.BROCHURE_SUBJECT,
+          html: ` 
+          <ul>
+            <li>nombre: ${form.name}</li>
+            <li>email: ${form.email}</li>
+          </ul>
+          <p>${form.name} acaba de descargarse el brochure</p>
+        `
+        }
+        await sendEmail(emailAlert)
         const email = {
           from: config.EMAIL_USER,
           to: `${form.email}`,
           subject: 'Brochure de Smarensol',
-          text: `Aqui puede encontrar adjunto nuestro brochure.  Smarensol S.A.,
+          text: `${form.name}  puede encontrar adjunto nuestro brochure.  Smarensol S.A.,
  
         `,
           attachments: [
@@ -65,23 +75,8 @@ async function postBrochure(ctx, next) {
             }
           ]
         }
-
-        sendEmail(email)
-        const emailAlert = {
-          from: config.EMAIL_USER,
-          to: config.EMAIL_USER,
-          subject: config.EMAIL_CONTACT_SUBJECT,
-          html: ` 
-          <ul>
-            <li>nombre: ${form.name}</li>
-            <li>email: ${form.email}</li>
-          </ul>
-          <p>Acaba de descargarse el brochure</p>
-        `,
-          replyTo: `${form.email}`
-        }
-        sendEmail(emailAlert)
-        return (ctx.body = form)
+        await sendEmail(email)
+        return (ctx.body = true)
       } else {
         consola.error({
           message: `validation not passed `,

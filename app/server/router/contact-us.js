@@ -26,7 +26,7 @@ class Validation {
 
     if (
       validator.isEmail(this.email) &&
-      validator.isLength(this.name, { min: 3, max: 25 }) &&
+      validator.isLength(this.name, { min: 3, max: 50 }) &&
       validator.isLength(this.msg, { min: 20, max: 1000 })
     ) {
       return true
@@ -63,7 +63,7 @@ async function postContactUs(ctx, next) {
             <li>email: ${form.email}</li>
             <li>teléfono: ${form.phone}</li>
           </ul>
-          <p>${form.comentary}</p>
+          <p>${form.msg}</p>
         `,
           replyTo: `${form.email}`
         }
