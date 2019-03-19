@@ -5,6 +5,7 @@ title= "Smarensol Brochure",
 @ok="handleOk",
 @shown="clear"
 )
+  wait-icon(:show="waiting")
   form(@submit.prevent="onSubmit")
     b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }}
     b-alert(variant="success", v-model="success", dismissible) {{ $t('sucessfulServerResponse') }}

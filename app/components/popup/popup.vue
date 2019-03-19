@@ -2,10 +2,12 @@
 <template src="./popup.pug" />
 <script>
 import VueRecaptcha from 'vue-recaptcha'
+import WaitIcon from '~/components/waitIcon/waitIcon.vue'
 export default {
   name: 'Popup',
   components: {
-    VueRecaptcha
+    VueRecaptcha,
+    WaitIcon
   },
   data() {
     return {
@@ -15,6 +17,7 @@ export default {
         recaptcha: ''
       },
       recaptcha_key: process.env.RECAPTCHA_PUBLIC,
+      waiting: false,
       success: false,
       error: false
     }
@@ -23,8 +26,9 @@ export default {
     validator: 'new' // give me my own validator scope.
   },
   methods: {
-    send() {
-      this.$axios({
+    async send() {
+      this.waiting = true
+      await this.$axios({
         method: 'post',
         url: '/brochure',
         data: this.form
@@ -38,6 +42,7 @@ export default {
           this.error = true
           this.success = false
         })
+      this.waiting = false
     },
     clear() {
       this.form.name = ''

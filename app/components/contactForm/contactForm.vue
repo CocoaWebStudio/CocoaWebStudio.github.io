@@ -3,11 +3,13 @@
 
 <script>
 import VueRecaptcha from 'vue-recaptcha'
+import WaitIcon from '~/components/waitIcon/waitIcon.vue'
 
 export default {
   name: 'ContactForm',
   components: {
-    VueRecaptcha
+    VueRecaptcha,
+    WaitIcon
   },
   head() {
     return {}
@@ -22,6 +24,7 @@ export default {
         recaptcha: ''
       },
       recaptcha_key: process.env.RECAPTCHA_PUBLIC,
+      waiting: true,
       success: false,
       error: false
     }
@@ -30,8 +33,9 @@ export default {
     validator: 'new' // give me my own validator scope.
   },
   methods: {
-    send() {
-      this.$axios({
+    async send() {
+      this.waiting = true
+      await this.$axios({
         method: 'post',
         url: '/contact-us',
         timeout: 8000,
@@ -46,6 +50,7 @@ export default {
           this.error = true
           this.success = false
         })
+      this.waiting = false
     },
     onReset() {
       /* Reset our form values */

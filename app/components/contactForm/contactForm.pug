@@ -1,6 +1,7 @@
 .container
   b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }}
   b-alert(variant="success", v-model="success", dismissible) {{ $t('sucessfulServerResponse') }}
+  wait-icon(:show="waiting")
   b-form(@reset="onReset", @submit.prevent="onSubmit")
     b-form-group(label-for="contactEmailInput") {{ $t('email') }}:
       b-form-input#contactEmailInput(
