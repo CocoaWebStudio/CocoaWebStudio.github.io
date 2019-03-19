@@ -85,6 +85,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
+    //baseURL: 'http://localhost:8081'
     baseURL: 'https://smarensol.com'
     // See https://github.com/nuxt-community/axios-module#options
   },
