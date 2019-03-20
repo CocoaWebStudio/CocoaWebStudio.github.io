@@ -20,8 +20,8 @@ module.exports = {
       resources: {
         scss: [
           './node_modules/package/_mixins.scss',
-          './assets/css/customVariables.scss',
-          './assets/css/main.scss'
+          './web/assets/css/customVariables.scss',
+          './web/assets/css/main.scss'
         ]
       }
     }
