@@ -24,7 +24,7 @@ export default {
         recaptcha: ''
       },
       recaptcha_key: process.env.RECAPTCHA_PUBLIC,
-      waiting: true,
+      waiting: false,
       success: false,
       error: false
     }
