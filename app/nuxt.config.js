@@ -1,5 +1,6 @@
 require('dotenv').config()
 const i18n = require('./i18n.config'),
+  bootstrapVue = require('./bootstrapVue.config')
   fs = require('fs'),
   dotenv = require('dotenv')
 
@@ -70,7 +71,7 @@ module.exports = {
   plugins: [
     { src: '~plugins/vee-validate.js'},
     { src: '~plugins/i18n.js' },
-    { src: '~/plugins/vue-lazyload' }
+    { src: '~plugins/vue-lazyload' }
   ],
 
   /*
@@ -80,16 +81,13 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    [
-      'bootstrap-vue/nuxt',
-      {
-        css: false
-      }
-    ],
+    'bootstrap-vue/nuxt',
     '@nuxtjs/dotenv',
     '@nuxtjs/pwa',
     ['nuxt-i18n', i18n]
   ],
+  bootstrapVue: bootstrapVue,
+
   /*
    ** Axios module configuration
    */
