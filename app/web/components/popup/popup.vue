@@ -3,6 +3,7 @@
 <script>
 import VueRecaptcha from 'vue-recaptcha'
 import WaitIcon from '~/components/waitIcon/waitIcon.vue'
+
 export default {
   name: 'Popup',
   components: {

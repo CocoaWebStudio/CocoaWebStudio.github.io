@@ -1,9 +1,18 @@
-const i18n = require('./i18n.config')
 require('dotenv').config()
+const i18n = require('./i18n.config'),
+  fs = require('fs'),
+  dotenv = require('dotenv')
+
+if(process.env.NODE_ENV === 'production'){
+  const envConfig = dotenv.parse(fs.readFileSync('.env.production'))
+  for (let k in envConfig) {
+    process.env[k] = envConfig[k]
+  }
+}
 
 module.exports = {
   mode: 'universal',
-
+  srcDir: 'web/',
   /*
    ** Headers of the page
    */
@@ -85,8 +94,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
-    //baseURL: 'http://localhost:8081'
-    baseURL: 'https://smarensol.com'
+    baseURL: process.env.AXIOS_SERVER
     // See https://github.com/nuxt-community/axios-module#options
   },
 
