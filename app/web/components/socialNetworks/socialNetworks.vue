@@ -9,7 +9,7 @@
         facebook-icon
     .col.py-3
       a.text-light(
-        href="linkedin.com/company/smarensol-s-a",
+        href="//linkedin.com/company/smarensol-s-a",
         target="_blank",
         rel="noopener noreferrer"
       )
@@ -20,7 +20,7 @@
     .col-md-5.text-center.py-3
       a.text-light(href="tel:+59342071092")
         phone-icon
-        span  (+593) 42071092
+        span  (+593) 4 207-1092
 </template>
 <script>
 import {
