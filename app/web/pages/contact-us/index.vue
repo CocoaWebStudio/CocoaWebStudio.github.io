@@ -13,7 +13,8 @@
             br
             a(href="tel:+59342071092")
               phone-icon
-              strong.mx-3 {{ $t('data-telephone1') }} &nbsp/
+              strong.mx-3 {{ $t('data-telephone1') }}
+            span.text-primary /&nbsp;
             a(href="tel:+593994138795")
               strong.mx-1 {{ $t('data-telephone2') }}
             br
