@@ -1,12 +1,8 @@
 'use strict'
-
-const rp = require('request-promise-native')
-
-const validator = require('validator')
-
-const consola = require('consola')
-const { sendEmail } = require('../commonFunctions')
-const config = require('../config')
+const rp = require('request-promise-native'),
+  validator = require('validator'),
+  { sendEmail } = require('../commonFunctions'),
+  consola = require('consola')
 
 class Validation {
   constructor(body) {
@@ -39,9 +35,9 @@ class Validation {
 async function postContactUs(ctx, next) {
   await rp({
     method: 'POST',
-    uri: config.RECAPTCHA_SERVER,
+    uri: process.env.RECAPTCHA_SERVER,
     form: {
-      secret: config.RECAPTCHA,
+      secret: process.env.RECAPTCHA,
       response: ctx.request.body.recaptcha
     },
     json: true // Automatically stringifies the body to JSON
@@ -54,10 +50,10 @@ async function postContactUs(ctx, next) {
           badge: true
         })
         const email = {
-          from: config.EMAIL_USER,
-          to: config.EMAIL_USER,
-          subject: config.EMAIL_CONTACT_SUBJECT,
-          html: ` 
+          from: process.env.EMAIL_USER,
+          to: process.env.EMAIL_USER,
+          subject: process.env.EMAIL_CONTACT_SUBJECT,
+          html: `
           <ul>
             <li>nombre: ${form.name}</li>
             <li>email: ${form.email}</li>

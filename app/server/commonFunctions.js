@@ -1,9 +1,6 @@
 'use strict'
-
-const nodemailer = require('nodemailer')
-
-const consola = require('consola')
-const config = require('./config')
+const nodemailer = require('nodemailer'),
+  consola = require('consola')
 
 // async..await is not allowed in global scope, must use a wrapper
 const sendEmail = async email => {
@@ -14,11 +11,11 @@ const sendEmail = async email => {
 
   // create reusable transporter object using the default SMTP transport
   const transporter = nodemailer.createTransport({
-    host: config.EMAIL_SERVER,
+    host: process.env.EMAIL_SERVER,
     port: 587, // true for 465, false for other ports
     auth: {
-      user: config.EMAIL_USER, // generated ethereal user
-      pass: config.EMAIL_PASS // generated ethereal password
+      user: process.env.EMAIL_USER, // generated ethereal user
+      pass: process.env.EMAIL_PASS // generated ethereal password
     },
     tls: {
       ciphers: 'SSLv3'
