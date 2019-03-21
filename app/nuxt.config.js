@@ -4,7 +4,7 @@ const i18n = require('./i18n.config'),
   fs = require('fs'),
   dotenv = require('dotenv')
 
-if(process.env.NODE_ENV === 'production'){
+if(process.env.NODE_ENV === 'production' && fs.existsSync('.env.production')){
   const envConfig = dotenv.parse(fs.readFileSync('.env.production'))
   for (let k in envConfig) {
     process.env[k] = envConfig[k]
@@ -63,7 +63,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/main.scss'],
+  css: ['~assets/css/main.scss'],
 
   /*
    ** Plugins to load before mounting the App
