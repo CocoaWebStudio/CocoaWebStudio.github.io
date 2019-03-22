@@ -1,14 +1,12 @@
-<i18n src="./popup.json" />
-<template src="./popup.pug" />
+<template lang="pug">
+  include popup.pug
+</template>
 <script>
-import VueRecaptcha from 'vue-recaptcha'
-import WaitIcon from '~/components/waitIcon/waitIcon.vue'
-
 export default {
   name: 'Popup',
   components: {
-    VueRecaptcha,
-    WaitIcon
+    VueRecaptcha: () => import('vue-recaptcha'),
+    WaitIcon: () => import('~/components/waitIcon/waitIcon.vue')
   },
   data() {
     return {
@@ -83,3 +81,4 @@ export default {
   }
 }
 </script>
+<i18n src="./popup.json" />

@@ -2,14 +2,11 @@
 <template src="./contactForm.pug" />
 
 <script>
-import VueRecaptcha from 'vue-recaptcha'
-import WaitIcon from '~/components/waitIcon/waitIcon.vue'
-
 export default {
   name: 'ContactForm',
   components: {
-    VueRecaptcha,
-    WaitIcon
+    VueRecaptcha: () => import('vue-recaptcha'),
+    WaitIcon: () => import('~/components/waitIcon/waitIcon.vue')
   },
   head() {
     return {}

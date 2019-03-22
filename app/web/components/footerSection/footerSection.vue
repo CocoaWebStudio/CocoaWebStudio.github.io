@@ -1,12 +1,11 @@
 <template src="./footerSection.pug" />
 
 <script>
-import socialNetworks from '~/components/socialNetworks/socialNetworks.vue'
-
 export default {
   name: 'FooterSection',
   components: {
-    socialNetworks
+    SocialNetworks: () =>
+      import('~/components/socialNetworks/socialNetworks.vue')
   },
   data() {
     return {

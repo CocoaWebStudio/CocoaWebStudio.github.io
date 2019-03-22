@@ -31,6 +31,7 @@ import {
 } from 'vue-feather-icons'
 
 export default {
+  name: 'SocialNetworks',
   components: {
     FacebookIcon,
     LinkedinIcon,

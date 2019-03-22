@@ -1,9 +1,9 @@
 b-modal(
-id="popup-wraper",
-ref="modal",
-title= "Smarensol Brochure",
-@ok="handleOk",
-@shown="clear"
+  id="popup-wraper",
+  ref="modal",
+  title= "Smarensol Brochure",
+  @ok="handleOk",
+  @shown="clear"
 )
   wait-icon(:show="waiting")
   form(@submit.prevent="onSubmit")
