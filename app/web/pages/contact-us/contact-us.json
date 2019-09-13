@@ -1,22 +1,26 @@
 {
   "en": {
-    "data": "Smarensol S.A",
-    "data-telephone1": "+(593) 4 207-1092",
-    "data-telephone2": "+(593) 99 413-8795",
-    "data-addres": "Torres del Mall del Sol – Torre B Piso 4",
-    "data-email": "ventas@smarensol.com",
-    "data-city": "Guayaquil – Ecuador",
-    "data-zip": "090505",
+    "data": "Chacun Son Site",
+    "data-telephone": "+1 (581) 2340581",
+    "data-email-ca": "quebec@chacunsonsite.ca",
+    "data-email-ec": "ecuador@chacunsonsite.ca",
+    "data-city": "We have offices in Canada and Ecuador",
     "contact-us": "CONTACT US"
   },
   "es": {
-    "data": "Smarensol S.A",
-    "data-telephone1": "+(593) 4 207-1092",
-    "data-telephone2": "+(593) 99 413-8795",
-    "data-addres": "Torres del Mall del Sol – Torre B Piso 4",
-    "data-email": "ventas@smarensol.com",
-    "data-zip": "090505",
-    "data-city": "Guayaquil – Ecuador",
+    "data": "Chacun Son Site",
+    "data-telephone": "+1 (581) 2340581",
+    "data-email-ca": "quebec@chacunsonsite.ca",
+    "data-email-ec": "ecuador@chacunsonsite.ca",
+    "data-city": "Tenemos oficinas en Canadá y Ecuador",
     "contact-us": "CONTÁCTENOS"
+  },
+  "fr": {
+    "data": "Chacun Son Site",
+    "data-telephone": "+1 (581) 2340581",
+    "data-email-ca": "quebec@chacunsonsite.ca",
+    "data-email-ec": "ecuador@chacunsonsite.ca",
+    "data-city": "Nous avons des bureaux au Canada et en Equateur",
+    "contact-us": "CONTACT US"
   }
 }

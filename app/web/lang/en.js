@@ -9,6 +9,7 @@ export default {
       title: 'ERROR 404 - Page not Found'
     }
   },
+  rights: ' All rights reserverd ',
   yourName: 'Your Name:',
   email: 'Email:'
 }

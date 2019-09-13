@@ -11,29 +11,26 @@
           address(itemscope itemtype="http://schema.org/LocalBusiness")
             h1(itemprop="name") {{ $t('data') }}
             br
-            a(href="tel:+59342071092")
+            h4.mx-1 {{ $t('data-city') }}
+            br
+            a(href="tel:+5812340581")
               phone-icon
-              strong.mx-3 {{ $t('data-telephone1') }}
-            span.text-primary /&nbsp;
-            a(href="tel:+593994138795")
-              strong.mx-1 {{ $t('data-telephone2') }}
+              strong.mx-3 {{ $t('data-telephone') }}
+            span.text-primary
             br
             br
-            map-pin-icon
-            strong.mx-3 {{ $t('data-addres') }}
-            br
-            strong.mx-5 {{ $t('data-city') }}
-            br
-            strong.mx-5 {{ $t('data-zip')}}
-            br
-            br
-            a.text-dark(href="mailto:ventas@smarensol.com")
+            a.text-dark(href="mailto:quebec@chacunsonsite.ca")
                mail-icon
-               strong.mx-3 {{ $t('data-email') }}
+               strong.mx-3 {{ $t('data-email-ca') }}
+            br
+            br
+            a.text-dark(href="mailto:quebec@chacunsonsite.ca")
+               mail-icon
+               strong.mx-3 {{ $t('data-email-ec') }}
+            br
+            br
         .col-md-6
           contactForm
-    location.d-none.d-md-block
-    location.d-block.d-md-none
 </template>
 <script>
 import contactForm from '@/components/contactForm/contactForm.vue'
