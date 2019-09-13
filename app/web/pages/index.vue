@@ -1,26 +1,15 @@
 <i18n src="./content-index.json"></i18n>
 <template lang="pug">
-  .home
+  .wraper
     slider(:sliders="sliders")
-    .container-fluid.py-4
-      .row
-        .col.text-center
-          h3.allies {{ $t('our-allies')}}
-    imageSection(:imageSections="imageSections")
-    about-us
-
 </template>
 
 <script>
 import slider from '~/components/slider/slider'
-import imageSection from '~/components/imageSection/imageSection'
-import aboutUs from '~/pages/about-us/index.vue'
 
 export default {
   components: {
-    slider,
-    imageSection,
-    aboutUs
+    slider
   },
   data() {
     return {
@@ -78,28 +67,6 @@ export default {
           link: 'https://www.gaoncable.com',
           name: 'Gaon Cable Co. Ltd.'
         }
-      ]
-    }
-  },
-  head() {
-    return {
-      title: 'Smarensol',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.$t('welcome')
-        },
-        {
-          property: 'og:title',
-          name: 'title',
-          content: 'Smarensol'
-        },
-        {
-          property: 'og:image',
-          content: 'http://euro-travel-example.com/thumbnail.jpg'
-        },
-        { property: 'og:url', content: 'https://smarensol.com' }
       ]
     }
   }

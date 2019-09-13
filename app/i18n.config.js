@@ -13,6 +13,13 @@ module.exports = {
       file: 'es.js',
       name: 'ESPAÑOL',
       flag: '/images/flags/es-EC.png'
+    },
+    {
+      code: 'fr',
+      iso: 'fr-FR',
+      file: 'fr.js',
+      name: 'FRANCAIS',
+      flag: '/images/flags/fr-FR.png'
     }
   ],
   strategy: 'prefix_and_default',
@@ -41,30 +48,6 @@ module.exports = {
     'about-us/index': {
       en: '/about-us',
       es: '/nosotros'
-    },
-    customers: {
-      en: '/customers',
-      es: '/clientes'
-    },
-    'product-lines/index': {
-      en: '/product-lines',
-      es: '/lineas-de-productos'
-    },
-    'product-lines/industrial/index': {
-      en: '/product-lines/industrial',
-      es: '/lineas-de-productos/industrial'
-    },
-    'product-lines/distribution/index': {
-      en: '/product-lines/distribution',
-      es: '/lineas-de-productos/distribucion'
-    },
-    'product-lines/substations/index': {
-      en: '/product-lines/substations',
-      es: '/lineas-de-productos/subestaciones'
-    },
-    'product-lines/transmission-lines/index': {
-      en: '/product-lines/transmission-lines',
-      es: '/lineas-de-productos/lineas-transmision'
     }
   }
 }
