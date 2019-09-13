@@ -1,5 +1,7 @@
 <i18n src="./contactForm.json"></i18n>
-<template src="./contactForm.pug" />
+<template lang="pug">
+ include contactForm.pug
+</template>
 
 <script>
 export default {

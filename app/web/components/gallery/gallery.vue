@@ -1,4 +1,4 @@
-<template src="./gallery.pug" />
+<template lang="pug" src="./gallery.pug" />
 <script>
 export default {
   props: {

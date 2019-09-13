@@ -1,4 +1,4 @@
-<template src="./footerSection.pug" />
+<template lang="pug" src="./footerSection.pug" />
 
 <script>
 export default {
