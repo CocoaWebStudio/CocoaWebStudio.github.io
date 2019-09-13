@@ -1,10 +1,10 @@
 <template lang="pug">
   .row
-    .col-md-6.text-center.py-4
-      a.text-light(href="mailto:quebec@chacunsonsite.ca")
+    .col.py-5
+      a.text-success(href="mailto:quebec@chacunsonsite.ca")
         mail-icon
-    .col-md-6.text-center.py-4
-      a.text-light(href="tel:+59342071092")
+    .col.py-5
+      a.text-success(href="tel:+59342071092")
         phone-icon
         span  (+593) 4 207-1092
 </template>
