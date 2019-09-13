@@ -3,10 +3,15 @@
     .col.py-5
       a.text-success(href="mailto:quebec@chacunsonsite.ca")
         mail-icon
+        span &nbsp Canadá
     .col.py-5
-      a.text-success(href="tel:+59342071092")
+      a.text-success(href="mailto:ecuador@chacunsonsite.ca")
+        mail-icon
+        span &nbsp Ecuador
+    .col.py-5
+      a.text-success(href="tel:+5812340581")
         phone-icon
-        span  (+593) 4 207-1092
+        span +1 (581) 2340581
 </template>
 <script>
 import { MailIcon, PhoneIcon } from 'vue-feather-icons'
