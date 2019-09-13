@@ -9,6 +9,7 @@ export default {
       title: 'ERROR 404 - Page not Found'
     }
   },
+  info: 'We have offices in Canada and Ecuador',
   rights: ' All rights reserverd ',
   yourName: 'Your Name:',
   email: 'Email:'
