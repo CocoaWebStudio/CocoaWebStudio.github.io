@@ -17,55 +17,19 @@ export default {
         {
           id: 0,
           title: 'smarensol',
-          url: '/images/slider/smarensol_slider_logo.jpg'
+          url: '/images/slider/slider_chacunsonsite_logo.jpg'
         },
         {
           id: 1,
-          url: '/images/slider/smarensol_slider_electric_tower.jpeg'
+          url: '/images/slider/slider_chacunsonsite_seo.jpg'
         },
         {
           id: 2,
-          url: '/images/slider/smarensol_slider_security_equipments.jpg'
+          url: '/images/slider/slider_chacunsonsite_ideas.jpg'
         },
         {
           id: 3,
-          url: '/images/slider/smarensol_slider_insulators.jpeg'
-        },
-        {
-          id: 4,
-          url: '/images/slider/smarensol_slider_electrical_substations.jpg'
-        },
-        {
-          id: 5,
-          url: '/images/slider/smarensol_slider_substations.jpeg'
-        },
-        {
-          id: 6,
-          url: '/images/slider/smarensol_slider_electricity_towers.jpg'
-        },
-        {
-          id: 7,
-          url: '/images/slider/smarensol_slider_electricity_substations.jpeg'
-        }
-      ],
-      imageSections: [
-        {
-          id: 0,
-          image: '/images/allies/smarensol_allies_delta_conectores.jpeg',
-          link: 'https://www.deltaconectores.com',
-          name: 'Delta Conductores S.A. de C.V.'
-        },
-        {
-          id: 1,
-          image: '/images/allies/smarensol_allies_ever_exceed.jpeg',
-          link: 'http://www.everexceed.com',
-          name: 'Ever Exceed.'
-        },
-        {
-          id: 2,
-          image: '/images/allies/smarensol_allies_gaon_cable.jpeg',
-          link: 'https://www.gaoncable.com',
-          name: 'Gaon Cable Co. Ltd.'
+          url: '/images/slider/slider_chacunsonsite_error400.jpg'
         }
       ]
     }
