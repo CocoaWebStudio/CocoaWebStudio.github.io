@@ -1,10 +1,26 @@
 {
   "en": {
-    "welcome": "WE ARE SPECIALISTS IN EQUIPMENT AND SUPPLIES FOR HALF AND HIGH VOLTAGE",
-    "our-allies": "OUR ALLIES"
+    "data": "Chacun Son Site",
+    "data-telephone": "+1 (581) 2340581",
+    "data-email-ca": "quebec@chacunsonsite.ca",
+    "data-email-ec": "ecuador@chacunsonsite.ca",
+    "data-city": "We have offices in Canada and Ecuador",
+    "contact-us": "CONTACT US"
   },
   "es": {
-    "welcome": "SOMOS ESPECIALISTAS EN EQUIPOS Y SUMINISTROS PARA MEDIA Y ALTA TENSIÓN",
-    "our-allies": "NUESTROS ALIADOS"
+    "data": "Chacun Son Site",
+    "data-telephone": "+1 (581) 2340581",
+    "data-email-ca": "quebec@chacunsonsite.ca",
+    "data-email-ec": "ecuador@chacunsonsite.ca",
+    "data-city": "Tenemos oficinas en Canadá y Ecuador",
+    "contact-us": "CONTÁCTENOS"
+  },
+  "fr": {
+    "data": "Chacun Son Site",
+    "data-telephone": "+1 (581) 2340581",
+    "data-email-ca": "quebec@chacunsonsite.ca",
+    "data-email-ec": "ecuador@chacunsonsite.ca",
+    "data-city": "Nous avons des bureaux au Canada et en Equateur",
+    "contact-us": "CONTACT US"
   }
 }

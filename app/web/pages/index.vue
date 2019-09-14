@@ -1,27 +1,23 @@
 <i18n src="./content-index.json"></i18n>
-<template lang="pug">
-  .wraper
-    slider(:sliders="sliders")
-    .col.text-center
-        h1.py-4 TODAS TUS IDEAS LAS PODEMOS TRANSFORMAR EN DESARROLLO WEB
-    imageSection(:imageSections="imageSections")
-    background.text-primary.py-2
-    galleryHorizontal.no-gutters(:galleryHorizontals="galleryHorizontals")
-    background.text-primary.py-2
-</template>
+<template lang="pug" src="./index.pug" />
 
 <script>
-import slider from '~/components/slider/slider'
+import slider from '~/components/slider/slider.vue'
 import galleryHorizontal from '@/components/galleryHorizontal/galleryHorizontal.vue'
 import background from '@/components/background/background.vue'
 import imageSection from '@/components/imageSection/imageSection.vue'
+import contactForm from '~/components/contactForm/contactForm.vue'
+import { PhoneIcon, MailIcon } from 'vue-feather-icons'
 
 export default {
   components: {
     slider,
     galleryHorizontal,
     background,
-    imageSection
+    imageSection,
+    contactForm,
+    PhoneIcon,
+    MailIcon
   },
   data() {
     return {
