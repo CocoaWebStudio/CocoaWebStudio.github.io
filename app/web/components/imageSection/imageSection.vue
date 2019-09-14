@@ -8,13 +8,13 @@
         cols="6"
 
       )
-        a(:href="image.link", target="_blank", rel="noopener noreferrer")
-          b-img.zoom(
-            :alt="image.name",
-            thumbnail,
-            fluid,
-            v-lazy="image.image"
-          )
+        b-img.zoom(
+          :alt="image.name",
+          thumbnail,
+          fluid,
+          v-lazy="image.image",
+          height="100"
+        )
 </template>
 
 <script>
