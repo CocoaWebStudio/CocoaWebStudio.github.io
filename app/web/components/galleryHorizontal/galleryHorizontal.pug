@@ -1,16 +1,17 @@
 .row.row-eq-height
   b-card.col-12.bg-gallery(no-body, v-for="galleryHorizontal in galleryHorizontals", :key="galleryHorizontal.id",
     v-lazy="galleryHorizontal.url",
-    :class="'col-md-'+galleryHorizontal.size"
+    :class="'col-md-'+galleryHorizontal.size",
+    :style="{ backgroundColor: '#fff' }"
   )
     nuxt-link(:to="galleryHorizontal.link", target="_blank",
         rel="noopener noreferrer")
-      b-row.no-gutters.opacity
+      b-row.no-gutters
         b-col.card-text(sm="12")
           b-card-body.text-warning
             h1.subtitle {{galleryHorizontal.name}}
             p.text {{galleryHorizontal.description}}
-        b-col.card-img
+        b-col.card-img.zoom
           .col-sm-12.image.gallery(
             :style="{ backgroundImage: 'url(' + galleryHorizontal.url + ')' }"
           )

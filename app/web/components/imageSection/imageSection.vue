@@ -8,7 +8,7 @@
         cols="6"
 
       )
-        b-img.zoom(
+        b-img(
           :alt="image.name",
           thumbnail,
           fluid,
