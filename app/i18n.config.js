@@ -39,15 +39,5 @@ module.exports = {
     fallbackLocale: null
   },
   vueI18nLoader: { fallbackLocale: 'es' },
-  parsePages: false,
-  pages: {
-    'contact-us/index': {
-      en: '/contact-us',
-      es: '/contactenos'
-    },
-    'about-us/index': {
-      en: '/about-us',
-      es: '/nosotros'
-    }
-  }
+  parsePages: false
 }

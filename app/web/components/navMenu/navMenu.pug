@@ -5,9 +5,9 @@ header.sticky-top.bd-navbar
     b-navbar-toggle(target="nav_collapse")
     b-collapse(is-nav id="nav_collapse")
       b-navbar-nav.ml-auto
-        nuxt-link.nav-link(:to="localePath('index')") {{ $t('menu.elements') }}
-        nuxt-link.nav-link(:to="localePath('index')") {{ $t('menu.works') }}
-        nuxt-link.nav-link(:to="localePath('index')") {{ $t('menu.contactUs') }}
+        nuxt-link.nav-link(to="#elements") {{ $t('menu.elements') }}
+        nuxt-link.nav-link(to="#works") {{ $t('menu.works') }}
+        nuxt-link.nav-link(to="#contact-us") {{ $t('menu.contactUs') }}
         b-nav-item-dropdown(variant="link", size="lg", right )
           template(slot="button-content")
             img.img-fluid.flag(:src="$i18n.locales.filter(function(i){return i.code == $i18n.locale})[0].flag")
