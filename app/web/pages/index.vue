@@ -46,7 +46,7 @@ export default {
           url: '/images/works/works_rahua.jpg',
           name: 'Rahua',
           description:
-            'Fue desarrollada para una gran y reconocida empresa ecomerce que se dedica al cuidado y mantenimiento del cabello, piel y rostro, con ingredientes orgánicos naturales  y puros derivados de las platas',
+            'Fue desarrollada para una gran y reconocida empresa ecommerce que se dedica al cuidado y mantenimiento del cabello, piel y rostro, con ingredientes orgánicos naturales  y puros derivados de las platas',
           size: '4',
           link: '//rahua.com/'
         },
@@ -70,12 +70,12 @@ export default {
         },
         {
           id: 3,
-          url: '/images/works/works_rahua.jpg',
-          name: 'Lorem ipsum ',
+          url: '/images/works/works_dechezmoi.jpg',
+          name: 'De Chez Moí',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
+            'Empredimiento de Juan Pablo Aguilar Lliguin, De Chez Moí es una ecommerce dedicada a la elavoración de chocolates orgánicos de alta gama.',
           size: '4',
-          link: '//smarensol.com/'
+          link: '//dechezmoi.ca/'
         },
         {
           id: 4,
