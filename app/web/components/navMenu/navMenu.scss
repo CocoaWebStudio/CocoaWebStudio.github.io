@@ -1,0 +1,17 @@
+.nav-link {
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--green)!important;
+  @media(min-width: 1200px) {
+    font-size: 1.3rem;
+  }
+}
+a:hover {
+  border-bottom: 1px solid var(--secondary);
+  line-height: 1.3em;
+}
+
+.flag {
+  max-width: 30%;
+}

@@ -55,13 +55,4 @@ export default {
   }
 }
 </script>
-<style scoped>
-a:hover {
-  border-bottom: 1px solid #020bfd;
-  line-height: 1.3em;
-}
-
-.flag {
-  max-width: 25%;
-}
-</style>
+<style src="./navMenu.scss" lang="scss" scoped />
