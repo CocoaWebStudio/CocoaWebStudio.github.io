@@ -1,6 +1,10 @@
 {
   "en": {
-    "data": "Chacun Son Site",
+    "data": {
+      "title1": "Chacun",
+      "title2": "Son",
+      "title3": "Site"
+    },
     "data-telephone": "+1 (581) 2340581",
     "data-email-ca": "quebec@chacunsonsite.ca",
     "data-email-ec": "ecuador@chacunsonsite.ca",
@@ -8,7 +12,11 @@
     "contact-us": "CONTACT US"
   },
   "es": {
-    "data": "Chacun Son Site",
+    "data": {
+      "title1": "Chacun",
+      "title2": "Son",
+      "title3": "Site"
+    },
     "data-telephone": "+1 (581) 2340581",
     "data-email-ca": "quebec@chacunsonsite.ca",
     "data-email-ec": "ecuador@chacunsonsite.ca",
@@ -16,7 +24,11 @@
     "contact-us": "CONTÁCTENOS"
   },
   "fr": {
-    "data": "Chacun Son Site",
+    "data": {
+      "title1": "Chacun",
+      "title2": "Son",
+      "title3": "Site"
+    },
     "data-telephone": "+1 (581) 2340581",
     "data-email-ca": "quebec@chacunsonsite.ca",
     "data-email-ec": "ecuador@chacunsonsite.ca",

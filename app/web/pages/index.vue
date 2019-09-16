@@ -216,3 +216,4 @@ export default {
 .text {
 }
 </style>
+<style src="./index.scss" lang="scss" scoped />
