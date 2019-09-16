@@ -2,6 +2,7 @@
   font-weight: 300;
   font-size: 1.2rem;
   letter-spacing: 1px;
+   text-transform: uppercase;
   color: var(--green)!important;
   @media(min-width: 1200px) {
     font-size: 1.3rem;
@@ -12,6 +13,6 @@ a:hover {
   line-height: 1.3em;
 }
 
-.flag {
-  max-width: 30%;
+.text {
+  text-transform: uppercase;
 }
