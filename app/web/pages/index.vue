@@ -6,6 +6,7 @@ import slider from '~/components/slider/slider.vue'
 import galleryHorizontal from '@/components/galleryHorizontal/galleryHorizontal.vue'
 import background from '@/components/background/background.vue'
 import imageSection from '@/components/imageSection/imageSection.vue'
+import imageTextSection from '@/components/imageTextSection/imageTextSection.vue'
 import contactForm from '~/components/contactForm/contactForm.vue'
 import { PhoneIcon, MailIcon } from 'vue-feather-icons'
 
@@ -15,6 +16,7 @@ export default {
     galleryHorizontal,
     background,
     imageSection,
+    imageTextSection,
     contactForm,
     PhoneIcon,
     MailIcon
@@ -179,6 +181,31 @@ export default {
           id: 12,
           name: 'Wordpress',
           image: '/images/elements/elements_wordpress_logo.png'
+        }
+      ],
+      imageTextSections: [
+        {
+          id: 0,
+          text: 'La seguridad e integridad de tus datos.',
+          image: '/images/services/services_data_segurity.png'
+        },
+        {
+          id: 1,
+          text:
+            'Hacer que tu negocio sea reconocido por los motores de busqueda en la web.',
+          image: '/images/services/services_seo_ux.png'
+        },
+        {
+          id: 2,
+          text:
+            'Crear interfaces intuitivas, usables, iteractivas e impactantes.',
+          image: '/images/services/services_ui.png'
+        },
+        {
+          id: 3,
+          text:
+            'Usar las mejores herramientas de desarrollo que se adapten a los requerimientos del cliente.',
+          image: '/images/services/services_tools.png'
         }
       ]
     }

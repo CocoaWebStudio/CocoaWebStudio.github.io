@@ -2,6 +2,7 @@ export default {
   menu: {
     elements: 'ELEMENTOS',
     works: 'TRABAJOS REALIZADOS',
+    services: 'SERVICIOS',
     contactUs: 'CONTÁCTENOS'
   },
   errors: {

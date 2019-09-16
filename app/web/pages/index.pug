@@ -1,13 +1,21 @@
 .wraper
   slider(:sliders="sliders")
   .col.text-center
-      h1.title.py-4 TODAS TUS IDEAS LAS PODEMOS TRANSFORMAR EN DESARROLLO WEB
+    h1.title.py-4 TODAS TUS IDEAS LAS PODEMOS TRANSFORMAR EN DESARROLLO WEB
   background.text-primary.py-2
   br
   imageSection#elements(:imageSections="imageSections")
   br
   .col.text-center
-      h1.title.py-4#works NUESTROS ULTIMOS TRABAJOS REALIZADOS
+    background.text-primary.py-2
+    h1.title.py-4#services PRESTAMOS SERVICIOS QUE SE ADAPTAN A TUS NECESIDADES PARA HACER CRECER TU NEGOCIO EN LA WEB
+    br
+    h3 Desarrollamos productos donde lo mas importate sea
+    br
+    .container
+      imageTextSection(:imageTextSections="imageTextSections")
+  .col.text-center
+    h1.title.py-4#works NUESTROS ULTIMOS TRABAJOS REALIZADOS
   background.text-primary.py-2
   galleryHorizontal.no-gutters(:galleryHorizontals="galleryHorizontals")
   background.text-primary.py-2
