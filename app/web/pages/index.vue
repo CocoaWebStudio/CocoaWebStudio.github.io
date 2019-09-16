@@ -47,7 +47,7 @@ export default {
           name: 'Rahua',
           description:
             'Fue desarrollada para una gran y reconocida empresa ecommerce que se dedica al cuidado y mantenimiento del cabello, piel y rostro, con ingredientes orgánicos naturales  y puros derivados de las platas',
-          size: '4',
+          size: '6',
           link: '//rahua.com/'
         },
         {
@@ -56,7 +56,7 @@ export default {
           name: 'Matte CG',
           description:
             'Reconocida Estudio Ecuatoriano de animación, VFX y Film, con una larga trayectoria en la creacion de proyectos por encargo para contenido y publicidad a nivel mundial',
-          size: '4',
+          size: '6',
           link: '//matte.cg/'
         },
         {
@@ -65,7 +65,7 @@ export default {
           name: 'Smarensol S.A',
           description:
             'Empresa enfocada al sector electrico, con una vasta experiencia en la comercializacion de equipos y suministros para sistemas eléctricos de Distribución, Transmisión y Subestaciones.',
-          size: '4',
+          size: '6',
           link: '//smarensol.com/'
         },
         {
@@ -74,7 +74,7 @@ export default {
           name: 'De Chez Moí',
           description:
             'Empredimiento de Juan Pablo Aguilar Lliguin, De Chez Moí es una ecommerce dedicada a la elavoración de chocolates orgánicos de alta gama.',
-          size: '4',
+          size: '6',
           link: '//dechezmoi.ca/'
         },
         {
@@ -83,7 +83,7 @@ export default {
           name: 'Lorem ipsum ',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
-          size: '4',
+          size: '6',
           link: '//smarensol.com/'
         },
         {
@@ -92,7 +92,7 @@ export default {
           name: 'Lorem ipsum ',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
-          size: '4',
+          size: '6',
           link: '//smarensol.com/'
         },
         {
@@ -101,7 +101,7 @@ export default {
           name: 'Lorem ipsum ',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
-          size: '4',
+          size: '6',
           link: '//smarensol.com/'
         },
         {
@@ -110,16 +110,7 @@ export default {
           name: 'Lorem ipsum ',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
-          size: '4',
-          link: '//smarensol.com/'
-        },
-        {
-          id: 8,
-          url: '/images/works/works_rahua.jpg',
-          name: 'Lorem ipsum ',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
-          size: '4',
+          size: '6',
           link: '//smarensol.com/'
         }
       ],
@@ -195,25 +186,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.bounce-enter-active {
-  animation: bounce-in 0.8s;
-}
-.bounce-leave-active {
-  animation: bounce-in 0.5s reverse;
-}
-@keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.text {
-}
-</style>
 <style src="./index.scss" lang="scss" scoped />
