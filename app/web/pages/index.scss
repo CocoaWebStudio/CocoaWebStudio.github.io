@@ -1,0 +1,7 @@
+.title {
+  font-size: 28px;
+  @media (min-width: 768px) {
+    font-size: 35px;
+  }
+  letter-spacing: 2px;
+}
