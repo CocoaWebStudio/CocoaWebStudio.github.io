@@ -119,68 +119,63 @@ export default {
       imageSections: [
         {
           id: 0,
-          name: 'Apollo',
-          image: '/images/elements/elements_apollo_logo.png'
+          name: 'Vuejs',
+          image: '/images/elements/elements_vue_logo.png'
         },
         {
           id: 1,
-          name: 'Bootstrap Vue',
-          image: '/images/elements/elements_bootrsp_vue_logo.png'
-        },
-        {
-          id: 2,
-          name: 'Bootstrap',
-          image: '/images/elements/elements_bootstrap_logo.png'
-        },
-        {
-          id: 3,
-          name: 'GraphQl',
-          image: '/images/elements/elements_graphql_logo.png'
-        },
-        {
-          id: 4,
-          name: 'Laravel',
-          image: '/images/elements/elements_laravel_logo.png'
-        },
-        {
-          id: 5,
-          name: 'Magento',
-          image: '/images/elements/elements_magento_logo.png'
-        },
-        {
-          id: 6,
-          name: 'Magento2',
-          image: '/images/elements/elements_magento2_logo.png'
-        },
-        {
-          id: 7,
           name: 'Nuxtjs',
           image: '/images/elements/elements_nuxt_logo.png'
         },
         {
-          id: 8,
-          name: 'Nuxtjs',
-          image: '/images/elements/elements_nuxtjs_logo.svg'
+          id: 2,
+          name: 'Bootstrap Vue',
+          image: '/images/elements/elements_bootrsp_vue_logo.png'
         },
         {
-          id: 9,
+          id: 3,
+          name: 'Bootstrap',
+          image: '/images/elements/elements_bootstrap_logo.png'
+        },
+        {
+          id: 4,
+          name: 'Apollo',
+          image: '/images/elements/elements_apollo_logo.png'
+        },
+        {
+          id: 5,
+          name: 'GraphQl',
+          image: '/images/elements/elements_graphql_logo.png'
+        },
+        {
+          id: 6,
           name: 'Shopify',
           image: '/images/elements/elements_shopify_logo.png'
         },
         {
+          id: 7,
+          name: 'Magento',
+          image: '/images/elements/elements_magento_logo.png'
+        },
+        {
+          id: 8,
+          name: 'Magento2',
+          image: '/images/elements/elements_magento2_logo.png'
+        },
+        {
+          id: 9,
+          name: 'Laravel',
+          image: '/images/elements/elements_laravel_logo.png'
+        },
+        {
           id: 10,
-          name: 'Vuejs',
-          image: '/images/elements/elements_vue_logo.svg'
+          name: 'Wordpress',
+          image: '/images/elements/elements_wordpress_logo.png'
         },
         {
           id: 11,
           name: 'Woo Commerce',
           image: '/images/elements/elements_woo_commerce_logo.png'
-        },
-        {
-          id: 12,
-          name: 'Wordpress',
-          image: '/images/elements/elements_wordpress_logo.png'
         }
       ],
       imageTextSections: [
