@@ -16,7 +16,7 @@
           height="100"
         )
         b-col(sm="12")
-          h4 {{image.text}}
+          h4 {{$t(image.text)}}
 </template>
 <script>
 export default {

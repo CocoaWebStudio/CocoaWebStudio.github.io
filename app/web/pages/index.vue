@@ -26,7 +26,7 @@ export default {
       sliders: [
         {
           id: 0,
-          title: 'smarensol',
+          title: 'chacunsonsite',
           url: '/images/slider/slider_chacunsonsite_logo.jpg'
         },
         {
@@ -47,8 +47,7 @@ export default {
           id: 0,
           url: '/images/works/works_rahua.jpg',
           name: 'Rahua',
-          description:
-            'Fue desarrollada para una gran y reconocida empresa ecommerce que se dedica al cuidado y mantenimiento del cabello, piel y rostro, con ingredientes orgánicos naturales  y puros derivados de las platas',
+          description: 'rahua',
           size: '6',
           link: '//rahua.com/'
         },
@@ -56,8 +55,7 @@ export default {
           id: 1,
           url: '/images/works/works_matte.jpg',
           name: 'Matte CG',
-          description:
-            'Reconocida Estudio Ecuatoriano de animación, VFX y Film, con una larga trayectoria en la creacion de proyectos por encargo para contenido y publicidad a nivel mundial',
+          description: 'matteGc',
           size: '6',
           link: '//matte.cg/'
         },
@@ -65,8 +63,7 @@ export default {
           id: 2,
           url: '/images/works/works_smarensol.jpg',
           name: 'Smarensol S.A',
-          description:
-            'Empresa enfocada al sector electrico, con una vasta experiencia en la comercializacion de equipos y suministros para sistemas eléctricos de Distribución, Transmisión y Subestaciones.',
+          description: 'smarensol',
           size: '6',
           link: '//smarensol.com/'
         },
@@ -74,8 +71,7 @@ export default {
           id: 3,
           url: '/images/works/works_dechezmoi.jpg',
           name: 'De Chez Moí',
-          description:
-            'Empredimiento de Juan Pablo Aguilar Lliguin, De Chez Moí es una ecommerce dedicada a la elavoración de chocolates orgánicos de alta gama.',
+          description: 'deChezMoi',
           size: '6',
           link: '//dechezmoi.ca/'
         },
@@ -181,31 +177,27 @@ export default {
       imageTextSections: [
         {
           id: 0,
-          text:
-            'Poner todo nuestro esfuerzo y compromiso para escribir codigo con amor.',
+          text: 'codeLovers',
           image: '/images/services/services_code_lovers.png'
         },
         {
           id: 1,
-          text: 'La seguridad e integridad de tus datos.',
+          text: 'security',
           image: '/images/services/services_data_segurity.png'
         },
         {
           id: 2,
-          text:
-            'Hacer que tu negocio sea reconocido por los motores de busqueda en la web.',
+          text: 'seoUx',
           image: '/images/services/services_seo_ux.png'
         },
         {
           id: 3,
-          text:
-            'Crear interfaces intuitivas, usables, iteractivas e impactantes.',
+          text: 'ui',
           image: '/images/services/services_ui.png'
         },
         {
           id: 4,
-          text:
-            'Usar las mejores herramientas de desarrollo que se adapten a tus requerimientos.',
+          text: 'tools',
           image: '/images/services/services_tools.png'
         }
       ]
