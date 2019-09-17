@@ -23,6 +23,8 @@ export default {
     'Empresa enfocada al sector electrico, con una vasta experiencia en la comercializacion de equipos y suministros para sistemas eléctricos de Distribución, Transmisión y Subestaciones.',
   deChezMoi:
     'Emprendimiento de Juan Pablo Aguilar Lliguin, De Chez Moí es una ecommerce dedicada a la elavoración de chocolates orgánicos de alta gama.',
+  test:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
   // imageTextSection
   codeLovers:
     'Poner todo nuestro esfuerzo y compromiso para escribir código con amor.',

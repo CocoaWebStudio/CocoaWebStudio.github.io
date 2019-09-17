@@ -23,6 +23,8 @@ export default {
     'Company focused on the electricity sector, with a vast experience in the commercialization of equipment and supplies for electrical distribution, transmission and substation systems.',
   deChezMoi:
     'Entrepreneurship by Juan Pablo Aguilar Lliguin, De Chez Moí is an ecommerce dedicated to the development of high-end organic chocolates.',
+  test:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
   // imageTextSection
   codeLovers: 'Put all our effort and commitment to write code with love.',
   security: 'The security and integrity of your data.',

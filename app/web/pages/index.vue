@@ -79,8 +79,7 @@ export default {
           id: 4,
           url: '/images/works/works_rahua.jpg',
           name: 'Lorem ipsum ',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
+          description: 'test',
           size: '6',
           link: '//smarensol.com/'
         },
@@ -88,8 +87,7 @@ export default {
           id: 5,
           url: '/images/works/works_rahua.jpg',
           name: 'Lorem ipsum ',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
+          description: 'test',
           size: '6',
           link: '//smarensol.com/'
         },
@@ -97,8 +95,7 @@ export default {
           id: 6,
           url: '/images/works/works_rahua.jpg',
           name: 'Lorem ipsum ',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
+          description: 'test',
           size: '6',
           link: '//smarensol.com/'
         },
@@ -106,8 +103,7 @@ export default {
           id: 7,
           url: '/images/works/works_rahua.jpg',
           name: 'Lorem ipsum ',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante sed mauris accumsan viverra nec nec tortor. In ac facilisis libero, eget dictum est. Suspendisse egestas maximus libero faucibus lacinia',
+          description: 'test',
           size: '6',
           link: '//smarensol.com/'
         }
