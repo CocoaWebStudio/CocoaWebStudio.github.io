@@ -10,7 +10,7 @@
     background.text-primary.py-2
     h1.title.py-4#services {{$t('service.title')}}
     br
-    h3 {{$t('service.subtitle')}}
+    h3.text-primary {{$t('service.subtitle')}}
     br
   imageTextSection(:imageTextSections="imageTextSections")
   br
@@ -24,7 +24,11 @@
   .container#contact-us
     .row
       .col.text-center
+        h2.text-primary {{$t('contact.title1')}}
+        h2.text-secondary {{$t('contact.title2')}}
+        br
         h1.title {{ $t('contact-us') }}
+        br
         br
     .row
       .col-md-4
@@ -36,7 +40,7 @@
           br
           h4.text-success.mx-1 {{ $t('data-city') }}
           br
-          a.text-warning(href="tel:+5812340581")
+          a.text-dark(href="tel:+5812340581")
             phone-icon
             strong.mx-3 {{ $t('data-telephone') }}
           span
