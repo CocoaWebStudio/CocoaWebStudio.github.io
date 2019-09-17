@@ -1,5 +1,11 @@
 {
   "en": {
+    "welcome": "ALL YOUR IDEAS CAN BE TRANSFORMED IN WEB DEVELOPMENT",
+    "service": {
+      "title": "WE PROVIDE SERVICES THAT ADAPT TO YOUR NEEDS TO MAKE YOUR BUSINESS GROW ON THE WEB",
+      "subtitle": "We develop products where the most important thing is"
+    },
+    "work": "OUR LATEST WORK PERFORMED",
     "data": {
       "title1": "Chacun",
       "title2": "Son",
@@ -12,6 +18,12 @@
     "contact-us": "CONTACT US"
   },
   "es": {
+    "welcome": "TODAS TUS IDEAS LAS PODEMOS TRANSFORMAR EN DESARROLLO WEB",
+    "service": {
+      "title": "PRESTAMOS SERVICIOS QUE SE ADAPTAN A TUS NECESIDADES PARA HACER CRECER TU NEGOCIO EN LA WEB",
+      "subtitle": "Desarrollamos productos donde lo más importante es"
+    },
+    "work": "NUESTROS ÚLTIMOS TRABAJOS REALIZADOS",
     "data": {
       "title1": "Chacun",
       "title2": "Son",
@@ -24,6 +36,12 @@
     "contact-us": "CONTÁCTENOS"
   },
   "fr": {
+    "welcome": "TOUTES VOS IDÉES PEUVENT ÊTRE TRANSFORMÉES EN DÉVELOPPEMENT WEB",
+    "service": {
+      "title": "NOUS FOURNISSONS DES SERVICES QUI ADAPTENT À VOS BESOINS POUR FAVORISER VOTRE ENTREPRISE SUR LE WEB",
+      "subtitle": "Nous développons des produits où la chose la plus importante est"
+    },
+    "work": "NOS DERNIERS TRAVAUX EFFECTUÉS",
     "data": {
       "title1": "Chacun",
       "title2": "Son",
