@@ -7,50 +7,54 @@
   }
   .card {
     border: 0;
-      .card-text {
-        max-width: 850px;
-        @media (min-width: 992px) {
-          max-width: 300px;
+    .opacity {
+      background: #1f0f3f42;
+        .card-text {
+          max-width: 850px;
+          @media (min-width: 992px) {
+            max-width: 300px;
+          }
+        .card-img {
+          max-width: auto;
         }
-      .card-img {
-        max-width: auto;
       }
-    }
-    .subtitle {
-      font-weight: 300;
-      font-size: 2rem;
-      word-spacing: 1px;
-      @media (min-width: 992px) {
-        font-size: 3rem;
+      .subtitle {
+        font-weight: 300;
+        font-size: 2rem;
+        word-spacing: 1px;
+        text-shadow: 1px 1px 4px var(--dark);
+        @media (min-width: 992px) {
+          font-size: 3rem;
+        }
       }
-    }
-    .text {
-      font-weight: 300;
-      font-size: 1rem;
-      margin-bottom: 0;
-      @media (min-width: 992px) {
-        font-size: 1.1rem;
+      .text {
+        font-weight: 300;
+        font-size: 1rem;
+        text-shadow: 2px 2px 4px var(--dark);
+        margin-bottom: 0;
+        @media (min-width: 992px) {
+          font-size: 1.1rem;
+        }
       }
-    }
-    .image {
-      filter: gray; /* IE6-9 */
-      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    }
-    .image:hover {
-      filter: none;
-      -webkit-filter: grayscale(0);
-        opacity:5;
-    }
-    .gallery{
-      height: 100%;
-      min-height: 250px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      @media (min-width: 992px) {
-        min-height: 380px;
+      .image {
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+      }
+      .image:hover {
+        filter: none;
+        -webkit-filter: grayscale(0);
+          opacity:5;
+      }
+      .gallery{
+        height: 100%;
+        min-height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-width: 992px) {
+          min-height: 380px;
+        }
       }
     }
   }
 }
-
