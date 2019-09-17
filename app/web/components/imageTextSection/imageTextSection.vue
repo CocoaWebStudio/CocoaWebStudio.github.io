@@ -4,7 +4,7 @@
       b-col( v-for="image in imageTextSections"
         :key="image.id",
         sm="6",
-        md="3",
+        md="4",
         cols="6"
 
       )
