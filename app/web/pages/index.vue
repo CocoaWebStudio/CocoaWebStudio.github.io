@@ -74,38 +74,6 @@ export default {
           description: 'deChezMoi',
           size: '6',
           link: '//dechezmoi.ca/'
-        },
-        {
-          id: 4,
-          url: '/images/works/works_rahua.jpg',
-          name: 'Lorem ipsum ',
-          description: 'test',
-          size: '6',
-          link: '//smarensol.com/'
-        },
-        {
-          id: 5,
-          url: '/images/works/works_rahua.jpg',
-          name: 'Lorem ipsum ',
-          description: 'test',
-          size: '6',
-          link: '//smarensol.com/'
-        },
-        {
-          id: 6,
-          url: '/images/works/works_rahua.jpg',
-          name: 'Lorem ipsum ',
-          description: 'test',
-          size: '6',
-          link: '//smarensol.com/'
-        },
-        {
-          id: 7,
-          url: '/images/works/works_rahua.jpg',
-          name: 'Lorem ipsum ',
-          description: 'test',
-          size: '6',
-          link: '//smarensol.com/'
         }
       ],
       imageSections: [
