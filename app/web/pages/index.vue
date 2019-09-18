@@ -166,6 +166,26 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'ChacunSonSite',
+      meta: [
+        {
+          property: 'og:title',
+          content: this.$t('css')
+        },
+        {
+          property: 'og:description',
+          content: this.$t('welcome')
+        },
+        {
+          property: 'og:image',
+          content: '~/assets/ChacunsonsiteLogo-sm.jpg'
+        },
+        { property: 'og:url', content: 'https://chacunsonsite.ca' }
+      ]
+    }
   }
 }
 </script>

@@ -1,5 +1,6 @@
 {
   "en": {
+    "css": "Chacun Son Site",
     "welcome": "ALL YOUR IDEAS CAN BE TRANSFORMED IN WEB DEVELOPMENT",
     "service": {
       "title": "WE PROVIDE SERVICES THAT ADAPT TO YOUR NEEDS TO MAKE YOUR BUSINESS GROW ON THE WEB",
@@ -22,6 +23,7 @@
     "contact-us": "CONTACT US"
   },
   "es": {
+    "css": "Chacun Son Site",
     "welcome": "TODAS TUS IDEAS LAS PODEMOS TRANSFORMAR EN DESARROLLO WEB",
     "service": {
       "title": "PRESTAMOS SERVICIOS QUE SE ADAPTAN A TUS NECESIDADES PARA HACER CRECER TU NEGOCIO EN LA WEB",
@@ -44,6 +46,7 @@
     "contact-us": "CONTÁCTENOS"
   },
   "fr": {
+    "css": "Chacun Son Site",
     "welcome": "TOUTES VOS IDÉES PEUVENT ÊTRE TRANSFORMÉES EN DÉVELOPPEMENT WEB",
     "service": {
       "title": "NOUS FOURNISSONS DES SERVICES QUI ADAPTENT À VOS BESOINS POUR FAVORISER VOTRE ENTREPRISE SUR LE WEB",
