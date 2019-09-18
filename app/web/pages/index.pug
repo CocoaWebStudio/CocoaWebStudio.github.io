@@ -1,10 +1,10 @@
 .wraper
   slider(:sliders="sliders")
   .col.text-center
-    h1.title.py-4 {{$t('welcome')}}
+    h1.title.py-4#elements {{$t('welcome')}}
   background.text-primary.py-2
   br
-  imageSection#elements(:imageSections="imageSections")
+  imageSection(:imageSections="imageSections")
   br
   .col.text-center
     background.text-primary.py-2
