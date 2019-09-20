@@ -1,8 +1,8 @@
 export default {
   menu: {
-    elements: 'ELEMENTS',
     works: 'WORKS',
     services: 'SERVICES',
+    technologies: 'TECHNOLOGIES',
     contactUs: 'CONTACT US'
   },
   errors: {
