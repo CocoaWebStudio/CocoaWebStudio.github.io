@@ -12,14 +12,16 @@ b-container(fluid)
       br
       h3.text-primary {{$t('service.subtitle')}}
       br
-  imageTextSection#elements.my-4(:imageTextSections="imageTextSections")
+  imageTextSection.my-4(:imageTextSections="imageTextSections")
   separator.text-primary.py-4
-
   b-row.py-4(no-gutters)
     b-col.text-center
       h1.title.py-4#works {{$t('work')}}
   galleryHorizontal.no-gutters(:galleryHorizontals="galleryHorizontals")
   separator.text-primary.py-2
+  b-row.py-4(no-gutters)
+    b-col.text-center
+      h1.title.py-4#elements {{$t('technology')}}
   imageSection(:imageSections="imageSections")
   br
   br
