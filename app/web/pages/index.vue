@@ -39,7 +39,7 @@ export default {
         },
         {
           id: 3,
-          url: '/images/slider/slider_chacunsonsite_error400.jpg'
+          url: '/images/slider/slider_chacunsonsite_socialNetworks.jpg'
         }
       ],
       galleryHorizontals: [
