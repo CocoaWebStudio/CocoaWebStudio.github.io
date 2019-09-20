@@ -6,7 +6,7 @@ import slider from '~/components/slider/slider.vue'
 import galleryHorizontal from '@/components/galleryHorizontal/galleryHorizontal.vue'
 import separator from '@/components/separator/separator.vue'
 import imageSection from '@/components/imageSection/imageSection.vue'
-import imageTextSection from '@/components/imageTextSection/imageTextSection.vue'
+import textsGallery from '@/components/textsGallery/textsGallery.vue'
 import contactForm from '~/components/contactForm/contactForm.vue'
 import { PhoneIcon, MailIcon } from 'vue-feather-icons'
 
@@ -16,7 +16,7 @@ export default {
     galleryHorizontal,
     separator,
     imageSection,
-    imageTextSection,
+    textsGallery,
     contactForm,
     PhoneIcon,
     MailIcon
@@ -138,7 +138,7 @@ export default {
           image: '/images/elements/elements_woo_commerce_logo.png'
         }
       ],
-      imageTextSections: [
+      textsGallerys: [
         {
           id: 0,
           text: 'codeLovers',
