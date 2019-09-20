@@ -1,28 +1,31 @@
-.wraper
-  slider(:sliders="sliders")
-  .col.text-center
-    h1.title.py-4#elements {{$t('welcome')}}
-  background.text-primary.py-2
-  br
-  imageSection(:imageSections="imageSections")
-  br
-  .col.text-center
-    background.text-primary.py-2
-    h1.title.py-4#services {{$t('service.title')}}
-    br
-    h3.text-primary {{$t('service.subtitle')}}
-    br
-  imageTextSection(:imageTextSections="imageTextSections")
-  br
-  .col.text-center
-    h1.title.py-4#works {{$t('work')}}
-  background.text-primary.py-2
+b-container(fluid)
+  b-row(no-gutters)
+    b-col
+      slider(:sliders="sliders")
+  b-row(no-gutters)
+    b-col.text-center
+      h1.py-4#elements {{$t('slogan')}}
+  background.text-primary.py-4
+  b-row.py-4(no-gutters)
+    b-col.text-center
+      h2.py-4#services {{$t('service.title')}}
+      br
+      h3.text-primary {{$t('service.subtitle')}}
+      br
+  imageTextSection.my-4(:imageTextSections="imageTextSections")
+  background.text-primary.py-4
+
+  b-row.py-4(no-gutters)
+    b-col.text-center
+      h1.title.py-4#works {{$t('work')}}
   galleryHorizontal.no-gutters(:galleryHorizontals="galleryHorizontals")
   background.text-primary.py-2
+  imageSection(:imageSections="imageSections")
+
   br
   br
-  .container#contact-us
-    .row
+  b-container#contact-us
+    b-row.py-4(no-gutters)
       .col.text-center
         h2.text-primary {{$t('contact.title1')}}
         h2.text-secondary {{$t('contact.title2')}}
