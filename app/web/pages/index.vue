@@ -4,7 +4,7 @@
 <script>
 import slider from '~/components/slider/slider.vue'
 import galleryHorizontal from '@/components/galleryHorizontal/galleryHorizontal.vue'
-import background from '@/components/background/background.vue'
+import separator from '@/components/separator/separator.vue'
 import imageSection from '@/components/imageSection/imageSection.vue'
 import imageTextSection from '@/components/imageTextSection/imageTextSection.vue'
 import contactForm from '~/components/contactForm/contactForm.vue'
@@ -14,7 +14,7 @@ export default {
   components: {
     slider,
     galleryHorizontal,
-    background,
+    separator,
     imageSection,
     imageTextSection,
     contactForm,
