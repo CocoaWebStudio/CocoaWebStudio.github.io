@@ -1,7 +1,7 @@
 {
   "en": {
     "css": "Chacun Son Site",
-    "welcome": "ALL YOUR IDEAS CAN BE TRANSFORMED IN WEB DEVELOPMENT",
+    "slogan": "WE CONVERT YOUR IDEAS TO WEB PROJECTS",
     "service": {
       "title": "WE PROVIDE SERVICES THAT ADAPT TO YOUR NEEDS TO MAKE YOUR BUSINESS GROW ON THE WEB",
       "subtitle": "We develop products where the most important thing for us is"
@@ -24,12 +24,12 @@
   },
   "es": {
     "css": "Chacun Son Site",
-    "welcome": "TODAS TUS IDEAS LAS PODEMOS TRANSFORMAR EN DESARROLLO WEB",
+    "slogan": "HACEMOS DE TUS IDEAS PROYETOS WEB",
     "service": {
-      "title": "PRESTAMOS SERVICIOS QUE SE ADAPTAN A TUS NECESIDADES PARA HACER CRECER TU NEGOCIO EN LA WEB",
+      "title": "NUESTROS SERVICIOS SE ADAPTAN A SUS NECESIDADES PARA HACER CRECER SU NEGOCIO EN LA WEB",
       "subtitle": "Desarrollamos productos donde lo más importante para nosotros es"
     },
-    "work": "NUESTROS ÚLTIMOS TRABAJOS REALIZADOS",
+    "work": "ÚLTIMOS TRABAJOS REALIZADOS",
     "contact": {
       "title1": "Cuentanos sobre el proyecto que quieres hacer,",
       "title2": "Seguro te podemos ayudar!"
@@ -47,7 +47,7 @@
   },
   "fr": {
     "css": "Chacun Son Site",
-    "welcome": "TOUTES VOS IDÉES PEUVENT ÊTRE TRANSFORMÉES EN DÉVELOPPEMENT WEB",
+    "slogan": "ON FAIT DE VOS IDÉES DES PROJETS WEB",
     "service": {
       "title": "NOUS FOURNISSONS DES SERVICES QUI ADAPTENT À VOS BESOINS POUR FAVORISER VOTRE ENTREPRISE SUR LE WEB",
       "subtitle": "Nous développons des produits où la chose la plus importante pour nous est"
