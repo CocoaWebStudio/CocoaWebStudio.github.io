@@ -3,6 +3,7 @@ export default {
     works: 'WORKS',
     services: 'SERVICES',
     technologies: 'TECHNOLOGIES',
+    blog: 'BLOG',
     contactUs: 'CONTACT US'
   },
   errors: {
