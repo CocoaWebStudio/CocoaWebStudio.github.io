@@ -20,19 +20,19 @@ b-container(fluid)
   galleryHorizontal.no-gutters(:galleryHorizontals="galleryHorizontals")
   separator.text-primary.py-2
   br
-  b-row(no-gutters)
-    b-col.text-center
-      h1#blog BLOG
-      br
-  b-col.text-center
-    gallery(:gallerys="gallerys")
-  separator.text-primary.py-2
   b-row.py-4(no-gutters)
     b-col.text-center
       h1.title.py-4#technologies {{$t('technology')}}
   imageSection(:imageSections="imageSections")
   br
   br
+  separator.text-primary.py-4
+  b-row(no-gutters)
+    b-col.text-center
+      h1#blog BLOG
+      br
+  b-col.text-center
+    gallery(:gallerys="gallerys")
   separator.text-primary.py-4
   b-container#contact-us
     b-row.py-4(no-gutters)
