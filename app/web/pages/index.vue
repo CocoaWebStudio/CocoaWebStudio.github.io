@@ -171,7 +171,7 @@ export default {
         {
           id: 0,
           url: '/images/blog/vue-logo.jpg',
-          title: '¿Porque Usamos Vuejs?',
+          title: 'titleVue',
           description: 'postVue',
           size: '12'
         }
