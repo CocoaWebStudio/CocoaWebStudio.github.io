@@ -19,6 +19,13 @@ b-container(fluid)
       h1.title.py-4#works {{$t('work')}}
   galleryHorizontal.no-gutters(:galleryHorizontals="galleryHorizontals")
   separator.text-primary.py-2
+  br
+  b-row(no-gutters)
+    b-col.text-center
+      h1#blog BLOG
+      br
+      gallery(:gallerys="gallerys")
+  separator.text-primary.py-2
   b-row.py-4(no-gutters)
     b-col.text-center
       h1.title.py-4#technologies {{$t('technology')}}

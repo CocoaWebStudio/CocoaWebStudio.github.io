@@ -8,6 +8,7 @@ import separator from '@/components/separator/separator.vue'
 import imageSection from '@/components/imageSection/imageSection.vue'
 import textsGallery from '@/components/textsGallery/textsGallery.vue'
 import contactForm from '~/components/contactForm/contactForm.vue'
+import gallery from '@/components/gallery/gallery.vue'
 import { PhoneIcon, MailIcon } from 'vue-feather-icons'
 
 export default {
@@ -18,6 +19,7 @@ export default {
     imageSection,
     textsGallery,
     contactForm,
+    gallery,
     PhoneIcon,
     MailIcon
   },
@@ -163,6 +165,15 @@ export default {
           id: 4,
           text: 'tools',
           image: '/images/services/services_tools.png'
+        }
+      ],
+      gallerys: [
+        {
+          id: 0,
+          url: '/images/blog/vue-logo.jpg',
+          title: '¿Porque Usamos Vuejs?',
+          description: 'postVue',
+          size: '12'
         }
       ]
     }

@@ -8,7 +8,7 @@ header.sticky-top.bd-navbar
         b-nav-item( href="#services" ) {{ $t('menu.services') }}
         b-nav-item( href="#works" ) {{ $t('menu.works') }}
         b-nav-item( href="#technologies" ) {{ $t('menu.technologies') }}
-        nuxt-link.nav-link(:to="localePath('blog')") {{ $t('menu.blog')}}
+        b-nav-item( href="#blog" ) {{ $t('menu.blog')}}
         b-nav-item( href="#contact-us" ) {{ $t('menu.contactUs') }}
         b-nav-item-dropdown(variant="link", size="lg", right )
           template(slot="button-content")
