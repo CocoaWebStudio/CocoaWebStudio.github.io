@@ -30,7 +30,7 @@ export default {
   methods: {
     Scroll() {
       if (window.scrollY > 0) {
-        this.imgHeight = window.innerWidth > 600 ? 65 : 45
+        this.imgHeight = window.innerWidth > 600 ? 35 : 25
       } else {
         this.bigHeight()
       }
@@ -47,7 +47,7 @@ export default {
       } else if (this.widthScreen > 990 && this.widthScreen < 1254) {
         this.imgHeight = 60
       } else if (this.widthScreen > 300 && this.widthScreen < 899) {
-        this.imgHeight = 50
+        this.imgHeight = 30
       } else {
         this.imgHeight = 85
       }
