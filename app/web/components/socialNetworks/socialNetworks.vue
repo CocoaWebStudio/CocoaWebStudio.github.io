@@ -4,10 +4,14 @@
       a.text-success(href="mailto:quebec@chacunsonsite.ca")
         mail-icon
         span &nbsp Canadá
+      .col.py-1
+        span quebec@chacunsonsite.ca
     .col.py-5
       a.text-success(href="mailto:ecuador@chacunsonsite.ca")
         mail-icon
         span &nbsp Ecuador
+      .col.py-1
+        span ecuador@chacunsonsite.ca
     .col.py-5
       a.text-success(href="tel:+5812340581")
         phone-icon

@@ -1,7 +1,7 @@
 <template lang="pug">
   b-container.py-2.gb-light
     b-row
-      b-col( v-for="image in imageTextSections"
+      b-col( v-for="image in textsGallerys"
         :key="image.id",
         sm="6",
         md="4",
@@ -21,7 +21,7 @@
 <script>
 export default {
   props: {
-    imageTextSections: {
+    textsGallerys: {
       type: Array,
       required: true
     }

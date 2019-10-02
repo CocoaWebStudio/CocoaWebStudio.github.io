@@ -1,11 +1,14 @@
 .row
-  .col-6.col-md-3(v-for="gallery in gallerys", :key="gallery.id")
-    b-card-group
-      b-card.zoom(
-        :title="$t(gallery.title)"
+  .col-12.col-sm-6.col-md-3(v-for="gallery in gallerys", :key="gallery.id", :class="'col-md-'+gallery.size")
+    b-card
+      .col-12.gallery(
+        v-lazy="gallery.url"
+        src=""
+        :style="{ backgroundImage: 'url(' + gallery.url + ')' }"
+        :alt="gallery.title"
+        img-top
         )
-        b-card-img(v-lazy="gallery.url",
-          :alt="$t(gallery.title)",
-          src,
-          top
-        )
+      .col.text-center
+        h1.subtitle {{$t(gallery.title)}}
+        p.text {{$t(gallery.description)}}
+

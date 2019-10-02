@@ -4,26 +4,29 @@ b-container(fluid)
       slider(:sliders="sliders")
   b-row(no-gutters)
     b-col.text-center
-      h1.py-4#elements {{$t('slogan')}}
-  background.text-primary.py-4
+      h1.py-4 {{$t('slogan')}}
+  separator.text-primary.py-4
   b-row.py-4(no-gutters)
     b-col.text-center
       h2.py-4#services {{$t('service.title')}}
       br
       h3.text-primary {{$t('service.subtitle')}}
       br
-  imageTextSection.my-4(:imageTextSections="imageTextSections")
-  background.text-primary.py-4
-
+  textsGallery.my-4(:textsGallerys="textsGallerys")
+  separator.text-primary.py-4
   b-row.py-4(no-gutters)
     b-col.text-center
       h1.title.py-4#works {{$t('work')}}
   galleryHorizontal.no-gutters(:galleryHorizontals="galleryHorizontals")
-  background.text-primary.py-2
+  separator.text-primary.py-2
+  br
+  b-row.py-4(no-gutters)
+    b-col.text-center
+      h1.title.py-4#technologies {{$t('technology')}}
   imageSection(:imageSections="imageSections")
-
   br
   br
+  separator.text-primary.py-4
   b-container#contact-us
     b-row.py-4(no-gutters)
       .col.text-center
@@ -33,7 +36,7 @@ b-container(fluid)
         h1.title {{ $t('contact-us') }}
         br
         br
-    .row
+    b-row(no-gutters)
       .col-md-4
         address(itemscope itemtype="http://schema.org/LocalBusiness")
           h1

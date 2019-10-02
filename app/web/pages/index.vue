@@ -5,19 +5,21 @@
 import { PhoneIcon, MailIcon } from 'vue-feather-icons'
 import slider from '~/components/slider/slider.vue'
 import galleryHorizontal from '@/components/galleryHorizontal/galleryHorizontal.vue'
-import background from '@/components/background/background.vue'
+import separator from '@/components/separator/separator.vue'
 import imageSection from '@/components/imageSection/imageSection.vue'
-import imageTextSection from '@/components/imageTextSection/imageTextSection.vue'
+import textsGallery from '@/components/textsGallery/textsGallery.vue'
 import contactForm from '~/components/contactForm/contactForm.vue'
+import gallery from '@/components/gallery/gallery.vue'
 
 export default {
   components: {
     slider,
     galleryHorizontal,
-    background,
+    separator,
     imageSection,
-    imageTextSection,
+    textsGallery,
     contactForm,
+    gallery,
     PhoneIcon,
     MailIcon
   },
@@ -39,7 +41,7 @@ export default {
         },
         {
           id: 3,
-          url: '/images/slider/slider_chacunsonsite_error400.jpg'
+          url: '/images/slider/slider_chacunsonsite_socialNetworks.jpg'
         }
       ],
       galleryHorizontals: [
@@ -80,65 +82,65 @@ export default {
         {
           id: 0,
           name: 'Vuejs',
-          image: '/images/elements/elements_vue_logo.png'
+          image: '/images/technologies/technologies_vue_logo.png'
         },
         {
           id: 1,
           name: 'Nuxtjs',
-          image: '/images/elements/elements_nuxt_logo.png'
+          image: '/images/technologies/technologies_nuxt_logo.png'
         },
         {
           id: 2,
           name: 'Bootstrap Vue',
-          image: '/images/elements/elements_bootrsp_vue_logo.png'
+          image: '/images/technologies/technologies_bootrsp_vue_logo.png'
         },
         {
           id: 3,
           name: 'Bootstrap',
-          image: '/images/elements/elements_bootstrap_logo.png'
+          image: '/images/technologies/technologies_bootstrap_logo.png'
         },
         {
           id: 4,
           name: 'Apollo',
-          image: '/images/elements/elements_apollo_logo.png'
+          image: '/images/technologies/technologies_apollo_logo.png'
         },
         {
           id: 5,
           name: 'GraphQl',
-          image: '/images/elements/elements_graphql_logo.png'
+          image: '/images/technologies/technologies_graphql_logo.png'
         },
         {
           id: 6,
           name: 'Shopify',
-          image: '/images/elements/elements_shopify_logo.png'
+          image: '/images/technologies/technologies_shopify_logo.png'
         },
         {
           id: 7,
           name: 'Magento',
-          image: '/images/elements/elements_magento_logo.png'
+          image: '/images/technologies/technologies_magento_logo.png'
         },
         {
           id: 8,
           name: 'Magento2',
-          image: '/images/elements/elements_magento2_logo.png'
+          image: '/images/technologies/technologies_magento2_logo.png'
         },
         {
           id: 9,
           name: 'Laravel',
-          image: '/images/elements/elements_laravel_logo.png'
+          image: '/images/technologies/technologies_laravel_logo.png'
         },
         {
           id: 10,
           name: 'Wordpress',
-          image: '/images/elements/elements_wordpress_logo.png'
+          image: '/images/technologies/technologies_wordpress_logo.png'
         },
         {
           id: 11,
           name: 'Woo Commerce',
-          image: '/images/elements/elements_woo_commerce_logo.png'
+          image: '/images/technologies/technologies_woo_commerce_logo.png'
         }
       ],
-      imageTextSections: [
+      textsGallerys: [
         {
           id: 0,
           text: 'codeLovers',
@@ -163,6 +165,15 @@ export default {
           id: 4,
           text: 'tools',
           image: '/images/services/services_tools.png'
+        }
+      ],
+      gallerys: [
+        {
+          id: 0,
+          url: '/images/blog/vue-logo.jpg',
+          title: 'titleVue',
+          description: 'postVue',
+          size: '12'
         }
       ]
     }
