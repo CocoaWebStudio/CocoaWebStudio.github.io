@@ -1,57 +1,25 @@
-require('dotenv').config()
-const i18n = require('./i18n.config'),
-  bootstrapVue = require('./bootstrapVue.config')
-  fs = require('fs'),
-  dotenv = require('dotenv')
+import fs from 'fs'
+import dotenv from 'dotenv'
+import i18n from './i18n.config'
+import head from './head.config'
+import bootstrapVue from './bootstrapVue.config'
 
-if(process.env.NODE_ENV === 'production' && fs.existsSync('.env.production')){
+if (process.env.NODE_ENV === 'production' && fs.existsSync('.env.production')) {
   const envConfig = dotenv.parse(fs.readFileSync('.env.production'))
-  for (let k in envConfig) {
+  for (const k in envConfig) {
     process.env[k] = envConfig[k]
   }
 }
 
-module.exports = {
+dotenv.config()
+
+export default {
   mode: 'universal',
   srcDir: 'web/',
   /*
    ** Headers of the page
    */
-  head: {
-    meta: [
-      {
-        charset: 'utf-8'
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
-      },
-      {
-        name: 'robots',
-        content: 'index, follow'
-      }
-    ],
-    script: [
-      {
-        src:
-          'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit',
-        async: true,
-        defer: true
-      }
-    ],
-    noscript: [
-      {
-        innerHTML: 'This website requires JavaScript.'
-      }
-    ],
-    link: [
-      {
-        rel: 'icon',
-        type: 'image/x-icon',
-        href: '/favicon.ico'
-      }
-    ]
-  },
+  head,
 
   /*
    ** Customize the progress-bar color
@@ -84,9 +52,10 @@ module.exports = {
     'bootstrap-vue/nuxt',
     '@nuxtjs/dotenv',
     '@nuxtjs/pwa',
-    ['nuxt-i18n', i18n]
+    ['nuxt-i18n']
   ],
-  bootstrapVue: bootstrapVue,
+  bootstrapVue,
+  i18n,
 
   /*
    ** Axios module configuration
@@ -103,6 +72,9 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
+    transpile: [
+      "vee-validate/dist/rules"
+    ],
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

@@ -1,25 +1,23 @@
+// jest.config.js
 module.exports = {
   verbose: true,
-  collectCoverage: true,
-  collectCoverageFrom: ["**/*.{js,vue}", "!**/node_modules/**"],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/web/$1',
     '^vue$': 'vue/dist/vue.common.js'
   },
-  moduleFileExtensions: ['js',"json", 'vue', 'pug', 'scss'],
+  moduleFileExtensions: ['js', 'vue', 'json', 'pug', 'scss'],
   transform: {
-    '^.+\\.js$': "babel-jest",
-    '.*\\.(vue)$': "vue-jest",
-    '^.+\\.pug$': "vue-jest",
-    '^.+\\.scss$': "vue-jest"
+    '^.+\\.js$': 'babel-jest',
+    '.*\\.(vue)$': 'vue-jest',
+    '^.+\\.pug$': 'vue-jest',
+    '^.+\\.scss$': 'vue-jest'
   },
-  verbose: true,
   snapshotSerializers: ["jest-serializer-vue"],
   globals: {
-    "vue-jest": {
+    'vue-jest': {
       pug: {
-        basedir: "<rootDir>/web/$1"
+        basedir: '<rootDir>/web/$1'
       },
       resources: {
         scss: [
