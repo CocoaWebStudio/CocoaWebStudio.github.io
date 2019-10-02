@@ -2,13 +2,13 @@
 <template lang="pug" src="./index.pug" />
 
 <script>
+import { PhoneIcon, MailIcon } from 'vue-feather-icons'
 import slider from '~/components/slider/slider.vue'
 import galleryHorizontal from '@/components/galleryHorizontal/galleryHorizontal.vue'
 import background from '@/components/background/background.vue'
 import imageSection from '@/components/imageSection/imageSection.vue'
 import imageTextSection from '@/components/imageTextSection/imageTextSection.vue'
 import contactForm from '~/components/contactForm/contactForm.vue'
-import { PhoneIcon, MailIcon } from 'vue-feather-icons'
 
 export default {
   components: {
@@ -177,7 +177,7 @@ export default {
         },
         {
           property: 'og:description',
-          content: this.$t('welcome')
+          content: this.$t('slogan')
         },
         {
           property: 'og:image',

@@ -1,18 +1,11 @@
-import Vue from 'vue'
-import {
-  Validator,
-  install as VeeValidate
-} from 'vee-validate/dist/vee-validate.minimal.esm.js'
-import { required, min, max, email } from 'vee-validate/dist/rules.esm.js'
+import { extend } from 'vee-validate'
+import { required, min, max, email } from 'vee-validate/dist/rules'
 
 // Add the rules you need.
-Validator.extend('required', required)
-Validator.extend('min', min)
-Validator.extend('max', max)
-Validator.extend('email', email)
-
-Vue.use(VeeValidate, {
-  inject: false,
-  // Important for bootstrap-vue
-  fieldsBagName: 'veeFields'
+extend('required', {
+  ...required,
+  message: 'This field is required'
 })
+extend('min', min)
+extend('max', max)
+extend('email', email)

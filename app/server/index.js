@@ -1,10 +1,10 @@
-debugger
-const Koa = require('koa'),
-  consola = require('consola'),
-  { Nuxt, Builder } = require('nuxt'),
-  config = require('../nuxt.config.js'),
-  { router } = require('./router'),
-  app = new Koa()
+import Koa from 'koa'
+import consola from 'consola'
+import { Nuxt, Builder } from 'nuxt'
+import config from '../nuxt.config.js'
+import { router } from './router'
+
+const app = new Koa()
 
 // Import and Set Nuxt.js options
 config.dev = !(app.env === 'production')

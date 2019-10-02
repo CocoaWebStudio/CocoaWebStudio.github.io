@@ -4,14 +4,18 @@
 </template>
 
 <script>
+import { ValidationObserver } from 'vee-validate'
+import BTextInputWithValidation from '~/components//inputValidation/BTextInputWithValidation.vue'
+import BTextAreaInputWithValidation from '~/components/inputValidation/BTextAreaInputWithValidation.vue'
+
 export default {
   name: 'ContactForm',
   components: {
     VueRecaptcha: () => import('vue-recaptcha'),
-    WaitIcon: () => import('~/components/waitIcon/waitIcon.vue')
-  },
-  head() {
-    return {}
+    WaitIcon: () => import('~/components/waitIcon/waitIcon.vue'),
+    ValidationObserver,
+    BTextInputWithValidation,
+    BTextAreaInputWithValidation
   },
   data() {
     return {
@@ -25,7 +29,8 @@ export default {
       recaptcha_key: process.env.RECAPTCHA_PUBLIC,
       waiting: false,
       success: false,
-      error: false
+      error: false,
+      response: ''
     }
   },
   $_veeValidate: {
@@ -40,12 +45,13 @@ export default {
         timeout: 8000,
         data: this.form
       })
-        .then(res => {
+        .then((res) => {
           this.success = true
           this.error = false
           this.onReset()
+          this.response = res.data.sendEmail
         })
-        .catch(e => {
+        .catch((e) => {
           this.error = true
           this.success = false
         })
@@ -60,12 +66,13 @@ export default {
       this.form.recaptcha = ''
       this.$validator.reset()
     },
-    onSubmit() {
-      this.$validator.validateAll().then(res => {
-        if (res) {
-          this.$refs.contactRecaptcha.execute()
-        }
-      })
+    async onSubmit() {
+      const isValid = await this.$refs.observer.validate()
+      if (!isValid) {
+        console.log('nope!')
+      } else {
+        this.$refs.contactRecaptcha.execute()
+      }
     },
     onCaptchaVerified(recaptchaToken) {
       this.status = 'submitting'
@@ -82,7 +89,7 @@ export default {
       }
       return null
     },
-    onCaptchaExpired: function() {
+    onCaptchaExpired() {
       this.$refs.contactRecaptcha.reset()
     }
   }
