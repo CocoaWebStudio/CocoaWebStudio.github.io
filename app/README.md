@@ -1,4 +1,4 @@
-# nuxtSmarensol
+# nuxtChacunSonSite
 
 > My grand Nuxt.js project
 

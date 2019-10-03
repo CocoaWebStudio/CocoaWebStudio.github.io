@@ -3,7 +3,7 @@
     navMenu
     .wraper.d-flex.flex-column
       nuxt.flex-fill
-      footerSection.w-100.text-light
+      footerSection.col.w-100.text-success
 </template>
 <script>
 import navMenu from '~/components/navMenu/navMenu'

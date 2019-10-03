@@ -1,15 +1,11 @@
-const KoaRouter = require('koa-router'),
-  router = new KoaRouter(),
-  koaBody = require('koa-body'),
-  postContactUs = require('./contact-us').postContactUs,
-  postBrochure = require('./brochure').postBrochure
+import KoaRouter from 'koa-router'
+import koaBody from 'koa-body'
+import { postContactUs } from './contact-us'
+
+const router = new KoaRouter()
 
 router.post('/contact-us', koaBody(), async (ctx, next) => {
   await postContactUs(ctx, next)
 })
 
-router.post('/brochure', koaBody(), async (ctx, next) => {
-  await postBrochure(ctx, next)
-})
-
-module.exports = { router }
+export { router }

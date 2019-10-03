@@ -1,0 +1,17 @@
+.row.row-eq-height
+  b-card.col-12.bg-gallery(no-body, v-for="galleryHorizontal in galleryHorizontals", :key="galleryHorizontal.id",
+    v-lazy="galleryHorizontal.url",
+    :class="'col-md-'+galleryHorizontal.size",
+    :style="{ backgroundColor: '#f7931e ' }"
+  )
+    nuxt-link(:to="galleryHorizontal.link", target="_blank",
+        rel="noopener noreferrer")
+      b-row.no-gutters.opacity
+        b-col.card-text(sm="12")
+          b-card-body.text-light
+            h1.subtitle {{galleryHorizontal.name}}
+            p.text {{$t(galleryHorizontal.description)}}
+        b-col.card-img.zoom
+          .col-sm-12.image.gallery(
+            :style="{ backgroundImage: 'url(' + galleryHorizontal.url + ')' }"
+          )

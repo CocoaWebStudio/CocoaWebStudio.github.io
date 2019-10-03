@@ -1,0 +1,56 @@
+b-container(fluid)
+  b-row(no-gutters)
+    b-col
+      slider(:sliders="sliders")
+  b-row(no-gutters)
+    b-col.text-center
+      h1.py-4 {{$t('slogan')}}
+  separator.text-primary.py-4
+  b-row.py-4(no-gutters)
+    b-col.text-center
+      h2.py-4#services {{$t('service.title')}}
+      br
+      h3.text-primary {{$t('service.subtitle')}}
+      br
+  textsGallery.my-4(:textsGallerys="textsGallerys")
+  separator.text-primary.py-4
+  b-row.py-4(no-gutters)
+    b-col.text-center
+      h1.title.py-4#works {{$t('work')}}
+  galleryHorizontal.no-gutters(:galleryHorizontals="galleryHorizontals")
+  separator.text-primary.py-2
+  br
+  b-row.py-4(no-gutters)
+    b-col.text-center
+      h1.title.py-4#technologies {{$t('technology')}}
+  imageSection(:imageSections="imageSections")
+  br
+  br
+  separator.text-primary.py-4
+  b-container#contact-us
+    b-row.py-4(no-gutters)
+      .col.text-center
+        h2.text-primary {{$t('contact.title1')}}
+        h2.text-secondary {{$t('contact.title2')}}
+        br
+        h1.title {{ $t('contact-us') }}
+        br
+        br
+    b-row(no-gutters)
+      .col-md-4
+        address(itemscope itemtype="http://schema.org/LocalBusiness")
+          h4.text-warning.mx-1 {{ $t('data-city') }}
+          br
+          a.text-dark(href="tel:+15812340581")
+            phone-icon
+            strong.mx-3 +1 (581) 234-0581
+          span
+          br
+          br
+          a.text-dark(href="mailto:info@chacunsonsite.ca")
+            mail-icon
+            strong.mx-3 info@chacunsonsite.ca
+          br
+          br
+      .col-md-8
+        contactForm

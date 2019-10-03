@@ -34,15 +34,15 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
+$blue:    #2e31d3 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #09b92f !default;
-$teal:    #20c997 !default;
+$red:     #b41f1f !default;
+$orange:  #f7931e !default;
+$yellow:  #f1c232 !default;
+$green:   #29a865 !default;
+$teal:    #b0cec5 !default;
 $cyan:    #17a2b8 !default;
 
 $colors: () !default;
@@ -66,10 +66,10 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $red !default;
+$secondary:     $orange !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          $blue !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $white !default;
@@ -293,8 +293,8 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2 !default;
-$h2-font-size:                $font-size-base * 1.8 !default;
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2.1 !default;
 $h3-font-size:                $font-size-base * 1.6 !default;
 $h4-font-size:                $font-size-base * 1.4 !default;
 $h5-font-size:                $font-size-base * 1.2 !default;
@@ -992,7 +992,7 @@ $thumbnail-padding:                 .25rem !default;
 $thumbnail-bg:                      $body-bg !default;
 $thumbnail-border-width:            0 !default;
 $thumbnail-border-color:            $body-bg !default;
-$thumbnail-border-radius:            !default;
+$thumbnail-border-radius:           0 !default;
 $thumbnail-box-shadow:              none !default;
 
 

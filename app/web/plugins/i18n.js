@@ -1,17 +1,16 @@
-import en from 'vee-validate/dist/locale/en'
-import es from 'vee-validate/dist/locale/es'
-import { Validator } from 'vee-validate/dist/vee-validate.minimal.esm.js'
+import en from 'vee-validate/dist/locale/en.json'
+import es from 'vee-validate/dist/locale/es.json'
+import fr from 'vee-validate/dist/locale/fr.json'
+import { localize } from 'vee-validate/'
 export default function({ app }) {
   // Loading languages for Vee
-
-  Validator.localize('en', en)
-  Validator.localize('es', es)
+  localize({ en, es, fr })
 
   // Localizing the app when user refresh or access a localized link
-  Validator.localize(app.i18n.loadedLanguages[0])
+  localize(app.i18n.loadedLanguages[0])
 
   // beforeLanguageSwitch called right before setting a new locale
   app.i18n.beforeLanguageSwitch = (oldLocale, newLocale) => {
-    Validator.localize(newLocale)
+    localize(newLocale)
   }
 }

@@ -1,8 +1,8 @@
 'use strict'
-const rp = require('request-promise-native'),
-  validator = require('validator'),
-  { sendEmail } = require('../commonFunctions'),
-  consola = require('consola')
+import rp from 'request-promise-native'
+import validator from 'validator'
+import { sendEmail } from '../commonFunctions'
+import consola from 'consola'
 
 class Validation {
   constructor(body) {
@@ -32,7 +32,7 @@ class Validation {
   }
 }
 
-async function postContactUs(ctx, next) {
+export async function postContactUs(ctx, next) {
   await rp({
     method: 'POST',
     uri: process.env.RECAPTCHA_SERVER,
@@ -42,7 +42,7 @@ async function postContactUs(ctx, next) {
     },
     json: true // Automatically stringifies the body to JSON
   })
-    .then(body => {
+    .then(async body => {
       const form = new Validation(ctx.request.body)
       if (body.success && form.validate()) {
         consola.ready({
@@ -85,5 +85,3 @@ async function postContactUs(ctx, next) {
       })
     })
 }
-
-module.exports = { postContactUs }
