@@ -51,7 +51,6 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/dotenv',
-    '@nuxtjs/pwa',
     ['nuxt-i18n']
   ],
   bootstrapVue,

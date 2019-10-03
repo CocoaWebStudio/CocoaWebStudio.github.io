@@ -1,21 +1,15 @@
 <template lang="pug">
   .row
-    .col.py-5
-      a.text-success(href="mailto:quebec@chacunsonsite.ca")
+    .col.py-3
+      a.text-warning(href="mailto:info@chacunsonsite.ca")
         mail-icon
-        span &nbsp Canadá
-      .col.py-1
-        span quebec@chacunsonsite.ca
-    .col.py-5
-      a.text-success(href="mailto:ecuador@chacunsonsite.ca")
-        mail-icon
-        span &nbsp Ecuador
-      .col.py-1
-        span ecuador@chacunsonsite.ca
-    .col.py-5
-      a.text-success(href="tel:+5812340581")
+        .col.py-1.text-warning
+          span info@chacunsonsite.ca
+    .col.py-3
+      a.text-warning(href="tel:+15812340581")
         phone-icon
-        span +1 (581) 2340581
+        .col.py-1.text-warning
+          span +1 (581) 234-0581
 </template>
 <script>
 import { MailIcon, PhoneIcon } from 'vue-feather-icons'

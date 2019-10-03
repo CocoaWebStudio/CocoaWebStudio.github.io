@@ -1,7 +1,7 @@
 {
   "en": {
     "css": "Chacun Son Site",
-    "slogan": "WE CONVERT YOUR IDEAS TO WEB PROJECTS",
+    "slogan": "We convert your ideas to web projects",
     "service": {
       "title": "WE ADAPT TO YOUR NEEDS TO MAKE YOUR BUSINESS GROW ON THE WEB",
       "subtitle": "We develop products where the most important thing for us is"
@@ -17,15 +17,12 @@
       "title2": "Son",
       "title3": "Site"
     },
-    "data-telephone": "+1 (581) 2340581",
-    "data-email-ca": "quebec@chacunsonsite.ca",
-    "data-email-ec": "ecuador@chacunsonsite.ca",
     "data-city": "We have offices in Canada and Ecuador",
     "contact-us": "CONTACT US"
   },
   "es": {
     "css": "Chacun Son Site",
-    "slogan": "HACEMOS DE TUS IDEAS PROYETOS WEB",
+    "slogan": "Hacemos de tus ideas proyectos web",
     "service": {
       "title": "NOS ADAPTAMOS A TUS NECESIDADES PARA HACER CRECER TU NEGOCIO EN LA WEB",
       "subtitle": "Desarrollamos productos donde lo más importante para nosotros es"
@@ -41,34 +38,23 @@
       "title2": "Son",
       "title3": "Site"
     },
-    "data-telephone": "+1 (581) 2340581",
-    "data-email-ca": "quebec@chacunsonsite.ca",
-    "data-email-ec": "ecuador@chacunsonsite.ca",
     "data-city": "Tenemos oficinas en Canadá y Ecuador",
     "contact-us": "CONTÁCTENOS"
   },
   "fr": {
     "css": "Chacun Son Site",
-    "slogan": "ON FAIT DE VOS IDÉES DES PROJETS WEB",
+    "slogan": "On fait de vos idées des projets web",
     "service": {
       "title": "NOUS ADAPTONS VOS BESOINS POUR FAVORISER VOTRE ENTREPRISE SUR LE WEB",
       "subtitle": "Nous développons des produits où la chose la plus importante pour nous est"
     },
     "work": "NOS DERNIERS TRAVAUX EFFECTUÉS",
-    "technology": "NOUS UTILISONS LES MEILLEURES TECHNOLOGIES POUR FAIRE UN WEB",
+    "technology": "NOUS UTILISONS LES MEILLEURES TECHNOLOGIES POUR FAIRE DU WEB",
     "contact": {
-      "title1": "Parlez-nous du projet que vous voulez faire,",
+      "title1": "Parlez-nous de votre projet,",
       "title2": "Bien sûr, nous pouvons vous aider!"
     },
-    "data": {
-      "title1": "Chacun",
-      "title2": "Son",
-      "title3": "Site"
-    },
-    "data-telephone": "+1 (581) 2340581",
-    "data-email-ca": "quebec@chacunsonsite.ca",
-    "data-email-ec": "ecuador@chacunsonsite.ca",
-    "data-city": "Nous avons des bureaux au Canada et en Equateur",
-    "contact-us": "CONTACT US"
+    "data-city": "Nous avons des bureaux au Montréal et Equateur",
+    "contact-us": "CONTACTEZ NOUS"
   }
 }

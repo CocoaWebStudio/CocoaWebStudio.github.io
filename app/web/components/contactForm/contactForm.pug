@@ -1,5 +1,5 @@
 #contactForm.container
-  b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }}
+  b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }} {{ response}}
   b-alert(variant="success", v-model="success", dismissible) {{ $t('sucessfulServerResponse') }} {{ response }}
   wait-icon(:show="waiting")
   ValidationObserver(ref="observer" v-slot="{ invalid }")
@@ -44,6 +44,7 @@
           @expired="onCaptchaExpired"
           ref="contactRecaptcha",
           size="invisible"
+          :loadRecaptchaScript="true"
         )
         b-button.mx-2(:disabled="invalid",
           type="submit", variant="secondary"

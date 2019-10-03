@@ -18,5 +18,15 @@
     "msg": "Comentario",
     "sucessfulServerResponse": "Su mensaje a sido enviado, gracias por comunicarse con nosotros",
     "serverError": "Algo esta fallando, por favor reintente más tarde"
+  },
+  "fr": {
+    "submit": "Énvoyer",
+    "reset": "Vider",
+    "email": "Courriel",
+    "name": "Nom",
+    "phone": "Teléphone",
+    "msg": "Comentaire",
+    "sucessfulServerResponse": "Su mensaje a sido enviado, gracias por comunicarse con nosotros",
+    "serverError": "Ça marche pas! svp essaie plus tard"
   }
 }

@@ -3,25 +3,20 @@
 
 <script>
 import { PhoneIcon, MailIcon } from 'vue-feather-icons'
-import slider from '~/components/slider/slider.vue'
-import galleryHorizontal from '@/components/galleryHorizontal/galleryHorizontal.vue'
-import separator from '@/components/separator/separator.vue'
-import imageSection from '@/components/imageSection/imageSection.vue'
-import textsGallery from '@/components/textsGallery/textsGallery.vue'
-import contactForm from '~/components/contactForm/contactForm.vue'
-import gallery from '@/components/gallery/gallery.vue'
 
 export default {
+  name: 'Index',
   components: {
-    slider,
-    galleryHorizontal,
-    separator,
-    imageSection,
-    textsGallery,
-    contactForm,
-    gallery,
     PhoneIcon,
-    MailIcon
+    MailIcon,
+    slider: () => import('~/components/slider/slider.vue'),
+    galleryHorizontal: () =>
+      import('@/components/galleryHorizontal/galleryHorizontal.vue'),
+    separator: () => import('@/components/separator/separator.vue'),
+    imageSection: () => import('@/components/imageSection/imageSection.vue'),
+    textsGallery: () => import('@/components/textsGallery/textsGallery.vue'),
+    contactForm: () => import('~/components/contactForm/contactForm.vue'),
+    gallery: () => import('@/components/gallery/gallery.vue')
   },
   data() {
     return {

@@ -5,17 +5,17 @@
 
 <script>
 import { ValidationObserver } from 'vee-validate'
-import BTextInputWithValidation from '~/components//inputValidation/BTextInputWithValidation.vue'
-import BTextAreaInputWithValidation from '~/components/inputValidation/BTextAreaInputWithValidation.vue'
 
 export default {
   name: 'ContactForm',
   components: {
+    ValidationObserver,
     VueRecaptcha: () => import('vue-recaptcha'),
     WaitIcon: () => import('~/components/waitIcon/waitIcon.vue'),
-    ValidationObserver,
-    BTextInputWithValidation,
-    BTextAreaInputWithValidation
+    BTextInputWithValidation: () =>
+      import('~/components//inputValidation/BTextInputWithValidation.vue'),
+    BTextAreaInputWithValidation: () =>
+      import('~/components/inputValidation/BTextAreaInputWithValidation.vue')
   },
   data() {
     return {
@@ -52,8 +52,10 @@ export default {
           this.response = res.data.sendEmail
         })
         .catch((e) => {
+          console.log(e)
           this.error = true
           this.success = false
+          this.response = e
         })
       this.waiting = false
     },
@@ -64,7 +66,7 @@ export default {
       this.form.phone = ''
       this.form.msg = ''
       this.form.recaptcha = ''
-      this.$validator.reset()
+      this.$refs.observer.reset()
     },
     async onSubmit() {
       const isValid = await this.$refs.observer.validate()
