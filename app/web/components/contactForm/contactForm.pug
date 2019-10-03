@@ -1,70 +1,52 @@
-.container
-  b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }}
-  b-alert(variant="success", v-model="success", dismissible) {{ $t('sucessfulServerResponse') }}
+#contactForm.container
+  b-alert(variant="danger", v-model="error", dismissible) {{ $t('serverError') }} {{ response}}
+  b-alert(variant="success", v-model="success", dismissible) {{ $t('sucessfulServerResponse') }} {{ response }}
   wait-icon(:show="waiting")
-  b-form(@reset="onReset", @submit.prevent="onSubmit")
-    b-form-group(label-for="contactEmailInput") {{ $t('email') }}:
-      b-form-input#contactEmailInput(
-        :name="$t('email')"
+  ValidationObserver(ref="observer" v-slot="{ invalid }")
+    b-form(@reset="onReset", @submit.prevent="onSubmit")
+      BTextInputWithValidation(
+        vid="contactEmailInput",
+        :label="`${$t('email')} :`",
+        label-for="contactEmailInput"
+        rules="required|email",
         type="email",
+        :name="$t('email')",
         v-model="form.email",
-        v-validate="'required|email'",
-        :state="validateState($t('email'))",
-        aria-describedby="contactEmailInputFeedback",
-        placeholder="your@email.com",
-        required
+        placeholder="Enter your email"
       )
-      b-form-invalid-feedback#contactEmailInputFeedback
-        small {{ errors.first($t('email')) }}
-    b-form-group(label-for="contactNameInput") {{ $t('name') }}:
-      b-form-input#contactNameInput(
+      BTextInputWithValidation(
+        vid="contactNameInput",
+        :label="`${$t('name')} :`",
+        label-for="contactNameInput"
+        rules="required|min:3|max:50",
+        type="text",
         :name="$t('name')",
-        type="text",
         v-model="form.name",
-        v-validate="'required|min:3|max:50'",
-        :state="validateState($t('name'))",
-        aria-describedby="contactNameInputFeedback",
-        placeholder='Juan Aguilar',
-        required
+        :placeholder="$t('name')"
       )
-      b-form-invalid-feedback#contactNameInputFeedback
-        small {{ errors.first($t('name')) }}
-    b-form-group(label-for="contactPhoneInput") {{ $t('phone') }}:
-      b-form-input#contactPhoneInput(
-        :name="$t('phone')"
-        type="tel"
-        v-model="form.phone"
-        v-validate="'min:9|max:20'",
-        :state="validateState($t('phone'))",
-        aria-describedby="contactPhoneInputFeedback",
-        placeholder='042345678',
-        onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 43"
-      )
-      b-form-invalid-feedback#contactPhoneInputFeedback
-        small {{ errors.first($t('phone')) }}
-    b-form-group(label-for="contactMsgInput") {{ $t('msg') }}:
-      b-form-textarea#contactMsgInput(
-        :name="$t('msg')",
+      BTextAreaInputWithValidation(
+        vid="contactMsgInput",
+        :label="`${$t('msg')} :`",
+        label-for="contactMsgInput"
+        rules="required|min:20|max:1000",
         type="text",
-        v-model="form.msg",
-        :rows="3",
-        :max-rows="6",
-        v-validate="'required|min:20|max:1000'",
-        :state="validateState($t('msg'))",
+        rows="3",
+        max-rows="6",
         aria-describedby="contactMsgInputFeedback",
-        required
+        :name="$t('msg')",
+        v-model="form.msg",
+        :placeholder="$t('msg')"
       )
-      b-form-invalid-feedback#contactMsgInputFeedback
-        small {{ errors.first($t('msg')) }}
-    b-form-group
-      vue-recaptcha(
-        :sitekey="recaptcha_key",
-        @verify="onCaptchaVerified",
-        @expired="onCaptchaExpired"
-        ref="contactRecaptcha",
-        size="invisible"
-      )
-      b-button.mx-2(:disabled="errors.any()",
-        type="submit", variant="primary"
-        ) {{ $t('submit') }}
-      b-button(type="reset", variant="success") {{ $t('reset') }}
+      b-form-group
+        vue-recaptcha(
+          :sitekey="recaptcha_key",
+          @verify="onCaptchaVerified",
+          @expired="onCaptchaExpired"
+          ref="contactRecaptcha",
+          size="invisible"
+          :loadRecaptchaScript="true"
+        )
+        b-button.mx-2(:disabled="invalid",
+          type="submit", variant="secondary"
+          ) {{ $t('submit') }}
+        b-button(type="reset", variant="primary") {{ $t('reset') }}

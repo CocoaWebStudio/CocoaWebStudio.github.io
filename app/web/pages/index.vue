@@ -1,127 +1,197 @@
 <i18n src="./content-index.json"></i18n>
-<template lang="pug">
-  .home
-    slider(:sliders="sliders")
-    .container-fluid.py-4
-      .row
-        .col.text-center
-          h3.allies {{ $t('our-allies')}}
-    imageSection(:imageSections="imageSections")
-    about-us
-
-</template>
+<template lang="pug" src="./index.pug" />
 
 <script>
-import slider from '~/components/slider/slider'
-import imageSection from '~/components/imageSection/imageSection'
-import aboutUs from '~/pages/about-us/index.vue'
+import { PhoneIcon, MailIcon } from 'vue-feather-icons'
 
 export default {
+  name: 'Index',
   components: {
-    slider,
-    imageSection,
-    aboutUs
+    PhoneIcon,
+    MailIcon,
+    slider: () => import('~/components/slider/slider.vue'),
+    galleryHorizontal: () =>
+      import('@/components/galleryHorizontal/galleryHorizontal.vue'),
+    separator: () => import('@/components/separator/separator.vue'),
+    imageSection: () => import('@/components/imageSection/imageSection.vue'),
+    textsGallery: () => import('@/components/textsGallery/textsGallery.vue'),
+    contactForm: () => import('~/components/contactForm/contactForm.vue'),
+    gallery: () => import('@/components/gallery/gallery.vue')
   },
   data() {
     return {
       sliders: [
         {
           id: 0,
-          title: 'smarensol',
-          url: '/images/slider/smarensol_slider_logo.jpg'
+          title: 'chacunsonsite',
+          url: '/images/slider/slider_chacunsonsite_logo.jpg'
         },
         {
           id: 1,
-          url: '/images/slider/smarensol_slider_electric_tower.jpeg'
+          url: '/images/slider/slider_chacunsonsite_seo.jpg'
         },
         {
           id: 2,
-          url: '/images/slider/smarensol_slider_security_equipments.jpg'
+          url: '/images/slider/slider_chacunsonsite_ideas.jpg'
         },
         {
           id: 3,
-          url: '/images/slider/smarensol_slider_insulators.jpeg'
+          url: '/images/slider/slider_chacunsonsite_socialNetworks.jpg'
+        }
+      ],
+      galleryHorizontals: [
+        {
+          id: 0,
+          url: '/images/works/works_rahua.jpg',
+          name: 'Rahua',
+          description: 'rahua',
+          size: '6',
+          link: '//rahua.com/'
         },
         {
-          id: 4,
-          url: '/images/slider/smarensol_slider_electrical_substations.jpg'
+          id: 1,
+          url: '/images/works/works_matte.jpg',
+          name: 'Matte CG',
+          description: 'matteGc',
+          size: '6',
+          link: '//matte.cg/'
         },
         {
-          id: 5,
-          url: '/images/slider/smarensol_slider_substations.jpeg'
+          id: 2,
+          url: '/images/works/works_smarensol.jpg',
+          name: 'Smarensol S.A',
+          description: 'smarensol',
+          size: '6',
+          link: '//smarensol.com/'
         },
         {
-          id: 6,
-          url: '/images/slider/smarensol_slider_electricity_towers.jpg'
-        },
-        {
-          id: 7,
-          url: '/images/slider/smarensol_slider_electricity_substations.jpeg'
+          id: 3,
+          url: '/images/works/works_dechezmoi.jpg',
+          name: 'De Chez Moí',
+          description: 'deChezMoi',
+          size: '6',
+          link: '//dechezmoi.ca/'
         }
       ],
       imageSections: [
         {
           id: 0,
-          image: '/images/allies/smarensol_allies_delta_conectores.jpeg',
-          link: 'https://www.deltaconectores.com',
-          name: 'Delta Conductores S.A. de C.V.'
+          name: 'Vuejs',
+          image: '/images/technologies/technologies_vue_logo.png'
         },
         {
           id: 1,
-          image: '/images/allies/smarensol_allies_ever_exceed.jpeg',
-          link: 'http://www.everexceed.com',
-          name: 'Ever Exceed.'
+          name: 'Nuxtjs',
+          image: '/images/technologies/technologies_nuxt_logo.png'
         },
         {
           id: 2,
-          image: '/images/allies/smarensol_allies_gaon_cable.jpeg',
-          link: 'https://www.gaoncable.com',
-          name: 'Gaon Cable Co. Ltd.'
+          name: 'Bootstrap Vue',
+          image: '/images/technologies/technologies_bootrsp_vue_logo.png'
+        },
+        {
+          id: 3,
+          name: 'Bootstrap',
+          image: '/images/technologies/technologies_bootstrap_logo.png'
+        },
+        {
+          id: 4,
+          name: 'Apollo',
+          image: '/images/technologies/technologies_apollo_logo.png'
+        },
+        {
+          id: 5,
+          name: 'GraphQl',
+          image: '/images/technologies/technologies_graphql_logo.png'
+        },
+        {
+          id: 6,
+          name: 'Shopify',
+          image: '/images/technologies/technologies_shopify_logo.png'
+        },
+        {
+          id: 7,
+          name: 'Magento',
+          image: '/images/technologies/technologies_magento_logo.png'
+        },
+        {
+          id: 8,
+          name: 'Magento2',
+          image: '/images/technologies/technologies_magento2_logo.png'
+        },
+        {
+          id: 9,
+          name: 'Laravel',
+          image: '/images/technologies/technologies_laravel_logo.png'
+        },
+        {
+          id: 10,
+          name: 'Wordpress',
+          image: '/images/technologies/technologies_wordpress_logo.png'
+        },
+        {
+          id: 11,
+          name: 'Woo Commerce',
+          image: '/images/technologies/technologies_woo_commerce_logo.png'
+        }
+      ],
+      textsGallerys: [
+        {
+          id: 0,
+          text: 'codeLovers',
+          image: '/images/services/services_code_lovers.png'
+        },
+        {
+          id: 1,
+          text: 'security',
+          image: '/images/services/services_data_segurity.png'
+        },
+        {
+          id: 2,
+          text: 'seoUx',
+          image: '/images/services/services_seo_ux.png'
+        },
+        {
+          id: 3,
+          text: 'ui',
+          image: '/images/services/services_ui.png'
+        },
+        {
+          id: 4,
+          text: 'tools',
+          image: '/images/services/services_tools.png'
+        }
+      ],
+      gallerys: [
+        {
+          id: 0,
+          url: '/images/blog/vue-logo.jpg',
+          title: 'titleVue',
+          description: 'postVue',
+          size: '12'
         }
       ]
     }
   },
   head() {
     return {
-      title: 'Smarensol',
+      title: 'ChacunSonSite',
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: this.$t('welcome')
+          property: 'og:title',
+          content: this.$t('css')
         },
         {
-          property: 'og:title',
-          name: 'title',
-          content: 'Smarensol'
+          property: 'og:description',
+          content: this.$t('slogan')
         },
         {
           property: 'og:image',
-          content: 'http://euro-travel-example.com/thumbnail.jpg'
+          content: '~/assets/ChacunsonsiteLogo-sm.jpg'
         },
-        { property: 'og:url', content: 'https://smarensol.com' }
+        { property: 'og:url', content: 'https://chacunsonsite.ca' }
       ]
     }
   }
 }
 </script>
-
-<style scoped>
-.bounce-enter-active {
-  animation: bounce-in 0.8s;
-}
-.bounce-leave-active {
-  animation: bounce-in 0.5s reverse;
-}
-@keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-</style>

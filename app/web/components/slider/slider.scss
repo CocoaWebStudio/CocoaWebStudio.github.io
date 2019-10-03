@@ -3,3 +3,39 @@
     padding: 1rem 3rem;
   }
 }
+.carousel-item {
+  .img-slider{
+    height: 60%;
+    min-height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 768px) {
+      height: 100%;
+      min-height: 750px;
+    }
+  }
+  /deep/ .carousel-caption h1 {
+    font-weight: 300;
+    font-size: 48px;
+    margin-bottom: 0;
+    line-height: 150%;
+    text-shadow: 2px 2px 4px var(--dark);
+    @media (min-width: 768px) {
+      font-size: 55px;
+      font-weight: 400;
+      line-height: 180%;
+    }
+  }
+  /deep/ .text-slider{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px var(--dark);
+    line-height: 120%;
+    @media (min-width: 768px) {
+      font-size: 40px;
+      font-weight: 400;
+    }
+  }
+}

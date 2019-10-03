@@ -1,30 +1,22 @@
 header.sticky-top.bd-navbar
   b-navbar.navbar-light.bg-light(toggleable="md")
     nuxt-link.nav-link(:to="localePath('index')")
-      img(src="~assets/SmarensolLogo.svg", alt="Smaresol S.A.", :height="imgHeight")
+      img(src="~assets/ChacunsonsiteLogo.png", alt="ChacunSonSite", :height="imgHeight")
     b-navbar-toggle(target="nav_collapse")
     b-collapse(is-nav id="nav_collapse")
       b-navbar-nav.ml-auto
-        nuxt-link.nav-link(:to="localePath('about-us')") {{ $t('menu.company')}}
-        b-nav-item-dropdown(:text="$t('menu.productLines.title')" right)
-          nuxt-link.nav-link(:to="localePath('product-lines-distribution')") {{ $t('menu.productLines.distribution') }}
-          nuxt-link.nav-link(:to="localePath('product-lines-substations')") {{ $t('menu.productLines.substations') }}
-          nuxt-link.nav-link(:to="localePath('product-lines-transmission-lines')") {{ $t('menu.productLines.transmition') }}
-          nuxt-link.nav-link(:to="localePath('product-lines-industrial')") {{ $t('menu.productLines.industrial') }}
-        nuxt-link.nav-link(:to="localePath('customers')") {{ $t('menu.customers') }}
-        nuxt-link.nav-link(:to="localePath('contact-us')") {{ $t('menu.contactUs') }}
-        b-btn(v-b-modal="'popup-wraper'" variant="success") {{ $t('menu.brochure') }}
-        popup
+        b-nav-item( href="#services" ) {{ $t('menu.services') }}
+        b-nav-item( href="#works" ) {{ $t('menu.works') }}
+        b-nav-item( href="#technologies" ) {{ $t('menu.technologies') }}
+        b-nav-item( href="https://medium.com/js-css", target="_blank",rel="noopener noreferrer") {{ $t('menu.blog')}}
+        b-nav-item( href="#contact-us" ) {{ $t('menu.contactUs') }}
         b-nav-item-dropdown(variant="link", size="lg", right )
           template(slot="button-content")
-            img.img-fluid.flag(:src="$i18n.locales.filter(function(i){return i.code == $i18n.locale})[0].flag")
+            span.text.text-secondary {{ $i18n.locales.filter(function(i){return i.code == $i18n.locale})[0].code }}
           nuxt-link.nav-link(
           v-for="locale in $i18n.locales",
           v-if="locale.code !== $i18n.locale",
           :key="locale.code",
-          :to="switchLocalePath(locale.code)")
-            img.img-fluid.flag(:src="locale.flag")
-  .container-fluid
-    .row.bg-primary
-      .col.text-center.text-light.py-2
-        h4.title.bounce-enter-active {{ $t('welcome')}}
+          :to="switchLocalePath(locale.code)"
+          )
+            span.text-secondary {{ locale.code }}

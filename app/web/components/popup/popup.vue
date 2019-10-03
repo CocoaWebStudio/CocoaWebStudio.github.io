@@ -32,12 +32,12 @@ export default {
         url: '/brochure',
         data: this.form
       })
-        .then(res => {
+        .then((res) => {
           this.success = true
           this.error = false
           this.clear()
         })
-        .catch(e => {
+        .catch((e) => {
           this.error = true
           this.success = false
         })
@@ -54,7 +54,7 @@ export default {
       evt.preventDefault()
       this.error = false
       this.success = false
-      this.$validator.validateAll().then(res => {
+      this.$validator.validateAll().then((res) => {
         if (res) {
           this.$refs.popupRecaptcha.execute()
         }
@@ -75,7 +75,7 @@ export default {
       }
       return null
     },
-    onCaptchaExpired: function() {
+    onCaptchaExpired() {
       this.$refs.popupRecaptcha.reset()
     }
   }

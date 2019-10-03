@@ -1,9 +1,8 @@
 'use strict'
-const nodemailer = require('nodemailer'),
-  consola = require('consola')
+import nodemailer from 'nodemailer'
+import consola from 'consola'
 
-// async..await is not allowed in global scope, must use a wrapper
-const sendEmail = async email => {
+export async function sendEmail(email) {
   consola.ready({
     message: `send email start`,
     badge: true
@@ -17,15 +16,25 @@ const sendEmail = async email => {
       user: process.env.EMAIL_USER, // generated ethereal user
       pass: process.env.EMAIL_PASS // generated ethereal password
     },
+    secure: false,
     tls: {
-      ciphers: 'SSLv3'
+      rejectUnauthorized: false
     }
   })
 
   // send mail with defined transport object
   await transporter.sendMail(email)
-}
-
-module.exports = {
-  sendEmail
+  .then((res) => {
+    console.log(res)
+    consola.ready({
+      message: `email sent`,
+      badge: true
+    })
+  })
+  .catch((e) => {
+    consola.error({
+      message: e,
+      badge: true
+    })
+  })
 }

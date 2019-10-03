@@ -8,3 +8,10 @@
   transform: scale(1.1);
 }
 h4 {min-height: 100px;}
+.gallery{
+  height: 100%;
+  min-height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
