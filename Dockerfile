@@ -1,24 +1,21 @@
 FROM node:lts-slim
 
-RUN mkdir -p /home/node/app/node_modules
+RUN mkdir -p /home/node/css/node_modules
 
-WORKDIR /home/node/app
-
-RUN chown -R node:node .
-
-COPY app/package.json ./
-
-COPY app/yarn.lock  ./
-
-RUN yarn
+WORKDIR /home/node/css
 
 COPY --chown=node:node ./app .
 
-RUN yarn build
+RUN chown -R node:node .
 
 USER node
 
-ENV HOST 0.0.0.0
-EXPOSE 8080
+RUN yarn install --production
+
+EXPOSE 8089
+
+ENV NUXT_PORT=8089 \
+  NUXT_HOST=css
+
 # start command
 CMD [ "yarn", "start" ]
