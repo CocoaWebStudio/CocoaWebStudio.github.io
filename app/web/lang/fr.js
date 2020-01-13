@@ -20,8 +20,8 @@ export default {
     "Il a été développé pour une grande entreprise de commerce électronique reconnue qui se consacre au soin et à l'entretien des cheveux, de la peau et du visage, avec des ingrédients organiques naturels et purs dérivés de l'argent.",
   matteGc:
     'Studio d’animation, effets spéciaux et films équatoriens reconnu pour sa longue expérience dans la création de projets personnalisés pour le contenu et la publicité dans le monde entier.',
-  smarensol:
-    'Entreprise centrée sur le secteur de l’électricité, forte d’une vaste expérience dans la commercialisation d’équipements et de fournitures pour les systèmes de distribution, de transport et de sous-station de distribution d’électricité.',
+  eps:
+    'Electric Power Solutions, Entreprise centrée sur le secteur de l’électricité, forte d’une vaste expérience dans la commercialisation d’équipements et de fournitures pour les systèmes de distribution, de transport et de sous-station de distribution d’électricité.',
   deChezMoi:
     'Entrepreneuriat par Juan Pablo Aguilar Lliguin, De Chez Moí est un commerce électronique dédié au développement de chocolats biologiques haut de gamme.',
   // CardText

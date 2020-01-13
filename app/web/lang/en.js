@@ -20,8 +20,8 @@ export default {
     'It was developed for a large and recognized ecommerce company that is dedicated to the care and maintenance of hair, skin and face, with natural and pure organic ingredients derived from silver.',
   matteGc:
     'Recognized Ecuadorian Animation Studio, VFX and Film, with a long history in the creation of custom projects for content and advertising worldwide.',
-  smarensol:
-    'Company focused on the electricity sector, with a vast experience in the commercialization of equipment and supplies for electrical distribution, transmission and substation systems.',
+  eps:
+    'Electric Power Solutions, Company focused on the electricity sector, with a vast experience in the commercialization of equipment and supplies for electrical distribution, transmission and substation systems.',
   deChezMoi:
     'Entrepreneurship by Juan Pablo Aguilar Lliguin, De Chez Moí is an ecommerce dedicated to the development of high-end organic chocolates.',
   test:
