@@ -58,11 +58,11 @@ export default {
         },
         {
           id: 2,
-          url: '/images/works/works_smarensol.jpg',
-          name: 'Smarensol S.A',
-          description: 'smarensol',
+          url: '/images/works/works_eps.jpg',
+          name: 'EPS S.A',
+          description: 'eps',
           size: '6',
-          link: '//smarensol.com/'
+          link: '//eps.ec/'
         },
         {
           id: 3,
