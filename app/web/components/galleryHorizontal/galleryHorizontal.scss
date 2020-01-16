@@ -37,8 +37,11 @@
         }
       }
       .image {
-        filter: gray; /* IE6-9 */
+        filter: none;
+        @media (min-width: 1336px) {
+          filter: gray; /* IE6-9 */
         -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        }
       }
       .image:hover {
         filter: none;

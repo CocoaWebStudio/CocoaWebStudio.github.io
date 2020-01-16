@@ -3,6 +3,9 @@ footer.bg-primary
     b-row(no-gutters)
       .col-md-10.offset-md-1.text-center
         social-networks
-    b-row.py-2(no-gutters)
-      .col.text-center.text-warning
-        h6 ©{{ year }} ChacunSonSite  {{ $t('rights')}}
+    b-row.py-2(no-gutters).text-center.text-warning
+      .col-md.text-footer-year
+        h6 ©{{ year }}
+          img.img(src="~/assets/ChacunsonsiteLogo.png", alt="Chacunsonsite", height="32")
+      .col-md.text-footer-info
+        h6 {{ $t('rights')}}
