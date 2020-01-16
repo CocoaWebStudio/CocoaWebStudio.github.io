@@ -1,7 +1,22 @@
 footer
 {
   .img {
-    margin-bottom: 6px;
     margin-left: 3px;
+    margin-right: 5px;
+    @media (min-width: 768px) {
+      margin: -10px;
+      margin-left: 3px;
+      margin-right: 5px;
+    }
+  }
+  .text-footer-year {
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+  }
+  .text-footer-info {
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
 }

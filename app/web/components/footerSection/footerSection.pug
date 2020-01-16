@@ -1,10 +1,11 @@
 footer.bg-primary
-  .container-fluid
-    .row
+  div
+    b-row(no-gutters)
       .col-md-10.offset-md-1.text-center
         social-networks
-    .row
-      .col.text-center.text-center.text-warning
+    b-row.py-2(no-gutters).text-center.text-warning
+      .col-md.text-footer-year
         h6 ©{{ year }}
           img.img(src="~/assets/ChacunsonsiteLogo.png", alt="Chacunsonsite", height="32")
-          h6 {{ $t('rights')}}
+      .col-md.text-footer-info
+        h6 {{ $t('rights')}}
