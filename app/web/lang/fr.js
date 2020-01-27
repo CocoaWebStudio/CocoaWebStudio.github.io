@@ -24,6 +24,10 @@ export default {
     'Electric Power Solutions, Entreprise centrée sur le secteur de l’électricité, forte d’une vaste expérience dans la commercialisation d’équipements et de fournitures pour les systèmes de distribution, de transport et de sous-station de distribution d’électricité.',
   deChezMoi:
     'Entrepreneuriat par Juan Pablo Aguilar Lliguin, De Chez Moí est un commerce électronique dédié au développement de chocolats biologiques haut de gamme.',
+  clubMecanique:
+    "C'est une idée créée par Annie Barrette, dont l'objectif principal est d'offrir des ateliers de base d'entretien automobile aux femmes, partout au Québec.",
+  tourPraga:
+    'Tour in Prague, est une entreprise dédiée à offrir différentes visites et excursions en espagnol dans la ville de Prague, en République tchèque.',
   // CardText
   codeLovers:
     'Mettez tous vos efforts et votre engagement pour écrire du code avec amour.',

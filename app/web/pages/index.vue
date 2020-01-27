@@ -71,6 +71,22 @@ export default {
           description: 'deChezMoi',
           size: '6',
           link: '//dechezmoi.ca/'
+        },
+        {
+          id: 4,
+          url: '/images/works/work_club_mecanique.jpg',
+          name: 'Club Mécanique des Femmes',
+          description: 'clubMecanique',
+          size: '6',
+          link: '//clubmecanique.com/'
+        },
+        {
+          id: 5,
+          url: '/images/works/work_tourenpraga.jpg',
+          name: 'Tour en Praga',
+          description: 'tourPraga',
+          size: '6',
+          link: '//tourenpraga.com/'
         }
       ],
       imageSections: [
