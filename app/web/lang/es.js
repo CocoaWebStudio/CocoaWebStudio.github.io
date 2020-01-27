@@ -27,7 +27,7 @@ export default {
   clubMecanique:
     'Es una idea creada por Annie Barrette, cuyo objetivo principal es ofrecer talleres básicos de mantenimiento de automóviles para mujeres, en todas partes de Quebec.',
   tourPraga:
-    'Tour en Praga, es una compañia  dedicada a ofrecer diferentes tours y excursiones en español en la ciudad de Praga, Republica Checa.',
+    'Tour en Praga, es una compañia  dedicada a ofrecer diferentes tours y excursiones en español en la ciudad de Praga, República Checa.',
   // CardText
   codeLovers:
     'Poner todo nuestro esfuerzo y compromiso para escribir código con amor.',
